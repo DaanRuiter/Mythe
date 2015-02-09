@@ -4,12 +4,11 @@ using UnityEngine.UI;
 
 public class TimeScript : MonoBehaviour {
 
-	private int _timeRemaining = 10;
+	private int _timeRemaining;
 	private Text _timeRemainingText;
 
 	void Awake () 
 	{
-		DontDestroyOnLoad(transform.parent);
 		_timeRemainingText = GetComponent<Text> ();
 
 		startGame();
@@ -17,9 +16,9 @@ public class TimeScript : MonoBehaviour {
 
 	public void startGame()
 	{
-		_timeRemaining = 10;
+		_timeRemaining += 10;
 		InvokeRepeating ("timeDown", 1f, 1f);
-		_timeRemainingText.text =  "" + _timeRemaining;// + timeRemaining;	//timeRemaining.ToString();
+		_timeRemainingText.text =  "Time: " + _timeRemaining;// + timeRemaining;	//timeRemaining.ToString();
 
 	}
 	
@@ -35,7 +34,7 @@ public class TimeScript : MonoBehaviour {
 		else
 		{
 			_timeRemaining --;
-			_timeRemainingText.text =  "" + _timeRemaining;
+			_timeRemainingText.text =  "Time: " + _timeRemaining;
 		}
 		Debug.Log (_timeRemaining);
 	}
