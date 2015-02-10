@@ -26,9 +26,13 @@ public class TimeScript : MonoBehaviour {
 	{
 		if(_timeRemaining == 0)
 		{
-			_timeRemainingText.text =  null;
 			CancelInvoke();
-			Application.LoadLevel("Shop");
+
+			startGame();
+
+			//_timeRemainingText.text =  null;
+			//CancelInvoke();
+			//Application.LoadLevel("Shop");
 			Debug.Log("Died");
 		}
 		else
