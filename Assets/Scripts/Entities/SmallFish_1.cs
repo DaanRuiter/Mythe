@@ -5,8 +5,12 @@ public class SmallFish_1 : FishPickup
 {
 	private float _angle;
 
+	private Vector2 basePosition;
+
 	void Start() 
 	{
+		basePosition = transform.position;
+
 		fishPoints = 10;
 
 		speedMultiplier = 1;
@@ -25,12 +29,11 @@ public class SmallFish_1 : FishPickup
 		direction = new Vector2(x, y);
 
 		_angle = Mathf.Atan2(direction.y, direction.x) * (180 / Mathf.PI) + 90;
+		transform.rotation = Quaternion.Euler(0, 0, _angle);
 
 		x = Mathf.Cos(mathSpeed) * radiusX;
 		y = Mathf.Sin(mathSpeed) * radiusY;
-		
-		transform.rotation = Quaternion.Euler(0, 0, _angle);
 
-		transform.position = direction;
+		transform.position = basePosition + direction;
 	}
 }
