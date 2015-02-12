@@ -13,6 +13,8 @@ public class SmallFish_1 : FishPickup
 
 		fishPoints = 10;
 
+		fishName = "bass";
+
 		speedMultiplier = 1;
 
 		radiusX = 5;

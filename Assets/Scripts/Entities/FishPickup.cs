@@ -17,6 +17,9 @@ public class FishPickup : MonoBehaviour
 	protected float mass;
 
 	[SerializeField]
+	protected string fishName;
+
+	[SerializeField]
 	protected int fishPoints;
 #endregion
 
