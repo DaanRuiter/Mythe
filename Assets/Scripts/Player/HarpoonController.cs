@@ -8,7 +8,11 @@ public enum MovementDirection
     Up
 }
 
-public class HarpoonController : MonoBehaviour {
+public class HarpoonController : MonoBehaviour
+{
+
+    //Daan Ruiter
+    //daanruiter.net
 
     public float movementSpeed;
     public float distanceForReset;
@@ -18,18 +22,26 @@ public class HarpoonController : MonoBehaviour {
 
     private MovementDirection _movementDirection;
     private GameObject _harpoonGun;
+
     private HarpoonAimer _harpoonAimer;
+    private TargetLocator _targetLocator;
 
     private void Start()
     {
+        //create some references
         _harpoonGun = GameObject.FindGameObjectWithTag("HarpoonGun");
+        _harpoonAimer = GameObject.FindGameObjectWithTag("HarpoonObject").GetComponent<HarpoonAimer>();
+        _targetLocator = GameObject.FindGameObjectWithTag("TargetLocator").GetComponent<TargetLocator>();
+
+        //initialize some variables.
         _movementDirection = MovementDirection.None;
         _target = Vector3.zero;
-        _harpoonAimer = GameObject.FindGameObjectWithTag("HarpoonObject").GetComponent<HarpoonAimer>();
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
+        //at this point the harpoon has collided with an object
+        //now it will reel the object back into the ship
         SwitchDirection();
     }
 
@@ -37,14 +49,17 @@ public class HarpoonController : MonoBehaviour {
     {
         if (_target != Vector3.zero)
         {
+            //move towards the target
             if(_movementDirection == MovementDirection.Down)
             {
                 transform.position = Vector3.MoveTowards(transform.position, _target, movementSpeed * Time.deltaTime);
             }
+                //move in a backgwards motion so it looks like the harpoon is being pulled back up
             else
             {
                 transform.position = Vector3.MoveTowards(transform.position, _harpoonGun.transform.position, movementSpeed * Time.deltaTime);
             }
+            //check if the harpoon has reached the gun
             if(_movementDirection == MovementDirection.Up && Vector3.Distance(transform.position, _target) < distanceForReset)
             {
                 ReAtachToGun();
@@ -54,30 +69,35 @@ public class HarpoonController : MonoBehaviour {
 
     public void ShootAt(Vector3 target)
     {
+        //Set the target, the direction and save the position it was in before the gun was shot
         _target = target;
         _movementDirection = MovementDirection.Down;
-
         _startPosition = transform.position;
     }
 
     private void ReAtachToGun()
     {
+        //nullify the target & direction
         _target = Vector3.zero;
         _movementDirection = MovementDirection.None;
-        _harpoonAimer.ResetGun();
+        //put the harpoon back in the right position
         transform.parent = _harpoonGun.transform;
         transform.position = _startPosition;
+        //tell the gun && targetlocator to start rotating again
+        _harpoonAimer.ResetGun();
     }
 
-    private void SwitchDirection()
+    public void SwitchDirection()
     {
         if (_movementDirection == MovementDirection.Down)
         {
+            //change the direction & reverse the starting target en the aimer target
             _movementDirection = MovementDirection.Up;
             _target = _harpoonGun.transform.position;
         }
         else
         {
+            //change the direction
             _movementDirection = MovementDirection.Down;
         }
     }
