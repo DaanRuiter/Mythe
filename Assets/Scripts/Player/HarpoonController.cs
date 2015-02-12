@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public enum MovementDirection
 {
@@ -26,6 +27,8 @@ public class HarpoonController : MonoBehaviour
     private HarpoonAimer _harpoonAimer;
     private TargetLocator _targetLocator;
 
+    private List<GameObject> _fishesOnHarpoon;
+
     private void Start()
     {
         //create some references
@@ -36,13 +39,22 @@ public class HarpoonController : MonoBehaviour
         //initialize some variables.
         _movementDirection = MovementDirection.None;
         _target = Vector3.zero;
+        _fishesOnHarpoon = new List<GameObject>();
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
         //at this point the harpoon has collided with an object
         //now it will reel the object back into the ship
-        SwitchDirection();
+        if(col.GetComponent<FishPickup>())
+        {
+            if (_movementDirection != MovementDirection.Up)
+            {
+                SwitchDirection();
+                col.GetComponent<FishPickup>().PickUp(transform);
+                _fishesOnHarpoon.Add(col.gameObject);
+            }
+        }
     }
 
     private void Update()
@@ -69,10 +81,10 @@ public class HarpoonController : MonoBehaviour
 
     public void ShootAt(Vector3 target)
     {
-        //Set the target, the direction and save the position it was in before the gun was shot
-        _target = target;
-        _movementDirection = MovementDirection.Down;
-        _startPosition = transform.position;
+         //Set the target, the direction and save the position it was in before the gun was shot
+         _target = target;
+         _movementDirection = MovementDirection.Down;
+         _startPosition = transform.position;
     }
 
     private void ReAtachToGun()
@@ -85,6 +97,12 @@ public class HarpoonController : MonoBehaviour
         transform.position = _startPosition;
         //tell the gun && targetlocator to start rotating again
         _harpoonAimer.ResetGun();
+        for (int i = 0; i < _fishesOnHarpoon.Count; i++)
+        {
+            Game.instance.AddScore(_fishesOnHarpoon[i].GetComponent<FishPickup>().GetPointWorth());
+            Destroy(_fishesOnHarpoon[i]);
+        }
+        _fishesOnHarpoon.Clear();
     }
 
     public void SwitchDirection()
@@ -100,5 +118,10 @@ public class HarpoonController : MonoBehaviour
             //change the direction
             _movementDirection = MovementDirection.Down;
         }
+    }
+
+    public MovementDirection GetDirection()
+    {
+        return this._movementDirection;
     }
 }
