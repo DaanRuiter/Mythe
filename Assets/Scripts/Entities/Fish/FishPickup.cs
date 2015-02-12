@@ -10,6 +10,8 @@ public class FishPickup : MonoBehaviour
 	protected float x;
 	protected float y;
 
+	protected bool hasBeenHooked;
+
 #region Serialized variables
 	[SerializeField]
 	protected float speedMultiplier;
@@ -24,13 +26,21 @@ public class FishPickup : MonoBehaviour
 #endregion
 
 	protected Vector2 direction;
-	
+
+	protected virtual void Start()
+	{
+		hasBeenHooked = false;
+	}
+
 	protected virtual void FixedUpdate()
 	{
 		speed = speedMultiplier;
 		mathSpeed += Time.deltaTime * speedMultiplier;
-		
-		Movement();
+
+		if(!hasBeenHooked)
+		{
+			Movement();
+		}
 	}
 	
 	protected virtual void Movement()

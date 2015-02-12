@@ -7,11 +7,12 @@ public class SmallFish_1 : FishPickup
 
 	private Vector2 basePosition;
 
-	void Start() 
+	protected override void Start() 
 	{
-		basePosition = transform.position;
+		base.Start();
 
 		fishPoints = 10;
+		mass = 10;
 
 		fishName = "bass";
 
@@ -19,6 +20,8 @@ public class SmallFish_1 : FishPickup
 
 		radiusX = 5;
 		radiusY = 5;
+
+		basePosition = transform.position;
 	}
 	
 	protected override void FixedUpdate () 

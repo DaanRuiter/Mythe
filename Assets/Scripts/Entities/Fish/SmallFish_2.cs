@@ -1,20 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SmallFish_3 : FishPickup 
-{	
+public class SmallFish_2 : FishPickup 
+{
+	private float _bounceSpeed;
+	private float _bounce;
 
 	private bool _negativeMovement;
 
-	void Start() 
+	protected override void Start() 
 	{
-		fishPoints = 10;
-		speedMultiplier = 0.5f;
-		
-		radiusX = transform.position.x + 5;
+		base.Start();
 
+		fishPoints = 10;
+		mass = 10;
+
+		radiusX = transform.position.x + 7.5f;
+		radiusY = 0.5f;
+		speedMultiplier = 0.25f;
 		x = transform.position.x;
-		y = transform.position.y;
 
 		_negativeMovement = false;
 	}
@@ -26,8 +30,10 @@ public class SmallFish_3 : FishPickup
 	
 	protected override void Movement()
 	{
+		y = transform.position.y + _bounce;
+
 		direction = new Vector2 (x, y);
-		
+
 		if(transform.position.x >= radiusX)
 		{
 			_negativeMovement = true;
@@ -42,6 +48,9 @@ public class SmallFish_3 : FishPickup
 		{
 			x += speed;
 		}
+
+		_bounce = (Mathf.Sin(mathSpeed * 50)) * radiusY;
+
 		transform.position = direction;
 	}
 }
