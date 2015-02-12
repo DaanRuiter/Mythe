@@ -12,12 +12,9 @@ public class SmallFish_Vertical : FishPickup
 		
 		fishPoints = 10;
 		mass = 10;
-<<<<<<< HEAD:Assets/Scripts/Entities/Fish/SmallFish_2.cs
 
 		radiusX = transform.position.x + 4f;
 		radiusY = 0.5f;
-=======
->>>>>>> d1c82e4bb694c1003d819726848045711f0b26fd:Assets/Scripts/Entities/Fish/SmallFish_Vertical.cs
 		speedMultiplier = 0.25f;
 
 		radiusY = transform.position.x + 5;
@@ -53,12 +50,9 @@ public class SmallFish_Vertical : FishPickup
 			scale.x = -startScale;
 			y += speed;
 		}
-<<<<<<< HEAD:Assets/Scripts/Entities/Fish/SmallFish_2.cs
 
-		_bounce = (Mathf.Sin(mathSpeed * 25)) * radiusY;
+//		_bounce = (Mathf.Sin(mathSpeed * 25)) * radiusY;
 
-=======
->>>>>>> d1c82e4bb694c1003d819726848045711f0b26fd:Assets/Scripts/Entities/Fish/SmallFish_Vertical.cs
 		transform.position = direction;
 
 		transform.localScale = scale;

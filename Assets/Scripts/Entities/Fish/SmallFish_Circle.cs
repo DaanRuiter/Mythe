@@ -14,7 +14,7 @@ public class SmallFish_Circle : FishPickup
 		fishPoints = 10;
 		mass = 10;
 
-		fishName = "bass";
+//		fishName = "bass";
 
 		speedMultiplier = 1;
 
