@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: f5daa77372bc97248b4f739ef17b9222
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Clown_Fish_0
+    21300002: Clown_Fish_1
+    21300004: Clown_Fish_2
+    21300006: Clown_Fish_3
+    21300008: Clown_Fish_4
+    21300010: Clown_Fish_5
+    21300012: Clown_Fish_6
+    21300014: Clown_Fish_7
+    21300016: Clown_Fish_8
+    21300018: Clown_Fish_9
+    21300020: Clown_Fish_10
+    21300022: Clown_Fish_11
+    21300024: Clown_Fish_12
+    21300026: Clown_Fish_13
+    21300028: Clown_Fish_14
+    21300030: Clown_Fish_15
+    21300032: Clown_Fish_16
+    21300034: Clown_Fish_17
+    21300036: Clown_Fish_18
+    21300038: Clown_Fish_19
+    21300040: Clown_Fish_20
+    21300042: Clown_Fish_21
+    21300044: Clown_Fish_22
+    21300046: Clown_Fish_23
+    21300048: Clown_Fish_24
+    21300050: Clown_Fish_25
+    21300052: Clown_Fish_26
+    21300054: Clown_Fish_27
+    21300056: Clown_Fish_28
+    21300058: Clown_Fish_29
+    21300060: Clown_Fish_30
+    21300062: Clown_Fish_31
+    21300064: Clown_Fish_32
+    21300066: Clown_Fish_33
+    21300068: Clown_Fish_34
+    21300070: Clown_Fish_35
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Clown_Fish_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 533
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_1
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 533
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_2
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 533
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_3
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 533
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_4
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 533
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_5
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 533
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 433
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_7
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 433
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_8
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 433
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_9
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 433
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_10
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 433
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_11
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 433
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 333
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_13
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 333
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_14
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 333
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_15
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 333
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_16
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 333
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_17
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 333
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 233
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_19
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 233
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_20
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 233
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_21
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 233
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_22
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 233
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_23
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 233
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 133
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_25
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 133
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_26
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 133
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_27
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 133
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_28
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 133
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_29
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 133
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 33
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Clown_Fish_31
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 33
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
