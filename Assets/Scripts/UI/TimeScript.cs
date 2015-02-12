@@ -5,11 +5,12 @@ using UnityEngine.UI;
 public class TimeScript : MonoBehaviour {
 
 	private int _timeRemaining;
-	private Text _timeRemainingText;
+	//private Text _timeRemainingText;
+	private Slider slider;
 
 	void Awake () 
 	{
-		_timeRemainingText = GetComponent<Text> ();
+		//_timeRemainingText = GetComponent<Text> ();
 
 		startGame();
 	}
@@ -18,11 +19,12 @@ public class TimeScript : MonoBehaviour {
 	{
 		_timeRemaining += 10;
 		InvokeRepeating ("timeDown", 1f, 1f);
-		_timeRemainingText.text =  "Time: " + _timeRemaining;// + timeRemaining;	//timeRemaining.ToString();
+		//_timeRemainingText.text =  "Time: " + _timeRemaining;// + timeRemaining;	//timeRemaining.ToString();
+		slider = gameObject.GetComponent<Slider>();
 
 	}
 	
-	private void timeDown()
+	public void timeDown()
 	{
 		if(_timeRemaining == 0)
 		{
@@ -38,9 +40,10 @@ public class TimeScript : MonoBehaviour {
 		else
 		{
 			_timeRemaining --;
-			_timeRemainingText.text =  "Time: " + _timeRemaining;
+			//_timeRemainingText.text =  "Time: " + _timeRemaining;
 		}
 		Debug.Log (_timeRemaining);
+		slider.value = _timeRemaining;
 	}
 
 	void OnLevelWasLoaded(int level) 
