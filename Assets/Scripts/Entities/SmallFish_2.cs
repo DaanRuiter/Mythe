@@ -12,7 +12,7 @@ public class SmallFish_2 : FishPickup
 	{
 		fishPoints = 10;
 
-		radiusX = transform.position.x + 7.5f;
+		radiusX = transform.position.x + 4f;
 		radiusY = 0.5f;
 		speedMultiplier = 0.25f;
 		x = transform.position.x;
@@ -46,7 +46,7 @@ public class SmallFish_2 : FishPickup
 			x += speed;
 		}
 
-		_bounce = (Mathf.Sin(mathSpeed * 50)) * radiusY;
+		_bounce = (Mathf.Sin(mathSpeed * 25)) * radiusY;
 
 		transform.position = direction;
 	}

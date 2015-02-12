@@ -6,8 +6,6 @@ public class HookShooter : MonoBehaviour {
     //Daan Ruiter
     //daanruiter.net
 
-    public float movementSpeed;
-
     private GameObject _harpoon;
     private GameObject _harpoonGun;
     private GameObject _targetLocator;

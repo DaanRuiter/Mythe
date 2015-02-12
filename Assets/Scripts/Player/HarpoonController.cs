@@ -21,7 +21,7 @@ public class HarpoonController : MonoBehaviour
     private Vector3 _startPosition;
 
     private MovementDirection _movementDirection;
-    private GameObject _harpoonGun;
+    private GameObject _harpoonObject;
 
     private HarpoonAimer _harpoonAimer;
     private TargetLocator _targetLocator;
@@ -29,8 +29,8 @@ public class HarpoonController : MonoBehaviour
     private void Start()
     {
         //create some references
-        _harpoonGun = GameObject.FindGameObjectWithTag("HarpoonGun");
-        _harpoonAimer = GameObject.FindGameObjectWithTag("HarpoonObject").GetComponent<HarpoonAimer>();
+        _harpoonObject = GameObject.FindGameObjectWithTag("HarpoonObject");
+        _harpoonAimer = _harpoonObject.GetComponent<HarpoonAimer>();
         _targetLocator = GameObject.FindGameObjectWithTag("TargetLocator").GetComponent<TargetLocator>();
 
         //initialize some variables.
@@ -57,7 +57,7 @@ public class HarpoonController : MonoBehaviour
                 //move in a backgwards motion so it looks like the harpoon is being pulled back up
             else
             {
-                transform.position = Vector3.MoveTowards(transform.position, _harpoonGun.transform.position, movementSpeed * Time.deltaTime);
+                transform.position = Vector3.MoveTowards(transform.position, _harpoonObject.transform.position, movementSpeed * Time.deltaTime);
             }
             //check if the harpoon has reached the gun
             if(_movementDirection == MovementDirection.Up && Vector3.Distance(transform.position, _target) < distanceForReset)
@@ -81,7 +81,7 @@ public class HarpoonController : MonoBehaviour
         _target = Vector3.zero;
         _movementDirection = MovementDirection.None;
         //put the harpoon back in the right position
-        transform.parent = _harpoonGun.transform;
+        transform.parent = _harpoonObject.transform;
         transform.position = _startPosition;
         //tell the gun && targetlocator to start rotating again
         _harpoonAimer.ResetGun();
@@ -93,7 +93,7 @@ public class HarpoonController : MonoBehaviour
         {
             //change the direction & reverse the starting target en the aimer target
             _movementDirection = MovementDirection.Up;
-            _target = _harpoonGun.transform.position;
+            _target = _harpoonObject.transform.position;
         }
         else
         {

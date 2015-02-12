@@ -9,9 +9,9 @@ public class SmallFish_3 : FishPickup
 	void Start() 
 	{
 		fishPoints = 10;
-		speedMultiplier = 0.5f;
+		speedMultiplier = 0.035f;
 		
-		radiusX = transform.position.x + 5;
+		radiusX = transform.position.x + 12;
 
 		x = transform.position.x;
 		y = transform.position.y;
