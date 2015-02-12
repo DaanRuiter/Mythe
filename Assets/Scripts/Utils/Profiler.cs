@@ -18,7 +18,7 @@ public class Profiler {
 	{
 		if(profiles.ContainsKey(tag))
 		{
-			Debug.Log(tag + " takes " + (Time.realtimeSinceStartup - profiles[tag]) + " MS");
+			Debug.Log(tag + " takes " + (Time.realtimeSinceStartup - profiles[tag])*1000 + " MS");
 			profiles.Remove(tag);
 		} else {
 			Debug.LogError("this tag has not been started yet!");
