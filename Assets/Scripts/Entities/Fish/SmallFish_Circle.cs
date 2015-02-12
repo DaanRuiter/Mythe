@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SmallFish_1 : FishPickup
+public class SmallFish_Circle : FishPickup
 {
 	private float _angle;
 
