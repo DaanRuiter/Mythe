@@ -7,9 +7,4 @@ public class MoneyPickup : Interactables
 	{
 		base.Start();
 	}
-	
-	void Update () 
-	{
-	
-	}
 }

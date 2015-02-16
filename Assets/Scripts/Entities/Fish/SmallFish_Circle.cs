@@ -12,13 +12,7 @@ public class SmallFish_Circle : FishPickup
 		base.Start();
 
 		mass = 10;
-<<<<<<< HEAD
-		
-=======
 
-//		fishName = "bass";
-
->>>>>>> origin/master
 		speedMultiplier = 1;
 
 		radiusX = 5;
@@ -36,7 +30,7 @@ public class SmallFish_Circle : FishPickup
 	{
 		direction = new Vector2(x, y);
 
-		_angle = Mathf.Atan2(direction.y, direction.x) * (180 / Mathf.PI) + 90;
+		_angle = Mathf.Atan2(direction.y, direction.x) * (180 / Mathf.PI) + 270;
 		transform.rotation = Quaternion.Euler(0, 0, _angle);
 
 		x = Mathf.Cos(mathSpeed) * radiusX;

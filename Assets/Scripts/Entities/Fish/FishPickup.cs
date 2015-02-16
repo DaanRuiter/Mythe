@@ -50,7 +50,7 @@ public class FishPickup : Interactables
 
     public int GetPointWorth()
     {
-        Debug.Log(fishPoints);
-        return fishPoints;
+        Debug.Log(points);
+        return points;
     }
 }
