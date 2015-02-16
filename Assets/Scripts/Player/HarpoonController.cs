@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public enum MovementDirection
 {
@@ -21,28 +22,39 @@ public class HarpoonController : MonoBehaviour
     private Vector3 _startPosition;
 
     private MovementDirection _movementDirection;
-    private GameObject _harpoonGun;
+    private GameObject _harpoonObject;
 
     private HarpoonAimer _harpoonAimer;
     private TargetLocator _targetLocator;
 
+    private List<GameObject> _fishesOnHarpoon;
+
     private void Start()
     {
         //create some references
-        _harpoonGun = GameObject.FindGameObjectWithTag("HarpoonGun");
-        _harpoonAimer = GameObject.FindGameObjectWithTag("HarpoonObject").GetComponent<HarpoonAimer>();
+        _harpoonObject = GameObject.FindGameObjectWithTag("HarpoonObject");
+        _harpoonAimer = _harpoonObject.GetComponent<HarpoonAimer>();
         _targetLocator = GameObject.FindGameObjectWithTag("TargetLocator").GetComponent<TargetLocator>();
 
         //initialize some variables.
         _movementDirection = MovementDirection.None;
         _target = Vector3.zero;
+        _fishesOnHarpoon = new List<GameObject>();
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
         //at this point the harpoon has collided with an object
         //now it will reel the object back into the ship
-        SwitchDirection();
+        if(col.GetComponent<FishPickup>())
+        {
+            if (_movementDirection != MovementDirection.Up)
+            {
+                SwitchDirection();
+                col.GetComponent<FishPickup>().PickUp(transform);
+                _fishesOnHarpoon.Add(col.gameObject);
+            }
+        }
     }
 
     private void Update()
@@ -57,7 +69,7 @@ public class HarpoonController : MonoBehaviour
                 //move in a backgwards motion so it looks like the harpoon is being pulled back up
             else
             {
-                transform.position = Vector3.MoveTowards(transform.position, _harpoonGun.transform.position, movementSpeed * Time.deltaTime);
+                transform.position = Vector3.MoveTowards(transform.position, _harpoonObject.transform.position, movementSpeed * Time.deltaTime);
             }
             //check if the harpoon has reached the gun
             if(_movementDirection == MovementDirection.Up && Vector3.Distance(transform.position, _target) < distanceForReset)
@@ -69,10 +81,10 @@ public class HarpoonController : MonoBehaviour
 
     public void ShootAt(Vector3 target)
     {
-        //Set the target, the direction and save the position it was in before the gun was shot
-        _target = target;
-        _movementDirection = MovementDirection.Down;
-        _startPosition = transform.position;
+         //Set the target, the direction and save the position it was in before the gun was shot
+         _target = target;
+         _movementDirection = MovementDirection.Down;
+         _startPosition = transform.position;
     }
 
     private void ReAtachToGun()
@@ -81,10 +93,16 @@ public class HarpoonController : MonoBehaviour
         _target = Vector3.zero;
         _movementDirection = MovementDirection.None;
         //put the harpoon back in the right position
-        transform.parent = _harpoonGun.transform;
+        transform.parent = _harpoonObject.transform;
         transform.position = _startPosition;
         //tell the gun && targetlocator to start rotating again
         _harpoonAimer.ResetGun();
+        for (int i = 0; i < _fishesOnHarpoon.Count; i++)
+        {
+            Game.instance.AddScore(_fishesOnHarpoon[i].GetComponent<FishPickup>().GetPointWorth());
+            Destroy(_fishesOnHarpoon[i]);
+        }
+        _fishesOnHarpoon.Clear();
     }
 
     public void SwitchDirection()
@@ -93,12 +111,17 @@ public class HarpoonController : MonoBehaviour
         {
             //change the direction & reverse the starting target en the aimer target
             _movementDirection = MovementDirection.Up;
-            _target = _harpoonGun.transform.position;
+            _target = _harpoonObject.transform.position;
         }
         else
         {
             //change the direction
             _movementDirection = MovementDirection.Down;
         }
+    }
+
+    public MovementDirection GetDirection()
+    {
+        return this._movementDirection;
     }
 }

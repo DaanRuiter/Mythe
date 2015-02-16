@@ -41,4 +41,16 @@ public class FishPickup : Interactables
 	{
 		
 	}
+
+    public void PickUp(Transform newParent)
+    {
+        transform.parent = newParent;
+        hasBeenHooked = true;
+    }
+
+    public int GetPointWorth()
+    {
+        Debug.Log(fishPoints);
+        return fishPoints;
+    }
 }

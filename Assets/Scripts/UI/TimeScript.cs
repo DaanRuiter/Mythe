@@ -5,24 +5,26 @@ using UnityEngine.UI;
 public class TimeScript : MonoBehaviour {
 
 	private int _timeRemaining;
-	private Text _timeRemainingText;
+	//private Text _timeRemainingText;
+	private Slider slider;
 
 	void Awake () 
 	{
-		_timeRemainingText = GetComponent<Text> ();
+		//_timeRemainingText = GetComponent<Text> ();
 
 		startGame();
 	}
 
 	public void startGame()
 	{
-		_timeRemaining += 10;
+		slider = gameObject.GetComponent<Slider>();
+		slider.maxValue = 100;
+		_timeRemaining = 100;
 		InvokeRepeating ("timeDown", 1f, 1f);
-		_timeRemainingText.text =  "Time: " + _timeRemaining;// + timeRemaining;	//timeRemaining.ToString();
-
+		//_timeRemainingText.text =  "Time: " + _timeRemaining;// + timeRemaining;	//timeRemaining.ToString();
 	}
 	
-	private void timeDown()
+	public void timeDown()
 	{
 		if(_timeRemaining == 0)
 		{
@@ -38,7 +40,8 @@ public class TimeScript : MonoBehaviour {
 		else
 		{
 			_timeRemaining --;
-			_timeRemainingText.text =  "Time: " + _timeRemaining;
+			//_timeRemainingText.text =  "Time: " + _timeRemaining;
+			slider.value = _timeRemaining;
 		}
 		Debug.Log (_timeRemaining);
 	}

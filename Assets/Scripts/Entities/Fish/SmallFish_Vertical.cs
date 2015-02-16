@@ -11,6 +11,9 @@ public class SmallFish_Vertical : FishPickup
 		base.Start();
 		
 		mass = 10;
+
+		radiusX = transform.position.x + 4f;
+		radiusY = 0.5f;
 		speedMultiplier = 0.25f;
 
 		radiusY = transform.position.x + 5;
@@ -46,6 +49,9 @@ public class SmallFish_Vertical : FishPickup
 			scale.x = -startScale;
 			y += speed;
 		}
+
+//		_bounce = (Mathf.Sin(mathSpeed * 25)) * radiusY;
+
 		transform.position = direction;
 
 		transform.localScale = scale;

@@ -6,8 +6,6 @@ public class HookShooter : MonoBehaviour {
     //Daan Ruiter
     //daanruiter.net
 
-    public float movementSpeed;
-
     private GameObject _harpoon;
     private GameObject _harpoonGun;
     private GameObject _targetLocator;
@@ -42,9 +40,12 @@ public class HookShooter : MonoBehaviour {
 
     public void ShootHarpoon()
     {
-        _harpoon.transform.parent = null;
-        _harpoon.transform.rotation = HarpoonAimer.Lookat2D(_harpoon.transform, _targetLocator.transform);
-        _harpoonController.ShootAt(_targetLocator.transform.position);
-        _harpoonAimer.rotate = false;
+        if (_harpoonController.GetDirection() == MovementDirection.None)
+        {
+            _harpoon.transform.parent = null;
+            _harpoon.transform.rotation = HarpoonAimer.Lookat2D(_harpoon.transform, _targetLocator.transform);
+            _harpoonController.ShootAt(_targetLocator.transform.position);
+            _harpoonAimer.rotate = false;
+        }
     }
 }
