@@ -1,0 +1,399 @@
+fileFormatVersion: 2
+guid: e402c31205c35e640a447964c09f9da6
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: blopfish_0
+    21300002: blopfish_1
+    21300004: blopfish_2
+    21300006: blopfish_3
+    21300008: blopfish_4
+    21300010: blopfish_5
+    21300012: blopfish_6
+    21300014: blopfish_7
+    21300016: blopfish_8
+    21300018: blopfish_9
+    21300020: blopfish_10
+    21300022: blopfish_11
+    21300024: blopfish_12
+    21300026: blopfish_13
+    21300028: blopfish_14
+    21300030: blopfish_15
+    21300032: blopfish_16
+    21300034: blopfish_17
+    21300036: blopfish_18
+    21300038: blopfish_19
+    21300040: blopfish_20
+    21300042: blopfish_21
+    21300044: blopfish_22
+    21300046: blopfish_23
+    21300048: blopfish_24
+    21300050: blopfish_25
+    21300052: blopfish_26
+    21300054: blopfish_27
+    21300056: blopfish_28
+    21300058: blopfish_29
+    21300060: blopfish_30
+    21300062: blopfish_31
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: blopfish_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 626
+        width: 141
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_1
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 637
+        width: 148
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_2
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 649
+        width: 158
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_3
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 654
+        width: 165
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_4
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 654
+        width: 167
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_5
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 654
+        width: 165
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 530
+        width: 159
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_7
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 530
+        width: 161
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_8
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 530
+        width: 162
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_9
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 530
+        width: 163
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_10
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 529
+        width: 164
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_11
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 530
+        width: 165
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 406
+        width: 166
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_13
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 406
+        width: 167
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_14
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 406
+        width: 167
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_15
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 406
+        width: 166
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_16
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 406
+        width: 165
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_17
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 406
+        width: 164
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 282
+        width: 163
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_19
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 282
+        width: 161
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_20
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 280
+        width: 158
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_21
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 275
+        width: 156
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_22
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 272
+        width: 153
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_23
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 268
+        width: 149
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 141
+        width: 146
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_25
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 138
+        width: 144
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_26
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 136
+        width: 144
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_27
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 135
+        width: 143
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_28
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 133
+        width: 142
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_29
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 132
+        width: 142
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7
+        width: 142
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blopfish_31
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 6
+        width: 141
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
