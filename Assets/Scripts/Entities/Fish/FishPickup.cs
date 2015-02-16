@@ -48,9 +48,16 @@ public class FishPickup : Interactables
         hasBeenHooked = true;
     }
 
+<<<<<<< HEAD
     public int GetPointWorth()
     {
         Debug.Log(points);
         return points;
     }
+=======
+//    public int GetPointWorth()
+//    {
+//        return fishPoints;
+//    }
+>>>>>>> 5b5059c2e7b8a849458fab16827577b0a3eb1dcb
 }

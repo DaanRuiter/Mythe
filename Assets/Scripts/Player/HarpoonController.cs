@@ -99,7 +99,7 @@ public class HarpoonController : MonoBehaviour
         _harpoonAimer.ResetGun();
         for (int i = 0; i < _fishesOnHarpoon.Count; i++)
         {
-            Game.instance.AddScore(_fishesOnHarpoon[i].GetComponent<FishPickup>().GetPointWorth());
+//            Game.instance.AddScore(_fishesOnHarpoon[i].GetComponent<FishPickup>().GetPointWorth());
             Destroy(_fishesOnHarpoon[i]);
         }
         _fishesOnHarpoon.Clear();
