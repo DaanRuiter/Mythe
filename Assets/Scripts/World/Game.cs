@@ -7,8 +7,10 @@ public class Game : MonoBehaviour {
     public static Game instance;
 
     public Text pointText;
+    public Text goldText;
 
-    private int _points;
+    public int points;
+    public int gold;
 
     private void Awake()
     {
@@ -17,7 +19,21 @@ public class Game : MonoBehaviour {
 
     public void AddScore(int pointsToAdd)
     {
-        _points += pointsToAdd;
-        pointText.text = "points: " + _points;
+        points += pointsToAdd;
+        pointText.text = "Points: " + points;
+    }
+
+    public void AddGold(int goldToAdd)
+    {
+        gold += goldToAdd;
+        goldText.text = "Gold: " + gold;
+    }
+
+    public void SetStats(int gold , int points)
+    {
+        this.points = points;
+        this.gold = gold;
+        pointText.text = "Points: " + points;
+        goldText.text = "Gold: " + gold;
     }
 }
