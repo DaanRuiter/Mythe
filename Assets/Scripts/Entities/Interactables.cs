@@ -6,24 +6,33 @@ public class Interactables : MonoBehaviour
 	protected bool hasBeenHooked;
 
 	[SerializeField]
+	protected PickupType type;
+
+	[SerializeField]
+	protected PickupType secondaryType;
+
+	[SerializeField]
 	protected float mass;
 	
 	[SerializeField]
 	protected string objectName;
 
+	[SerializeField]
+	protected int points;
+
+	[SerializeField]
+	protected int secondaryPoints;
+
 	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	protected virtual void Start () 
+	{
+		hasBeenHooked = false;
 	}
 }
 
 public enum PickupType
 {
+	none,
 	fish,
 	gold,
 	trap

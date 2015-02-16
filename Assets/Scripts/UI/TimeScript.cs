@@ -17,11 +17,11 @@ public class TimeScript : MonoBehaviour {
 
 	public void startGame()
 	{
-		_timeRemaining += 10;
+		slider = gameObject.GetComponent<Slider>();
+		slider.maxValue = 100;
+		_timeRemaining = 100;
 		InvokeRepeating ("timeDown", 1f, 1f);
 		//_timeRemainingText.text =  "Time: " + _timeRemaining;// + timeRemaining;	//timeRemaining.ToString();
-		slider = gameObject.GetComponent<Slider>();
-
 	}
 	
 	public void timeDown()
@@ -41,9 +41,9 @@ public class TimeScript : MonoBehaviour {
 		{
 			_timeRemaining --;
 			//_timeRemainingText.text =  "Time: " + _timeRemaining;
+			slider.value = _timeRemaining;
 		}
 		Debug.Log (_timeRemaining);
-		slider.value = _timeRemaining;
 	}
 
 	void OnLevelWasLoaded(int level) 

@@ -17,4 +17,9 @@ public class ShopScript : MonoBehaviour {
 		canvas[lastScreen].SetActive(false);
 		lastScreen = nextScreen;
 	}
+
+	public void nextLevel(int nextLevel)
+	{
+		Application.LoadLevel(nextLevel);
+	}
 }

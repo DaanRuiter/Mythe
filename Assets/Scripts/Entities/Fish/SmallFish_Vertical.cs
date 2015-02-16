@@ -10,7 +10,6 @@ public class SmallFish_Vertical : FishPickup
 	{
 		base.Start();
 		
-		fishPoints = 10;
 		mass = 10;
 
 		radiusX = transform.position.x + 2f;
