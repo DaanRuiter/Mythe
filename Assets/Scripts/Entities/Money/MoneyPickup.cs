@@ -1,12 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MoneyPickup : MonoBehaviour 
+public class MoneyPickup : Interactables 
 {
-
-	void Start () 
+	protected override void Start () 
 	{
-	
+		base.Start();
 	}
 	
 	void Update () 

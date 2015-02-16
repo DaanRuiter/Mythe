@@ -10,7 +10,6 @@ public class SmallFish_Vertical : FishPickup
 	{
 		base.Start();
 		
-		fishPoints = 10;
 		mass = 10;
 		speedMultiplier = 0.25f;
 
