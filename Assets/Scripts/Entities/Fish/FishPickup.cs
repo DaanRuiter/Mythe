@@ -48,8 +48,8 @@ public class FishPickup : Interactables
         hasBeenHooked = true;
     }
 
-    public int GetPointWorth()
-    {
-        return fishPoints;
-    }
+//    public int GetPointWorth()
+//    {
+//        return fishPoints;
+//    }
 }

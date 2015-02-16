@@ -11,11 +11,8 @@ public class SmallFish_Horizontal : FishPickup
 
 		startScale = transform.localScale.x;
 
-<<<<<<< HEAD
-=======
-		fishPoints = 10;
+//		fishPoints = 10;
 		speedMultiplier = 0.035f;
->>>>>>> origin/master
 		mass = 10;
 		speedMultiplier = 0.1f;
 		

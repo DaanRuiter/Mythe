@@ -12,13 +12,10 @@ public class SmallFish_Circle : FishPickup
 		base.Start();
 
 		mass = 10;
-<<<<<<< HEAD
-		
-=======
+
 
 //		fishName = "bass";
 
->>>>>>> origin/master
 		speedMultiplier = 1;
 
 		radiusX = 5;
