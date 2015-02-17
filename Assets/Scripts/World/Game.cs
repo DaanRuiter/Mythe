@@ -37,3 +37,11 @@ public class Game : MonoBehaviour {
         goldText.text = "Gold: " + gold;
     }
 }
+
+public class Level : MonoBehaviour
+{
+    public int index;
+    public int fishNeededToAdvance;
+    public int pointsAquired;
+    public int goldAquired;
+}

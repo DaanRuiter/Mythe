@@ -33,7 +33,6 @@ public class FishPickup : Interactables
 
     public int GetPointWorth()
     {
-        Debug.Log(points);
         return points;
     }
 //    public int GetPointWorth()

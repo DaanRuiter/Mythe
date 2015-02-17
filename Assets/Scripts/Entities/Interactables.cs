@@ -54,6 +54,12 @@ public class Interactables : MonoBehaviour
 	{
 		
 	}
+
+    public void PickUp(Transform newParent)
+    {
+        transform.parent = newParent;
+        hasBeenHooked = true;
+    }
 }
 
 

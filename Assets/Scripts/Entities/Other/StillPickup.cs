@@ -3,15 +3,15 @@ using System.Collections;
 
 public class StillPickup : FishPickup 
 {
-	private float _rotateRange;
+	private float _rotateRange = -0.1f;
 	
 	protected override void Start() 
 	{
 		base.Start();
 
-		speedMultiplier = 1;
+		speedMultiplier = 0.5f;
 
-		radiusY = 2;
+		radiusY = 1;
 	}
 	
 	protected override void FixedUpdate () 
@@ -25,16 +25,18 @@ public class StillPickup : FishPickup
 		
 		y = Mathf.Sin(mathSpeed) * radiusY;
 
-		if(direction.y >= 0)
-		{
-			_rotateRange = 0.5f;
-		}else if(direction.y <= 0)
-		{
-			_rotateRange = -0.5f;
-		}
-
-		transform.position = basePosition + direction;
 
 		transform.Rotate(0,0,_rotateRange);
+
+		/*if(transform.rotation.z >= 0.15)
+		{
+
+		}else if(transform.rotation.z <= )
+		{
+
+		}*/
+		Debug.Log(transform.rotation.z);
+
+		transform.position = basePosition + direction;
 	}
 }
