@@ -8,6 +8,6 @@ public class Gold : MonoBehaviour {
 	
 	public void UpdateUI(int score)
 	{
-		goldText.text = "Gold: " + score;
+		goldText.text = "" + score;
 	}
 }
