@@ -34,6 +34,14 @@ public class PlayerEquipment : MonoBehaviour {
         Load(_playerData);
     }
 
+    private void Update()
+    {
+        if(Input.GetKeyUp(KeyCode.S))
+        {
+            Save();
+        }
+    }
+
     public void Save()
     {
         BinaryFormatter binaryFormatter = new BinaryFormatter();
