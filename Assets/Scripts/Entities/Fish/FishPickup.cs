@@ -25,24 +25,18 @@ public class FishPickup : Interactables
 		basePosition = transform.position;
 	}
 
-<<<<<<< HEAD
-=======
     public void PickUp(Transform newParent)
     {
         transform.parent = newParent;
         hasBeenHooked = true;
     }
 
->>>>>>> 41cbbe2e7efc9cbd46cbaa8315f0a62c305073d3
     public int GetPointWorth()
     {
         return points;
     }
-<<<<<<< HEAD
-=======
 //    public int GetPointWorth()
 //    {
 //        return fishPoints;
 //    }
->>>>>>> 41cbbe2e7efc9cbd46cbaa8315f0a62c305073d3
 }

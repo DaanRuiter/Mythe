@@ -28,13 +28,13 @@ public class StillPickup : FishPickup
 
 		transform.Rotate(0,0,_rotateRange);
 
-		if(transform.rotation.z >= 0.15)
+		/*if(transform.rotation.z >= 0.15)
 		{
 
 		}else if(transform.rotation.z <= )
 		{
 
-		}
+		}*/
 		Debug.Log(transform.rotation.z);
 
 		transform.position = basePosition + direction;
