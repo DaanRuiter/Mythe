@@ -35,6 +35,10 @@ public class Interactables : MonoBehaviour
 		hasBeenHooked = false;
 	}
 
+    public int GetPoints()
+    {
+        return points;
+    }
 	protected virtual void FixedUpdate()
 	{
 		speed = speedMultiplier;
