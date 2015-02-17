@@ -3,16 +3,11 @@ using System.Collections;
 
 public class FishPickup : Interactables 
 {
-	protected float speed;
-	protected float mathSpeed;
 	protected float radiusX;
 	protected float radiusY;
 	protected float x;
 	protected float y;
 	protected float startScale;
-	
-	[SerializeField]
-	protected float speedMultiplier;
 
 	protected Vector2 scale;
 	protected Vector2 direction;
@@ -26,25 +21,22 @@ public class FishPickup : Interactables
 		startScale = transform.localScale.x;
 	}
 
-	protected virtual void FixedUpdate()
-	{
-		speed = speedMultiplier;
-		mathSpeed += Time.deltaTime * speedMultiplier;
-
-		if(!hasBeenHooked)
-		{
-			Movement();
-		}
-	}
-	
-	protected virtual void Movement()
-	{
-		
-	}
-
     public void PickUp(Transform newParent)
     {
         transform.parent = newParent;
         hasBeenHooked = true;
     }
+<<<<<<< HEAD
+=======
+
+    public int GetPointWorth()
+    {
+        Debug.Log(points);
+        return points;
+    }
+//    public int GetPointWorth()
+//    {
+//        return fishPoints;
+//    }
+>>>>>>> b31562559ebc2f5e219f8a65d1758c12fa62ea87
 }

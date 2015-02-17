@@ -20,7 +20,7 @@ public class TrapPickup : Interactables
 	{
 		base.Start();
 
-		Invoke("Explode", 2);
+		Invoke("Explode", 20);
 		
 		_origin = new Vector2(transform.position.x, transform.position.y);
 		_bombRadius = 5;
@@ -38,10 +38,12 @@ public class TrapPickup : Interactables
 
 
 		Destroy(this.gameObject, 1);
-		Debug.Log(_explodables.Length);
 	}
 	void Update()
 	{
-
+		if(hasBeenHooked)
+		{
+			Explode();
+		}
 	}
 }
