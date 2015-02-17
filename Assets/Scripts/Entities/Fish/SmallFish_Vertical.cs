@@ -12,10 +12,16 @@ public class SmallFish_Vertical : FishPickup
 		
 		mass = 10;
 
+<<<<<<< HEAD
+		radiusX = transform.position.x;
+
+		radiusY = transform.position.y +3;
+=======
 		radiusX = transform.position.x + 2f;
 		speedMultiplier = 0.25f;
 
 		radiusY = transform.position.y + 5;
+>>>>>>> b31562559ebc2f5e219f8a65d1758c12fa62ea87
 		
 		x = transform.position.x;
 		y = transform.position.y;

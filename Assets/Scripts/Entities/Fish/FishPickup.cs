@@ -26,6 +26,8 @@ public class FishPickup : Interactables
         transform.parent = newParent;
         hasBeenHooked = true;
     }
+<<<<<<< HEAD
+=======
 
     public int GetPointWorth()
     {
@@ -36,4 +38,5 @@ public class FishPickup : Interactables
 //    {
 //        return fishPoints;
 //    }
+>>>>>>> b31562559ebc2f5e219f8a65d1758c12fa62ea87
 }
