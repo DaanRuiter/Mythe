@@ -10,24 +10,10 @@ public class SmallFish_Vertical : FishPickup
 	{
 		base.Start();
 
-<<<<<<< HEAD
-		speedMultiplier = 0.25f;
+		speedMultiplier = 0.2f;
 
 		radiusY = 5;
 
-=======
-		radiusX = transform.position.x;
-
-		radiusY = transform.position.y +3;
-		radiusX = transform.position.x + 2f;
-		speedMultiplier = 0.25f;
-
-		radiusY = transform.position.y + 5;
-
-		x = transform.position.x;
-		y = transform.position.y;
-		
->>>>>>> origin/master
 		_negativeMovement = false;
 	}
 	
