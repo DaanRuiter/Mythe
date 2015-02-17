@@ -100,10 +100,6 @@ public class HarpoonController : MonoBehaviour
         for (int i = 0; i < _fishesOnHarpoon.Count; i++)
         {
             Game.instance.AddScore(_fishesOnHarpoon[i].GetComponent<Interactables>().GetPoints());
-<<<<<<< HEAD
-=======
-//            Game.instance.AddScore(_fishesOnHarpoon[i].GetComponent<FishPickup>().GetPointWorth());
->>>>>>> 41cbbe2e7efc9cbd46cbaa8315f0a62c305073d3
             Destroy(_fishesOnHarpoon[i]);
         }
         _fishesOnHarpoon.Clear();
