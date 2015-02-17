@@ -10,16 +10,9 @@ public class SmallFish_Horizontal : FishPickup
 		base.Start();
 
 		startScale = transform.localScale.x;
-
-<<<<<<< HEAD
-=======
-		fishPoints = 10;
-		speedMultiplier = 0.035f;
->>>>>>> origin/master
 		mass = 10;
-		speedMultiplier = 0.1f;
 		
-		radiusX = transform.position.x + 12;
+		radiusX = transform.position.x + 8;
 
 		x = transform.position.x;
 		y = transform.position.y;

@@ -28,6 +28,11 @@ public class Interactables : MonoBehaviour
 	{
 		hasBeenHooked = false;
 	}
+
+    public int GetPoints()
+    {
+        return points;
+    }
 }
 
 public enum PickupType
