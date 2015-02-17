@@ -8,6 +8,6 @@ public class Score : MonoBehaviour
 	
 	public void UpdateUI(int score)
 	{
-		scoreText.text = "Score: " + score;
+		scoreText.text = "" + score;
 	}
 }

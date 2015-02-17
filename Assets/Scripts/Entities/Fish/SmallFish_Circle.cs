@@ -5,19 +5,21 @@ public class SmallFish_Circle : FishPickup
 {
 	private float _angle;
 
-	private Vector2 basePosition;
 
 	protected override void Start() 
 	{
 		base.Start();
 
 		mass = 10;
+<<<<<<< HEAD
+=======
+//		fishName = "bass";
+
+>>>>>>> 41cbbe2e7efc9cbd46cbaa8315f0a62c305073d3
 		speedMultiplier = 1;
 
 		radiusX = 5;
 		radiusY = 5;
-
-		basePosition = transform.position;
 	}
 	
 	protected override void FixedUpdate () 
