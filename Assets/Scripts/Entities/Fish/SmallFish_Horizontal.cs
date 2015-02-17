@@ -14,10 +14,7 @@ public class SmallFish_Horizontal : FishPickup
 		mass = 10;
 		speedMultiplier = 0.1f;
 		
-		radiusX = transform.position.x + 12;
-
-		x = transform.position.x;
-		y = transform.position.y;
+		radiusX = 5;
 
 		_negativeMovement = false;
 	}
@@ -31,10 +28,10 @@ public class SmallFish_Horizontal : FishPickup
 	{
 		direction = new Vector2 (x, y);
 		
-		if(transform.position.x >= radiusX)
+		if(x >= radiusX)
 		{
 			_negativeMovement = true;
-		}else if(transform.position.x <= -radiusX)
+		}else if(x <= -radiusX)
 		{
 			_negativeMovement = false;
 		}
@@ -47,7 +44,7 @@ public class SmallFish_Horizontal : FishPickup
 			scale.x = -startScale;
 			x += speed;
 		}
-		transform.position = direction;
+		transform.position = basePosition + direction;
 
 		transform.localScale = scale;
 	}

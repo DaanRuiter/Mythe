@@ -9,17 +9,11 @@ public class SmallFish_Vertical : FishPickup
 	protected override void Start() 
 	{
 		base.Start();
-		
-		mass = 10;
 
-		radiusX = transform.position.x + 2f;
 		speedMultiplier = 0.25f;
 
-		radiusY = transform.position.y + 5;
-		
-		x = transform.position.x;
-		y = transform.position.y;
-		
+		radiusY = 5;
+
 		_negativeMovement = false;
 	}
 	
@@ -31,11 +25,11 @@ public class SmallFish_Vertical : FishPickup
 	protected override void Movement()
 	{
 		direction = new Vector2 (x, y);
-		
-		if(transform.position.y >= radiusY)
+
+		if(y >= radiusY)
 		{
 			_negativeMovement = true;
-		}else if(transform.position.y <= -radiusY)
+		}else if(y <= -radiusY)
 		{
 			_negativeMovement = false;
 		}
@@ -49,7 +43,7 @@ public class SmallFish_Vertical : FishPickup
 			y += speed;
 		}
 		
-		transform.position = direction;
+		transform.position = basePosition + direction;
 
 		transform.localScale = scale;
 	}

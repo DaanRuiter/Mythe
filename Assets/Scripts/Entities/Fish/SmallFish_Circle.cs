@@ -5,7 +5,6 @@ public class SmallFish_Circle : FishPickup
 {
 	private float _angle;
 
-	private Vector2 basePosition;
 
 	protected override void Start() 
 	{
@@ -17,8 +16,6 @@ public class SmallFish_Circle : FishPickup
 
 		radiusX = 5;
 		radiusY = 5;
-
-		basePosition = transform.position;
 	}
 	
 	protected override void FixedUpdate () 
