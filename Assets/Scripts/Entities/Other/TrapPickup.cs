@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TrapPickup : Interactables 
+public class TrapPickup : MonoBehaviour 
 {
+	private bool _hasBeenHit;
+
 	private float _bombRadius;
 
 	private Vector2 _origin; 
@@ -16,9 +18,9 @@ public class TrapPickup : Interactables
 	[SerializeField]
 	private ParticleSystem _explosionEffect;
 
-	protected override void Start () 
+	void Start () 
 	{
-		base.Start();
+		_hasBeenHit = false;
 
 		Invoke("Explode", 20);
 		
@@ -41,7 +43,7 @@ public class TrapPickup : Interactables
 	}
 	void Update()
 	{
-		if(hasBeenHooked)
+		if(_hasBeenHit)
 		{
 			Explode();
 		}

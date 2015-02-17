@@ -16,6 +16,8 @@ public class SmallFish_Vertical : FishPickup
 		
 		x = transform.position.x;
 		y = transform.position.y;
+
+		radiusY = 5;
 		_negativeMovement = false;
 	}
 	
