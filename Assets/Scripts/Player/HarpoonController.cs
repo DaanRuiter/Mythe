@@ -46,12 +46,12 @@ public class HarpoonController : MonoBehaviour
     {
         //at this point the harpoon has collided with an object
         //now it will reel the object back into the ship
-        if(col.GetComponent<FishPickup>())
+        if(col.GetComponent<Interactables>())
         {
             if (_movementDirection != MovementDirection.Up)
             {
                 SwitchDirection();
-                col.GetComponent<FishPickup>().PickUp(transform);
+                col.GetComponent<Interactables>().PickUp(transform);
                 _fishesOnHarpoon.Add(col.gameObject);
             }
         }
@@ -99,11 +99,7 @@ public class HarpoonController : MonoBehaviour
         _harpoonAimer.ResetGun();
         for (int i = 0; i < _fishesOnHarpoon.Count; i++)
         {
-<<<<<<< HEAD
             Game.instance.AddScore(_fishesOnHarpoon[i].GetComponent<Interactables>().GetPoints());
-=======
-//            Game.instance.AddScore(_fishesOnHarpoon[i].GetComponent<FishPickup>().GetPointWorth());
->>>>>>> b31562559ebc2f5e219f8a65d1758c12fa62ea87
             Destroy(_fishesOnHarpoon[i]);
         }
         _fishesOnHarpoon.Clear();
