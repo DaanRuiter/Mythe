@@ -35,8 +35,6 @@ public class Game : MonoBehaviour {
         this.gold = gold;
         pointText.text = "" + points;
         goldText.text = "" + gold;
-<<<<<<< HEAD
-=======
     }
 
     public void HandleInteractable(Interactables interactable)
@@ -48,7 +46,6 @@ public class Game : MonoBehaviour {
         {
             AddScore(interactable.GetPoints());
         }
->>>>>>> FETCH_HEAD
     }
 }
 

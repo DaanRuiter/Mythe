@@ -27,7 +27,6 @@ public class StillPickup : FishPickup
 
 		transform.Rotate(0,0,_rotateRange);
 
-<<<<<<< HEAD
 		/*if(transform.rotation.z >= 0.15)
 		{
 
@@ -36,8 +35,6 @@ public class StillPickup : FishPickup
 
 		}*/
 
-=======
->>>>>>> FETCH_HEAD
 		transform.position = basePosition + direction;
 	}
 }
