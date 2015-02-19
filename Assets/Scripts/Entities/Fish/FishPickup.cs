@@ -1,42 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FishPickup : Interactables 
+public class FishPickup : Interactables
 {
-	protected float radiusX;
-	protected float radiusY;
-	protected float x;
-	protected float y;
-	protected float startScale;
+    protected float radiusX;
+    protected float radiusY;
+    protected float x;
+    protected float y;
+    protected float startScale;
 
-	protected Vector2 scale;
-	protected Vector2 direction;
+    protected Vector2 scale;
+    protected Vector2 direction;
 
-	protected Vector2 basePosition;
-
-	protected override void Start()
-	{
-		base.Start();
-
-		scale = new Vector2(transform.localScale.x, transform.localScale.y);
-
-		startScale = transform.localScale.x;
-
-		basePosition = transform.position;
-	}
-
-    public void PickUp(Transform newParent)
+    protected override void Start()
     {
-        transform.parent = newParent;
-        hasBeenHooked = true;
-    }
+        base.Start();
 
-    public int GetPointWorth()
-    {
-        return points;
+        scale = new Vector2(transform.localScale.x, transform.localScale.y);
+
+        startScale = transform.localScale.x;
     }
-//    public int GetPointWorth()
-//    {
-//        return fishPoints;
-//    }
 }

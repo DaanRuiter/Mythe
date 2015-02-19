@@ -35,6 +35,20 @@ public class Game : MonoBehaviour {
         this.gold = gold;
         pointText.text = "" + points;
         goldText.text = "" + gold;
+<<<<<<< HEAD
+=======
+    }
+
+    public void HandleInteractable(Interactables interactable)
+    {
+        if(interactable.GetPickupType() == PickupType.gold)
+        {
+            AddGold(interactable.GetPoints());
+        }else if(interactable.GetPickupType() == PickupType.fish)
+        {
+            AddScore(interactable.GetPoints());
+        }
+>>>>>>> FETCH_HEAD
     }
 }
 

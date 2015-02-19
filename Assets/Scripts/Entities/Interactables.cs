@@ -29,16 +29,26 @@ public class Interactables : MonoBehaviour
 	[SerializeField]
 	protected float speedMultiplier;
 
+    protected Vector2 basePosition;
+
 	// Use this for initialization
 	protected virtual void Start () 
 	{
 		hasBeenHooked = false;
+
+        basePosition = transform.position;
 	}
+
+    public PickupType GetPickupType()
+    {
+        return type;
+    }
 
     public int GetPoints()
     {
         return points;
     }
+
 	protected virtual void FixedUpdate()
 	{
 		speed = speedMultiplier;

@@ -43,7 +43,6 @@ public class TimeScript : MonoBehaviour {
 			//_timeRemainingText.text =  "Time: " + _timeRemaining;
 			slider.value = _timeRemaining;
 		}
-		Debug.Log (_timeRemaining);
 	}
 
 	void OnLevelWasLoaded(int level) 
