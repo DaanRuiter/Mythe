@@ -20,15 +20,4 @@ public class FishPickup : Interactables
 
         startScale = transform.localScale.x;
     }
-
-    public void PickUp(Transform newParent)
-    {
-        transform.parent = newParent;
-        hasBeenHooked = true;
-    }
-
-    public int GetPointWorth()
-    {
-        return points;
-    }
 }
