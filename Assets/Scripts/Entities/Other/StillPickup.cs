@@ -35,7 +35,6 @@ public class StillPickup : FishPickup
 		{
 
 		}*/
-		Debug.Log(transform.rotation.z);
 
 		transform.position = basePosition + direction;
 	}
