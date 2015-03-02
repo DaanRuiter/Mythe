@@ -11,6 +11,7 @@ public class SmallFishVertical : FishPickup
 		base.Start();
 
 		speedMultiplier = 0.25f;
+
 		radiusY = 5;
 		_negativeMovement = false;
 	}

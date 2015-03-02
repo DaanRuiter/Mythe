@@ -20,21 +20,32 @@ public class Game : MonoBehaviour {
     public void AddScore(int pointsToAdd)
     {
         points += pointsToAdd;
-        pointText.text = "Points: " + points;
+        pointText.text = "" + points;
     }
 
     public void AddGold(int goldToAdd)
     {
         gold += goldToAdd;
-        goldText.text = "Gold: " + gold;
+        goldText.text = "" + gold;
     }
 
     public void SetStats(int gold , int points)
     {
         this.points = points;
         this.gold = gold;
-        pointText.text = "Points: " + points;
-        goldText.text = "Gold: " + gold;
+        pointText.text = "" + points;
+        goldText.text = "" + gold;
+    }
+
+    public void HandleInteractable(Interactables interactable)
+    {
+        if(interactable.GetPickupType() == PickupType.gold)
+        {
+            AddGold(interactable.GetPoints());
+        }else if(interactable.GetPickupType() == PickupType.fish)
+        {
+            AddScore(interactable.GetPoints());
+        }
     }
 }
 
