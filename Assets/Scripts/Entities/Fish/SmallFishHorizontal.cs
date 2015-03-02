@@ -1,17 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SmallFish_Vertical : FishPickup 
-{
-
+public class SmallFishHorizontal : FishPickup 
+{	
 	private bool _negativeMovement;
-	
+
 	protected override void Start() 
 	{
 		base.Start();
 
+		startScale = transform.localScale.x;
+		mass = 10;
+
 		speedMultiplier = 0.25f;
-		radiusY = 5;
+
+		radiusX = 5;
+
 		_negativeMovement = false;
 	}
 	
@@ -23,24 +27,23 @@ public class SmallFish_Vertical : FishPickup
 	protected override void Movement()
 	{
 		direction = new Vector2 (x, y);
-
-		if(y >= radiusY)
+		
+		if(x >= radiusX)
 		{
 			_negativeMovement = true;
-		}else if(y <= -radiusY)
+		}else if(x <= -radiusX)
 		{
 			_negativeMovement = false;
 		}
 		if(_negativeMovement)
 		{
 			scale.x = startScale;
-			y -= speed;
+			x -= speed;
 		}else if(!_negativeMovement)
 		{
 			scale.x = -startScale;
-			y += speed;
+			x += speed;
 		}
-		
 		transform.position = basePosition + direction;
 
 		transform.localScale = scale;

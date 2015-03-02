@@ -3,7 +3,7 @@ using System.Collections;
 
 public class StillPickup : FishPickup 
 {
-	private float _rotateRange = -0.1f;
+	private float _rotateRange;
 	
 	protected override void Start() 
 	{
@@ -11,9 +11,23 @@ public class StillPickup : FishPickup
 
 		speedMultiplier = 0.5f;
 
-		radiusY = 1;
+		_rotateRange = Random.Range(0.05f, 0.35f);
+		if(_rotateRange > 0.2f)
+		{
+			_rotateRange = (_rotateRange*-1)/2;
+		}
+
+		radiusY = Random.Range(1,3);
+
+		if(radiusY == 2)
+		{
+			radiusY = -1;
+		}
+
+		Debug.Log(radiusY);
+
 	}
-	
+
 	protected override void FixedUpdate () 
 	{
 		base.FixedUpdate();
@@ -25,18 +39,15 @@ public class StillPickup : FishPickup
 		
 		y = Mathf.Sin(mathSpeed) * radiusY;
 
-
 		transform.Rotate(0,0,_rotateRange);
 
-		/*if(transform.rotation.z >= 0.15)
+		if(transform.rotation.z >= 0.15f)
 		{
-
-		}else if(transform.rotation.z <= )
+			_rotateRange -= _rotateRange * 2;
+		}else if(transform.rotation.z <= -0.15f)
 		{
-
-		}*/
-		Debug.Log(transform.rotation.z);
-
+			_rotateRange -= _rotateRange * 2;
+		}
 		transform.position = basePosition + direction;
 	}
 }
