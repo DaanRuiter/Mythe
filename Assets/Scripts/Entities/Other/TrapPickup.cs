@@ -25,7 +25,7 @@ public class TrapPickup : MonoBehaviour
 		Invoke("Explode", 20);
 		
 		_origin = new Vector2(transform.position.x, transform.position.y);
-		_bombRadius = 5;
+		_bombRadius = 10;
 	}
 	
 	private void Explode () 

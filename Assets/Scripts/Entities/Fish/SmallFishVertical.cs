@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SmallFish_Vertical : FishPickup 
+public class SmallFishVertical : FishPickup 
 {
 
 	private bool _negativeMovement;

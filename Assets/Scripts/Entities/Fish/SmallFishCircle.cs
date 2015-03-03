@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SmallFish_Circle : FishPickup
+public class SmallFishCircle : FishPickup
 {
 	private float _angle;
 
@@ -26,7 +26,7 @@ public class SmallFish_Circle : FishPickup
 	{
 		direction = new Vector2(x, y);
 
-		_angle = Mathf.Atan2(direction.y, direction.x) * (180 / Mathf.PI) + 90;
+		_angle = Mathf.Atan2(direction.y, direction.x) * (180 / Mathf.PI) + 270;
 		transform.rotation = Quaternion.Euler(0, 0, _angle);
 
 		x = Mathf.Cos(mathSpeed) * radiusX;
