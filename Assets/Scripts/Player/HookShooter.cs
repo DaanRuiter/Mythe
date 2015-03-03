@@ -7,12 +7,10 @@ public class HookShooter : MonoBehaviour {
     //daanruiter.net
 
     private GameObject _harpoon;
-    private GameObject _harpoonGun;
     private GameObject _targetLocator;
 
     private HarpoonController _harpoonController;
     private HarpoonAimer _harpoonAimer;
-    private TargetLocator _targetLocatorScript;
 
     private LineRenderer _lineRenderer;
 
@@ -22,12 +20,10 @@ public class HookShooter : MonoBehaviour {
     private void Start()
     {
         _harpoon = GameObject.FindGameObjectWithTag("Harpoon");
-        _harpoonGun = GameObject.FindGameObjectWithTag("HarpoonGun");
         _targetLocator = GameObject.FindGameObjectWithTag("TargetLocator");
 
         _harpoonController = _harpoon.GetComponent<HarpoonController>();
         _harpoonAimer = transform.parent.GetComponent<HarpoonAimer>();
-        _targetLocatorScript = _targetLocator.GetComponent<TargetLocator>();
 
         _lineRenderer = GetComponent<LineRenderer>();
         _lineRenderer.SetPosition(0, transform.position);
@@ -35,6 +31,7 @@ public class HookShooter : MonoBehaviour {
 
     private void Update()
     {
+        _lineRenderer.SetPosition(0, transform.position);
         _lineRenderer.SetPosition(1, _harpoon.transform.position);
     }
 
