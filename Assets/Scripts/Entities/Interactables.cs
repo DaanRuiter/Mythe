@@ -58,20 +58,22 @@ public class Interactables : MonoBehaviour
 		speed = speedMultiplier;
 		mathSpeed += Time.deltaTime * speedMultiplier;
 
+		if(hasBeenHooked)
+		{
+			folowPattern = false;
+		}
+
 		if(folowPattern == true)
 		{
 			Movement();
 		}
 
-		if(!hasBeenHooked)
-		{
-			folowPattern = true;
-		}
+
 	}
 	
 	protected virtual void Movement()
 	{
-		
+
 	}
 
     public void PickUp(Transform newParent)
