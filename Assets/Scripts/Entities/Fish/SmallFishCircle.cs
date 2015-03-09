@@ -5,7 +5,6 @@ public class SmallFishCircle : FishPickup
 {
 	private float _angle;
 
-
 	protected override void Start() 
 	{
 		base.Start();

@@ -43,6 +43,10 @@ public class MobyDick : MonoBehaviour
 
 		float borderX = 30f;
 
+		//Vector3 positiveBorder = new Vector3(borderX, 0, 0);
+		//Vector3 negativeBorder = new Vector3(-borderX, 0, 0);
+
+
 		if(_x <= -borderX)
 		{
 			_negativeMovement = false;
@@ -52,11 +56,20 @@ public class MobyDick : MonoBehaviour
 		}
 		if(_negativeMovement)
 		{
-			_x -= 0.5f;
+			_x -= 0.25f;
 		}else if(!_negativeMovement)
 		{
-			_x += 0.5f;
+			_x += 0.25f;
 		}
+
+
+
+		if(this.transform.position.y <= -15)
+		{
+			_y += Mathf.Sin(Time.deltaTime) * Mathf.PI;
+		}
+
+
 
 		transform.position = movement;
 	}
