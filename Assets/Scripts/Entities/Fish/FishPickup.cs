@@ -8,7 +8,7 @@ public class FishPickup : Interactables
     protected float x;
     protected float y;
     protected float startScale;
-
+	
     protected Vector2 scale;
     protected Vector2 direction;
 
@@ -42,19 +42,20 @@ public class FishPickup : Interactables
 
 	protected virtual void MoveAway()
 	{
-		direction = new Vector2(x, y);
+		float screenHalf;
+		screenHalf = Screen.width / 2;
 
-		float checkScreenHalf;
-		checkScreenHalf = Screen.width / 2;
-		if(transform.position.x > checkScreenHalf)
+		if(transform.position.x <= screenHalf)
 		{
-			x -= 0.25f;
-		}else if(transform.position.x < checkScreenHalf)
+			x = 0.5f;
+		}else if(transform.position.x >= screenHalf)
 		{
-			x += 0.25f;
+			x = -0.5f;
 		}
 
-		transform.position = direction;
+		direction = new Vector2(x, 0);
+		
+		transform.position += new Vector3(direction.x, direction.y, 0);
 	}
 
 

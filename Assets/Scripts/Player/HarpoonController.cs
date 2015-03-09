@@ -109,8 +109,13 @@ public class HarpoonController : MonoBehaviour
         //collect all the interactables the harpoon has collected
         for (int i = 0; i < _fishesOnHarpoon.Count; i++)
         {
+<<<<<<< HEAD
             Game.instance.HandleInteractable(_fishesOnHarpoon[i].GetComponent<Interactables>());
             Destroy(_fishesOnHarpoon[i]);
+=======
+			Destroy(_fishesOnHarpoon[i]);
+            Game.instance.HandleInteractable(_fishesOnHarpoon[i].GetComponent<Interactables>());
+>>>>>>> 9a6466d942c2f2243b20a6bedcb1a132fa630c3e
         }
         _fishesOnHarpoon.Clear();
         _sprite.enabled = false;
