@@ -18,6 +18,7 @@ public class HarpoonController : MonoBehaviour
     public float movementSpeed;
     public float distanceForReset;
     public SpriteRenderer aimingArrow;
+    public Swipezone swipeZone;
 
     private float _baseMovementSpeed;
 
