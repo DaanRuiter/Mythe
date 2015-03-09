@@ -111,10 +111,8 @@ public class HarpoonController : MonoBehaviour
         {
 			Destroy(_fishesOnHarpoon[i]);
             Game.instance.HandleInteractable(_fishesOnHarpoon[i].GetComponent<Interactables>());
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
+
         }
         _fishesOnHarpoon.Clear();
         _sprite.enabled = false;
