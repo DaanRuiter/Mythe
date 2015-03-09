@@ -110,7 +110,12 @@ public class HarpoonController : MonoBehaviour
         for (int i = 0; i < _fishesOnHarpoon.Count; i++)
         {
             Game.instance.HandleInteractable(_fishesOnHarpoon[i].GetComponent<Interactables>());
+<<<<<<< HEAD
             Destroy(_fishesOnHarpoon[i]);
+=======
+
+
+>>>>>>> 995405eb66dd78718f0c4962f42e04104ef5e0e6
         }
         _fishesOnHarpoon.Clear();
         _sprite.enabled = false;

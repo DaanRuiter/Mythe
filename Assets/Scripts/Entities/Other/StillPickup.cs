@@ -46,6 +46,11 @@ public class StillPickup : FishPickup
 		{
 			_rotateRange -= _rotateRange * 2;
 		}
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 995405eb66dd78718f0c4962f42e04104ef5e0e6
 		transform.position = basePosition + direction;
 	}
 }
