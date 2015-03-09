@@ -13,11 +13,16 @@ public class MobyDickSpawner : MonoBehaviour
 		float spawnTimeRange = Random.Range(2, 4);
 
 		Invoke("SpawnHim", spawnTimeRange);
+
+		Invoke("DespawnHim", spawnTimeRange + 4);
 	}
 
 	void SpawnHim()
 	{
 		Instantiate(moby, new Vector3(29, -20, 0), Quaternion.identity);
 		mobyHasSpawned = true;
+	}
+	void DespawnHim()
+	{
 	}
 }
