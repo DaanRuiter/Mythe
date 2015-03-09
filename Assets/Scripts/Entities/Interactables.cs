@@ -31,10 +31,14 @@ public class Interactables : MonoBehaviour
 
     protected Vector2 basePosition;
 
+	protected bool folowPattern;
+
 	// Use this for initialization
 	protected virtual void Start () 
 	{
 		hasBeenHooked = false;
+
+		folowPattern = true;
 
         basePosition = transform.position;
 	}
@@ -53,10 +57,15 @@ public class Interactables : MonoBehaviour
 	{
 		speed = speedMultiplier;
 		mathSpeed += Time.deltaTime * speedMultiplier;
-		
-		if(!hasBeenHooked)
+
+		if(folowPattern == true)
 		{
 			Movement();
+		}
+
+		if(!hasBeenHooked)
+		{
+			folowPattern = true;
 		}
 	}
 	
