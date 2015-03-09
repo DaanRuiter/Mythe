@@ -18,8 +18,8 @@ public class TimeScript : MonoBehaviour {
 	public void startGame()
 	{
 		slider = gameObject.GetComponent<Slider>();
-		slider.maxValue = 100;
-		_timeRemaining = 100;
+		slider.maxValue = 10;
+		_timeRemaining = 10;
 		InvokeRepeating ("timeDown", 1f, 1f);
 		//_timeRemainingText.text =  "Time: " + _timeRemaining;// + timeRemaining;	//timeRemaining.ToString();
 	}
@@ -28,13 +28,15 @@ public class TimeScript : MonoBehaviour {
 	{
 		if(_timeRemaining == 0)
 		{
-			CancelInvoke();
-
-			startGame();
+			//reset timer
+				//CancelInvoke();
+				//startGame();
 
 			//_timeRemainingText.text =  null;
-			//CancelInvoke();
-			//Application.LoadLevel("Shop");
+
+			//Gaat naar een ander level. bijvoorbeeld shop/deadscreen.
+			CancelInvoke();
+			Application.LoadLevel("Menu");
 			Debug.Log("Died");
 		}
 		else

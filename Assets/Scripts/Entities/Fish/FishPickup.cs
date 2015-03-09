@@ -12,11 +12,8 @@ public class FishPickup : Interactables
     protected Vector2 scale;
     protected Vector2 direction;
 
-<<<<<<< HEAD
-=======
 	public bool spawnCheck;
 
->>>>>>> 7958aaa680f636006203b8e99a0d7377f2028384
 	protected override void Start()
 	{
 		base.Start();
@@ -30,7 +27,7 @@ public class FishPickup : Interactables
 	{
 		base.FixedUpdate();
 
-		spawnCheck = Camera.main.GetComponent<MobyDickSpawner>().mobyHasSpawned;
+//		spawnCheck = Camera.main.GetComponent<MobyDickSpawner>().mobyHasSpawned;
 
 		if(spawnCheck == true)
 		{
