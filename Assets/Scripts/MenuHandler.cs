@@ -21,10 +21,9 @@ public class MenuHandler : MonoBehaviour {
 		canvas[0].SetActive(true);
 	}
 
-	public void LevelSelect()
+	public void Credits()
 	{
 		canvas[0].SetActive(false);
 		canvas[1].SetActive(true);
-		Debug.Log(canvas[1]);
 	}
 }

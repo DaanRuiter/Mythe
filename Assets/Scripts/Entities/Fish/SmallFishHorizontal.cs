@@ -12,9 +12,9 @@ public class SmallFishHorizontal : FishPickup
 		startScale = transform.localScale.x;
 		mass = 10;
 
-		speedMultiplier = 0.25f;
+		speedMultiplier = 0.125f;
 
-		radiusX = 5;
+		radiusX = 10;
 
 		_negativeMovement = false;
 	}

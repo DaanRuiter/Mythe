@@ -26,6 +26,7 @@ public class HookShooter : MonoBehaviour {
         _harpoonAimer = transform.parent.GetComponent<HarpoonAimer>();
 
         _lineRenderer = GetComponent<LineRenderer>();
+
         _lineRenderer.SetPosition(0, transform.position);
     }
 
@@ -42,7 +43,7 @@ public class HookShooter : MonoBehaviour {
             _harpoon.transform.parent = null;
             _harpoon.transform.rotation = HarpoonAimer.Lookat2D(_harpoon.transform, _targetLocator.transform);
             _harpoonController.ShootAt(_targetLocator.transform.position);
-            _harpoonAimer.rotate = false;
+            _harpoonAimer.SetRotate(false);
         }
     }
 }

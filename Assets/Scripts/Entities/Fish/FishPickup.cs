@@ -12,8 +12,6 @@ public class FishPickup : Interactables
     protected Vector2 scale;
     protected Vector2 direction;
 
-	protected Vector2 basePosition;
-
 	protected override void Start()
 	{
 		base.Start();

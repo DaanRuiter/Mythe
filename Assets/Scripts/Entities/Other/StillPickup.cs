@@ -24,8 +24,6 @@ public class StillPickup : FishPickup
 			radiusY = -1;
 		}
 
-		Debug.Log(radiusY);
-
 	}
 
 	protected override void FixedUpdate () 

@@ -17,6 +17,7 @@ public class HarpoonController : MonoBehaviour
 
     public float movementSpeed;
     public float distanceForReset;
+    public SpriteRenderer aimingArrow;
 
     private float _baseMovementSpeed;
 
@@ -27,6 +28,7 @@ public class HarpoonController : MonoBehaviour
     private GameObject _harpoonObject;
 
     private HarpoonAimer _harpoonAimer;
+    private SpriteRenderer _sprite;
 
     private List<GameObject> _fishesOnHarpoon;
 
@@ -35,6 +37,7 @@ public class HarpoonController : MonoBehaviour
         //create some references
         _harpoonObject = GameObject.FindGameObjectWithTag("HarpoonObject");
         _harpoonAimer = _harpoonObject.GetComponent<HarpoonAimer>();
+        _sprite = GetComponent<SpriteRenderer>();
 
         //initialize some variables.
         _movementDirection = MovementDirection.None;
@@ -50,7 +53,7 @@ public class HarpoonController : MonoBehaviour
         //now it will reel the object back into the ship
         if(col.GetComponent<Interactables>())
         {
-            if (_movementDirection != MovementDirection.Up)
+            if (_movementDirection == MovementDirection.Down)
             {
                 SwitchDirection();
                 col.GetComponent<Interactables>().PickUp(transform);
@@ -88,6 +91,8 @@ public class HarpoonController : MonoBehaviour
          //Set the target, the direction and save the position it was in before the gun was shot
          _target = target;
          _movementDirection = MovementDirection.Down;
+         _sprite.enabled = true;
+         aimingArrow.enabled = false;
     }
 
     private void ReAtachToGun()
@@ -107,6 +112,8 @@ public class HarpoonController : MonoBehaviour
             Destroy(_fishesOnHarpoon[i]);
         }
         _fishesOnHarpoon.Clear();
+        _sprite.enabled = false;
+        aimingArrow.enabled = true;
     }
 
     public void SwitchDirection()
