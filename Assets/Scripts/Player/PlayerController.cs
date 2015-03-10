@@ -7,11 +7,6 @@ public class PlayerController : MonoBehaviour {
 
     private Rigidbody2D r;
 
-    private Vector2 firstPressPos;
-    private Vector2 secondPressPos;
-    private Vector2 currentSwipe;
-    private Vector2 currentSwipeNorm;
-
     private Vector2 forceVector;
 
     public ParticleSystem PSLeft;
@@ -19,57 +14,32 @@ public class PlayerController : MonoBehaviour {
 
     public Swipezone movementZone;
 
+    [HideInInspector]
+    public bool active;
+
     private void Start()
     {
         r = GetComponent<Rigidbody2D>();
         forceVector = new Vector2(0, 0);
+        active = true;
     }
 
     private void Update()
     {
-        if (movementZone.IsInArea())
+        if (movementZone.IsInArea() && active)
         {
-            if (Input.GetMouseButtonDown(0))
+            Swipe sipe = SwipeMovement.Get.Swipe();
+            if (sipe.direction == SwipeDirection.Right)
             {
-                //save touch 2d point
-                firstPressPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+                PSLeft.Emit(12);
+                forceVector.x = LimitForce(SwipeMovement.Get.Swipe().swipeLength);
+                r.AddForce(forceVector);
             }
-            if (Input.GetMouseButtonUp(0))
+            if (sipe.direction == SwipeDirection.Left)
             {
-                //save touch 2d point
-                secondPressPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-
-                //create a vector from the two points
-                currentSwipe = new Vector2(secondPressPos.x - firstPressPos.x, secondPressPos.y - firstPressPos.y);
-                currentSwipeNorm = currentSwipe;
-
-                //normalize the 2d vector
-                currentSwipeNorm.Normalize();
-
-                //swipe upwards
-                if (currentSwipeNorm.y > 0 && currentSwipeNorm.x > -0.5f && currentSwipeNorm.x < 0.5f)
-                {
-                    Debug.Log("up swipe");
-                }
-                //swipe down
-                if (currentSwipeNorm.y < 0 && currentSwipeNorm.x > -0.5f && currentSwipeNorm.x < 0.5f)
-                {
-                    Debug.Log("down swipe");
-                }
-                //swipe left
-                if (currentSwipeNorm.x < 0 && currentSwipeNorm.y > -0.5f && currentSwipeNorm.y < 0.5f)
-                {
-                    PSRight.Emit(12);
-                    forceVector.x = -LimitForce(currentSwipe.x);
-                    r.AddForce(forceVector);
-                }
-                //swipe right
-                if (currentSwipeNorm.x > 0 && currentSwipeNorm.y > -0.5f && currentSwipeNorm.y < 0.5f)
-                {
-                    PSLeft.Emit(12);
-                    forceVector.x = LimitForce(currentSwipe.x);
-                    r.AddForce(forceVector);
-                }
+                PSRight.Emit(12);
+                forceVector.x = -LimitForce(SwipeMovement.Get.Swipe().swipeLength);
+                r.AddForce(forceVector);
             }
         }
     }

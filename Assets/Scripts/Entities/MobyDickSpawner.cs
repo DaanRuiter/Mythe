@@ -3,6 +3,7 @@ using System.Collections;
 
 public class MobyDickSpawner : MonoBehaviour 
 {
+    public float minSpawnTime, maxSpawnTime;
 
 	public GameObject moby;
 	public bool mobyHasSpawned;
@@ -10,7 +11,7 @@ public class MobyDickSpawner : MonoBehaviour
 	void Start () 
 	{
 		mobyHasSpawned = false;
-		float spawnTimeRange = Random.Range(2, 4);
+        float spawnTimeRange = Random.Range(minSpawnTime, maxSpawnTime);
 
 		Invoke("SpawnHim", spawnTimeRange);
 	}
