@@ -11,29 +11,40 @@ public class MobyDick : MonoBehaviour
 
 	private float _x;
 	private float _y;
+	private float _timer;
 
+	public bool despawning;
 	private bool _negativeMovement;
 
 	void Start () 
 	{
-		_blastTime = Random.Range(1,6);
-		Invoke("WaterBlast", _blastTime);
+		_timer = Random.Range(4, 8);
+
+		Invoke ("Despawn", Random.Range(10, 15));
 
 		_x = transform.position.x;
 		_y = transform.position.y;
 
 		_negativeMovement = false;
+
+		despawning = false;
 	}
 	
-	void Update () 
+	void FixedUpdate () 
 	{
-		if(_waterBlast.isPlaying == false)
+		_timer -= Time.deltaTime;
+
+		if(_timer <= 0)
+		{
+			WaterBlast();
+		}
+
+		if(_waterBlast.isPlaying == false && despawning == false)
 		{
 			SteeringBehaviour();
-		}else 
+		}else if(despawning == true)
 		{
-			sendCollision();
-			Debug.DrawLine(new Vector2(this.transform.position.x + 10, this.transform.position.y), new Vector2(this.transform.position.x+10, this.transform.position.y +50) , Color.green, _waterBlast.duration);
+			Despawn();
 		}
 	}
 
@@ -42,10 +53,6 @@ public class MobyDick : MonoBehaviour
 		movement = new Vector2(_x, _y);
 
 		float borderX = 30f;
-
-		//Vector3 positiveBorder = new Vector3(borderX, 0, 0);
-		//Vector3 negativeBorder = new Vector3(-borderX, 0, 0);
-
 
 		if(_x <= -borderX)
 		{
@@ -56,20 +63,11 @@ public class MobyDick : MonoBehaviour
 		}
 		if(_negativeMovement)
 		{
-			_x -= 0.25f;
+			_x -= 0.5f;
 		}else if(!_negativeMovement)
 		{
-			_x += 0.25f;
+			_x += 0.5f;
 		}
-
-
-
-		if(this.transform.position.y <= -15)
-		{
-			_y += Mathf.Sin(Time.deltaTime) * Mathf.PI;
-		}
-
-
 
 		transform.position = movement;
 	}
@@ -77,11 +75,32 @@ public class MobyDick : MonoBehaviour
 	void WaterBlast()
 	{
 		_waterBlast.Play();
+		sendCollision();
+		_timer = Random.Range(4, 8);
 	}
 
 	void sendCollision()
 	{
+		Debug.DrawLine(new Vector2(this.transform.position.x + 10, this.transform.position.y), new Vector2(this.transform.position.x+10, this.transform.position.y +50) , Color.green, _waterBlast.duration);
+
 		RaycastHit2D hit = Physics2D.Raycast(new Vector2(this.transform.position.x + 10, this.transform.position.y), new Vector2(this.transform.position.x+10, this.transform.position.y +50));
+	}
+
+	public void Despawn()
+	{
+		movement = new Vector2(_x, _y);
+
+		despawning = true;
+		_waterBlast.Stop(true);
+
+		_y -= 0.2f;
+
+		if(_y <= -35)
+		{
+			Destroy(this.gameObject);
+		}
+
+		transform.position = movement;
 	}
 }
 

@@ -13,6 +13,7 @@ public class FishPickup : Interactables
     protected Vector2 direction;
 
 	public bool spawnCheck;
+	public bool despawnCheck;
 
 	protected override void Start()
 	{
@@ -27,25 +28,35 @@ public class FishPickup : Interactables
 	{
 		base.FixedUpdate();
 
-//		spawnCheck = Camera.main.GetComponent<MobyDickSpawner>().mobyHasSpawned;
+		spawnCheck = Camera.main.GetComponent<MobyDickSpawner>().mobyHasSpawned;
+		despawnCheck = Camera.main.GetComponent<MobyDickSpawner>().mobyHasDespawned;
 
 		if(spawnCheck == true)
 		{
 			folowPattern = false;
 			MoveAway();
+		}else if(despawnCheck == true)
+		{
+			MoveBack();
+		}
+
+		if(!despawnCheck && !spawnCheck)
+		{
+			folowPattern = true;
 		}
 	}
 
 	protected virtual void MoveAway()
 	{
-		//Debug.Log(this.transform.position.x);
-
-		if(transform.position.x <= 0)
+		if(transform.position.x <= 0 && transform.position.x >= -40f)
 		{
-			x = -0.5f;
-		}else if(transform.position.x >= 0)
+			x = -0.3f;
+		}else if(transform.position.x >= 0 && transform.position.x <= 40f)
 		{
-			x = 0.5f;
+			x = 0.3f;
+		}else
+		{
+			x = 0f;
 		}
 
 		direction = new Vector2(x, 0);
@@ -53,6 +64,20 @@ public class FishPickup : Interactables
 		transform.position += new Vector3(direction.x, direction.y, 0);
 	}
 
+	protected virtual void MoveBack()
+	{
+		if(transform.position.x <= basePosition.x)
+		{
+			x = 0.3f;
+		}else if(transform.position.x >= basePosition.x)
+		{
+			x = -0.3f;
+		}
+
+		direction = new Vector2(x, 0);
+
+		transform.position += new Vector3(direction.x, direction.y, 0);
+	}
 
     public int GetPointWorth()
     {
