@@ -33,7 +33,7 @@ public class MobyDick : MonoBehaviour
 		}else 
 		{
 			sendCollision();
-			Debug.DrawLine(this.transform.position, new Vector2(this.transform.position.x, this.transform.position.y +50) , Color.green, _waterBlast.duration);
+			Debug.DrawLine(new Vector2(this.transform.position.x + 10, this.transform.position.y), new Vector2(this.transform.position.x+10, this.transform.position.y +50) , Color.green, _waterBlast.duration);
 		}
 	}
 
@@ -81,7 +81,7 @@ public class MobyDick : MonoBehaviour
 
 	void sendCollision()
 	{
-		RaycastHit2D hit = Physics2D.Raycast(this.transform.position, new Vector2(this.transform.position.x, this.transform.position.y +50));
+		RaycastHit2D hit = Physics2D.Raycast(new Vector2(this.transform.position.x + 10, this.transform.position.y), new Vector2(this.transform.position.x+10, this.transform.position.y +50));
 	}
 }
 

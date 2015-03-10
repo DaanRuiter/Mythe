@@ -42,15 +42,14 @@ public class FishPickup : Interactables
 
 	protected virtual void MoveAway()
 	{
-		float screenHalf;
-		screenHalf = Screen.width / 2;
+		//Debug.Log(this.transform.position.x);
 
-		if(transform.position.x <= screenHalf)
-		{
-			x = 0.5f;
-		}else if(transform.position.x >= screenHalf)
+		if(transform.position.x <= 0)
 		{
 			x = -0.5f;
+		}else if(transform.position.x >= 0)
+		{
+			x = 0.5f;
 		}
 
 		direction = new Vector2(x, 0);
