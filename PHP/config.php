@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "username";
-$password = "ww";
+$username = "MobyleDick";
+$password = "MOByleDICkPassWordForPHphiGHSCoreTable751";
 $dbName = "DBMobyDick";
 
 // Create connection
