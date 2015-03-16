@@ -22,9 +22,7 @@ public class Swipe
     }
 }
 
-public class SwipeMovement : MonoBehaviour {
-
-    public static SwipeMovement Get; void Awake() { Get = this; }
+public class SwipeMovement {
 
     private Vector2 firstPressPos;
     private Vector2 secondPressPos;
@@ -35,12 +33,17 @@ public class SwipeMovement : MonoBehaviour {
 
     private Swipe latestSwipe;
 
+    public SwipeMovement()
+    {
+        latestSwipe = new Swipe(SwipeDirection.None, 0f);
+    }
+
     private void Start()
     {
         latestSwipe = new Swipe(SwipeDirection.None, 0f);
     }
 
-    private void Update()
+    public void RegisterSwipes()
     {
         if (Input.GetMouseButtonDown(0))
         {
@@ -82,7 +85,7 @@ public class SwipeMovement : MonoBehaviour {
         }
     }
 
-    public Swipe Swipe()
+    public Swipe GetSwipe()
     {
         if(currentSwipe != null)
         {

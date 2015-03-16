@@ -6,11 +6,13 @@ public class PlayerController : MonoBehaviour {
     public float minimumMovemmentSpeed, maximumMovementSpeed;
 
     private Rigidbody2D r;
+    private SwipeMovement s;
 
     private Vector2 forceVector;
 
     public ParticleSystem PSLeft;
     public ParticleSystem PSRight;
+    public HookShooter hs;
 
     public Swipezone movementZone;
 
@@ -20,6 +22,7 @@ public class PlayerController : MonoBehaviour {
     private void Start()
     {
         r = GetComponent<Rigidbody2D>();
+        s = new SwipeMovement();
         forceVector = new Vector2(0, 0);
         active = true;
     }
@@ -28,17 +31,18 @@ public class PlayerController : MonoBehaviour {
     {
         if (movementZone.IsInArea() && active)
         {
-            Swipe sipe = SwipeMovement.Get.Swipe();
-            if (sipe.direction == SwipeDirection.Right)
+            s.RegisterSwipes();
+            Swipe swipe = s.GetSwipe();
+            if (swipe.direction == SwipeDirection.Right)
             {
                 PSLeft.Emit(12);
-                forceVector.x = LimitForce(SwipeMovement.Get.Swipe().swipeLength);
+                forceVector.x = LimitForce(swipe.swipeLength);
                 r.AddForce(forceVector);
             }
-            if (sipe.direction == SwipeDirection.Left)
+            if (swipe.direction == SwipeDirection.Left)
             {
                 PSRight.Emit(12);
-                forceVector.x = -LimitForce(SwipeMovement.Get.Swipe().swipeLength);
+                forceVector.x = -LimitForce(swipe.swipeLength);
                 r.AddForce(forceVector);
             }
         }
@@ -58,5 +62,11 @@ public class PlayerController : MonoBehaviour {
             swipeForce = maximumMovementSpeed;
         }
         return swipeForce;
+    }
+
+    public void SetActive(bool state)
+    {
+        this.active = state;
+        hs.SetActive(state);
     }
 }

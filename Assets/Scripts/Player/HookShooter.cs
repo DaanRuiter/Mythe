@@ -15,6 +15,7 @@ public class HookShooter : MonoBehaviour {
     private LineRenderer _lineRenderer;
 
     private bool _harpoonTraveling;
+    private bool _active; 
 
     //this class mostly acts as a refernce hub and will tell all the other components to act when the player shoots the harpoon
     private void Start()
@@ -28,22 +29,29 @@ public class HookShooter : MonoBehaviour {
         _lineRenderer = GetComponent<LineRenderer>();
 
         _lineRenderer.SetPosition(0, transform.position);
+
+        _active = true;
     }
 
     private void Update()
-    {
+    {  
         _lineRenderer.SetPosition(0, transform.position);
         _lineRenderer.SetPosition(1, _harpoon.transform.position);
     }
 
     public void ShootHarpoon()
     {
-        if (_harpoonController.GetDirection() == MovementDirection.None)
+        if (_harpoonController.GetDirection() == MovementDirection.None && _active)
         {
             _harpoon.transform.parent = null;
             _harpoon.transform.rotation = HarpoonAimer.Lookat2D(_harpoon.transform, _targetLocator.transform);
             _harpoonController.ShootAt(_targetLocator.transform.position);
             _harpoonAimer.SetRotate(false);
         }
+    }
+
+    public void SetActive(bool state)
+    {
+        _active = state;
     }
 }

@@ -33,7 +33,9 @@ public class MobyDick : MonoBehaviour
 		}else 
 		{
 			sendCollision();
+#if UNITY_EDITOR
 			Debug.DrawLine(new Vector2(this.transform.position.x + 10, this.transform.position.y), new Vector2(this.transform.position.x+10, this.transform.position.y +50) , Color.green, _waterBlast.duration);
+#endif
 		}
 	}
 
@@ -63,13 +65,10 @@ public class MobyDick : MonoBehaviour
 		}
 
 
-
 		if(this.transform.position.y <= -15)
 		{
 			_y += Mathf.Sin(Time.deltaTime) * Mathf.PI;
 		}
-
-
 
 		transform.position = movement;
 	}
@@ -82,6 +81,10 @@ public class MobyDick : MonoBehaviour
 	void sendCollision()
 	{
 		RaycastHit2D hit = Physics2D.Raycast(new Vector2(this.transform.position.x + 10, this.transform.position.y), new Vector2(this.transform.position.x+10, this.transform.position.y +50));
+        if(hit.transform.tag == "Player")
+        {
+            hit.transform.GetComponent<PushUpOnWaterBlast>().Blast();
+        }
 	}
 }
 

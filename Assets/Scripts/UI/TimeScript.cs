@@ -18,8 +18,8 @@ public class TimeScript : MonoBehaviour {
 	public void startGame()
 	{
 		slider = gameObject.GetComponent<Slider>();
-		slider.maxValue = 10;
-		_timeRemaining = 10;
+		slider.maxValue = 95;
+		_timeRemaining = 95;
 		InvokeRepeating ("timeDown", 1f, 1f);
 		//_timeRemainingText.text =  "Time: " + _timeRemaining;// + timeRemaining;	//timeRemaining.ToString();
 	}

@@ -16,6 +16,7 @@ public class HarpoonController : MonoBehaviour
     //daanruiter.net
 
     public float movementSpeed;
+    public float maxMovementSpeed;
     public float distanceForReset;
     public SpriteRenderer aimingArrow;
     public Swipezone swipeZone;
@@ -84,6 +85,14 @@ public class HarpoonController : MonoBehaviour
             {
                 ReAtachToGun();
             }
+            if(movementSpeed > _baseMovementSpeed)
+            {
+                movementSpeed -= 0.02f;
+                if(movementSpeed < _baseMovementSpeed)
+                {
+                    movementSpeed = _baseMovementSpeed;
+                }
+            }
         }
     }
 
@@ -115,6 +124,7 @@ public class HarpoonController : MonoBehaviour
         _fishesOnHarpoon.Clear();
         _sprite.enabled = false;
         aimingArrow.enabled = true;
+        movementSpeed = _baseMovementSpeed;
     }
 
     public void SwitchDirection()
@@ -128,6 +138,15 @@ public class HarpoonController : MonoBehaviour
         {
             //change the direction
             _movementDirection = MovementDirection.Down;
+        }
+    }
+
+    public void AddVelocity(float vel)
+    {
+        movementSpeed += vel;
+        if(movementSpeed > maxMovementSpeed)
+        {
+            movementSpeed = maxMovementSpeed;
         }
     }
 
