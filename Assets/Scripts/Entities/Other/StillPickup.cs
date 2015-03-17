@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class StillPickup : FishPickup 
+public class StillPickup : Interactables 
 {
 	private float _rotateRange;
 	
