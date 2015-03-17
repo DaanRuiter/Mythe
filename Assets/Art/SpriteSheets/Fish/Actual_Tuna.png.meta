@@ -1,0 +1,475 @@
+fileFormatVersion: 2
+guid: 89fed7aa61361664b8b1385a66192177
+timeCreated: 1426495910
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Actual_Tuna_0
+    21300002: Actual_Tuna_1
+    21300004: Actual_Tuna_2
+    21300006: Actual_Tuna_3
+    21300008: Actual_Tuna_4
+    21300010: Actual_Tuna_5
+    21300012: Actual_Tuna_6
+    21300014: Actual_Tuna_7
+    21300016: Actual_Tuna_8
+    21300018: Actual_Tuna_9
+    21300020: Actual_Tuna_10
+    21300022: Actual_Tuna_11
+    21300024: Actual_Tuna_12
+    21300026: Actual_Tuna_13
+    21300028: Actual_Tuna_14
+    21300030: Actual_Tuna_15
+    21300032: Actual_Tuna_16
+    21300034: Actual_Tuna_17
+    21300036: Actual_Tuna_18
+    21300038: Actual_Tuna_19
+    21300040: Actual_Tuna_20
+    21300042: Actual_Tuna_21
+    21300044: Actual_Tuna_22
+    21300046: Actual_Tuna_23
+    21300048: Actual_Tuna_24
+    21300050: Actual_Tuna_25
+    21300052: Actual_Tuna_26
+    21300054: Actual_Tuna_27
+    21300056: Actual_Tuna_28
+    21300058: Actual_Tuna_29
+    21300060: Actual_Tuna_30
+    21300062: Actual_Tuna_31
+    21300064: Actual_Tuna_32
+    21300066: Actual_Tuna_33
+    21300068: Actual_Tuna_34
+    21300070: Actual_Tuna_35
+    21300072: Actual_Tuna_36
+    21300074: Actual_Tuna_37
+    21300076: Actual_Tuna_38
+    21300078: Actual_Tuna_39
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Actual_Tuna_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 888
+        width: 200
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_1
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 888
+        width: 202
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_2
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 888
+        width: 203
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_3
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 889
+        width: 204
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 790
+        width: 203
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_5
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 791
+        width: 206
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_6
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 792
+        width: 206
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_7
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 792
+        width: 205
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 694
+        width: 203
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_9
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 694
+        width: 203
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_10
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 694
+        width: 202
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_11
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 693
+        width: 201
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 596
+        width: 200
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_13
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 596
+        width: 202
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_14
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 596
+        width: 203
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_15
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 596
+        width: 204
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 499
+        width: 202
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_17
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 499
+        width: 202
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_18
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 499
+        width: 202
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_19
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 500
+        width: 201
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 402
+        width: 200
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_21
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 401
+        width: 201
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_22
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 401
+        width: 202
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_23
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 400
+        width: 203
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 301
+        width: 202
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_25
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 301
+        width: 204
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_26
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 300
+        width: 204
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_27
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 300
+        width: 205
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 201
+        width: 205
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_29
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 201
+        width: 205
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_30
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 200
+        width: 205
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_31
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 200
+        width: 205
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 203
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_33
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 101
+        width: 204
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_34
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 101
+        width: 203
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_35
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 101
+        width: 203
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 201
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Actual_Tuna_37
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1
+        width: 202
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

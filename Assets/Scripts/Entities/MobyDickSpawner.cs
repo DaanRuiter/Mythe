@@ -12,7 +12,7 @@ public class MobyDickSpawner : MonoBehaviour
 	{
 		mobyHasSpawned = false;
 		mobyHasDespawned = false;
-		float spawnTimeRange = Random.Range(2, 4);
+		float spawnTimeRange = Random.Range(10, 20);
 
 		Invoke("SpawnHim", spawnTimeRange);
 	}
