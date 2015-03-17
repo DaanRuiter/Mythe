@@ -5,8 +5,8 @@ using UnityEngine.UI;
 public class TimeScript : MonoBehaviour {
 
 	private int _timeRemaining;
-	//private Text _timeRemainingText;
-	private Slider slider;
+	private int _totalTime; 
+	//private Slider slider;
 
 	void Awake () 
 	{
@@ -17,9 +17,11 @@ public class TimeScript : MonoBehaviour {
 
 	public void startGame()
 	{
-		slider = gameObject.GetComponent<Slider>();
-		slider.maxValue = 100;
-		_timeRemaining = 100;
+		_totalTime = 100;
+		//slider = gameObject.GetComponent<Slider>();
+		//slider.maxValue = 100;
+		_timeRemaining = _totalTime;
+
 		InvokeRepeating ("timeDown", 1f, 1f);
 		//_timeRemainingText.text =  "Time: " + _timeRemaining;// + timeRemaining;	//timeRemaining.ToString();
 	}
@@ -28,12 +30,6 @@ public class TimeScript : MonoBehaviour {
 	{
 		if(_timeRemaining == 0)
 		{
-			//reset timer
-				//CancelInvoke();
-				//startGame();
-
-			//_timeRemainingText.text =  null;
-
 			//Gaat naar een ander level. bijvoorbeeld shop/deadscreen.
 			CancelInvoke();
 			Application.LoadLevel("Menu");
@@ -41,9 +37,9 @@ public class TimeScript : MonoBehaviour {
 		}
 		else
 		{
+
 			_timeRemaining --;
-			//_timeRemainingText.text =  "Time: " + _timeRemaining;
-			slider.value = _timeRemaining;
+			transform.Rotate(0,0,-3);//100/360 kan niet, komt op 0 uit.(achter de comma word niet mee gerekend)
 		}
 	}
 
