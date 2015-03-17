@@ -4,24 +4,24 @@ using System.Collections;
 public class Resources : MonoBehaviour {
 
 	private 	int 	_score;
-	private 	int 	_gold;
+	//private 	int 	_gold;
 
 	private 	Score	_scoreUI;
-	private 	Gold 	_goldUI;
+	//private 	Gold 	_goldUI;
 	
 	void Awake()
 	{
 		_scoreUI 	= 	gameObject.GetComponent<Score>();
-		_goldUI 	= 	gameObject.GetComponent<Gold>();
+		//_goldUI 	= 	gameObject.GetComponent<Gold>();
 	}
 
 	void Start()
 	{
 		_scoreUI.UpdateUI(_score);
-		_goldUI.UpdateUI(_gold);
+		//_goldUI.UpdateUI(_gold);
 	}
 
-	void Update()
+	/*void Update()
 	{
 		if(Input.GetKeyUp(KeyCode.G))
 		{
@@ -32,7 +32,7 @@ public class Resources : MonoBehaviour {
 		{
 			UpdateScore(10);
 		}
-	}
+	}*/
 
 	// ---------------------- Score ----------------------
 	public int score()
@@ -53,8 +53,8 @@ public class Resources : MonoBehaviour {
 	}
 
 	// ---------------------- Gold ----------------------
-	public int gold()
-	{
+	//public int gold()
+	/*{
 		return _gold;
 	}
 	
@@ -68,5 +68,5 @@ public class Resources : MonoBehaviour {
 	{
 		_gold += amount;
 		_goldUI.UpdateUI(_gold);
-	}
+	}*/
 }
