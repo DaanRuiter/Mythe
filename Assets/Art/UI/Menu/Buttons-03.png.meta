@@ -1,0 +1,275 @@
+fileFormatVersion: 2
+guid: 6b5428dbc21f940c999b321478ca8951
+timeCreated: 1426493343
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Buttons-03_0
+    21300002: Buttons-03_1
+    21300004: Buttons-03_2
+    21300006: Buttons-03_3
+    21300008: Buttons-03_4
+    21300010: Buttons-03_5
+    21300012: Buttons-03_6
+    21300014: Buttons-03_7
+    21300016: Buttons-03_8
+    21300018: Buttons-03_9
+    21300020: Buttons-03_10
+    21300022: Buttons-03_11
+    21300024: Buttons-03_12
+    21300026: Buttons-03_13
+    21300028: Buttons-03_14
+    21300030: Buttons-03_15
+    21300032: Buttons-03_16
+    21300034: Buttons-03_17
+    21300036: Buttons-03_18
+    21300038: Buttons-03_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Buttons-03_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 262
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buttons-03_1
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 262
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buttons-03_2
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 262
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buttons-03_3
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 262
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buttons-03_4
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 262
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buttons-03_5
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 189
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buttons-03_6
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 189
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buttons-03_7
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 189
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buttons-03_8
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 189
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buttons-03_9
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 189
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buttons-03_10
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 118
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buttons-03_11
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 118
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buttons-03_12
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 118
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buttons-03_13
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 118
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buttons-03_14
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 118
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buttons-03_15
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 48
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buttons-03_16
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 48
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buttons-03_17
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 48
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buttons-03_18
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 48
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Buttons-03_19
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 48
+        width: 61
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

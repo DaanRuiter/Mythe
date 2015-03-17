@@ -29,7 +29,6 @@ public class MobyDick : MonoBehaviour
         _y = transform.position.y;
 
         _negativeMovement = false;
-
         despawning = false;
     }
 
