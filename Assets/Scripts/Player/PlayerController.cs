@@ -9,12 +9,15 @@ public class PlayerController : MonoBehaviour {
     private SwipeMovement s;
 
     private Vector2 forceVector;
+    private float nativeHeight;
 
     public ParticleSystem PSLeft;
     public ParticleSystem PSRight;
     public HookShooter hs;
 
     public Swipezone movementZone;
+    public float blastMaxHeight;
+    public float blastSpeed;
 
     [HideInInspector]
     public bool active;
@@ -25,11 +28,12 @@ public class PlayerController : MonoBehaviour {
         s = new SwipeMovement();
         forceVector = new Vector2(0, 0);
         active = true;
+        nativeHeight = transform.position.y;
     }
 
     private void Update()
     {
-        if (movementZone.IsInArea() && active)
+        if (movementZone.IsInArea() && active && transform.position.y == nativeHeight)
         {
             s.RegisterSwipes();
             Swipe swipe = s.GetSwipe();
@@ -46,6 +50,7 @@ public class PlayerController : MonoBehaviour {
                 r.AddForce(forceVector);
             }
         }
+        active = true;
     }
 
     private float LimitForce(float swipeForce)
@@ -62,6 +67,30 @@ public class PlayerController : MonoBehaviour {
             swipeForce = maximumMovementSpeed;
         }
         return swipeForce;
+    }
+
+    private Vector2 pushVelocity = new Vector2(0, 0);
+    public void PushUp()
+    {
+        if (transform.position.y < nativeHeight + blastMaxHeight)
+        {
+            pushVelocity.y = blastSpeed;
+            transform.Translate(pushVelocity);
+        }
+    }
+
+    public void PushDown()
+    {
+        if(transform.position.y > nativeHeight)
+        {
+            pushVelocity.y = -(blastSpeed * 2);
+            transform.Translate(pushVelocity);
+        }else if(
+            transform.position.y < nativeHeight)
+        {
+            pushVelocity.y = nativeHeight - transform.position.y;
+            transform.Translate(pushVelocity);
+        }
     }
 
     public void SetActive(bool state)

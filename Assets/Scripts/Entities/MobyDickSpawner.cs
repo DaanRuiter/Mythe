@@ -1,31 +1,46 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MobyDickSpawner : MonoBehaviour 
+public class MobyDickSpawner : MonoBehaviour
 {
-    public float minSpawnTime, maxSpawnTime;
+    public GameObject moby;
+    private GameObject a;
+    public bool mobyHasSpawned;
+    public bool mobyHasDespawned;
 
-	public GameObject moby;
-	public bool mobyHasSpawned;
+    void Start()
+    {
+        mobyHasSpawned = false;
+        mobyHasDespawned = false;
+        float spawnTimeRange = Random.Range(2, 4);
 
-	void Start () 
-	{
-		mobyHasSpawned = false;
-        float spawnTimeRange = Random.Range(minSpawnTime, maxSpawnTime);
+        Invoke("SpawnHim", spawnTimeRange);
+    }
 
-		Invoke("SpawnHim", spawnTimeRange);
+    void Update()
+    {
+        if (a != null)
+        {
+            DespawnHim();
+        }
+        else
+        {
+            mobyHasDespawned = false;
+            mobyHasSpawned = false;
+        }
+    }
 
-		Invoke("DespawnHim", spawnTimeRange + 4);
-	}
-
-	void SpawnHim()
-	{
-		Instantiate(moby, new Vector3(29, -20, 0), Quaternion.identity);
-		mobyHasSpawned = true;
-	}
-
-	void DespawnHim()
-	{
-
-	}
+    void SpawnHim()
+    {
+        a = Instantiate(moby, new Vector3(35, -20, 0), Quaternion.identity) as GameObject;
+        mobyHasSpawned = true;
+    }
+    void DespawnHim()
+    {
+        if (a.GetComponent<MobyDick>().despawning == true)
+        {
+            mobyHasSpawned = false;
+            mobyHasDespawned = true;
+        }
+    }
 }
