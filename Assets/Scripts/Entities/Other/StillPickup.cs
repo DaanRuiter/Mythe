@@ -3,7 +3,7 @@ using System.Collections;
 
 public class StillPickup : Interactables 
 {
-	private float _rotateRange;
+	/*private float _rotateRange;
 	
 	protected override void Start() 
 	{
@@ -49,5 +49,5 @@ public class StillPickup : Interactables
 
 
 		transform.position = basePosition + direction;
-	}
+	}*/
 }
