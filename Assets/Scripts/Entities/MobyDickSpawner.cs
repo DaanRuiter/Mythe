@@ -8,11 +8,11 @@ public class MobyDickSpawner : MonoBehaviour
     public bool mobyHasSpawned;
     public bool mobyHasDespawned;
 
-    void Start()
-    {
-        mobyHasSpawned = false;
-        mobyHasDespawned = false;
-        float spawnTimeRange = Random.Range(2, 4);
+	void Start () 
+	{
+		mobyHasSpawned = false;
+		mobyHasDespawned = false;
+		float spawnTimeRange = Random.Range(10, 20);
 
         Invoke("SpawnHim", spawnTimeRange);
     }

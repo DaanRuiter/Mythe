@@ -67,8 +67,6 @@ public class Interactables : MonoBehaviour
 		{
 			Movement();
 		}
-
-
 	}
 	
 	protected virtual void Movement()
@@ -82,7 +80,6 @@ public class Interactables : MonoBehaviour
         hasBeenHooked = true;
     }
 }
-
 
 public enum PickupType
 {

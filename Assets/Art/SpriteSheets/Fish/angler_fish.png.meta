@@ -1,0 +1,495 @@
+fileFormatVersion: 2
+guid: 34b0bdd9da04035498c2ab838bf7d83c
+timeCreated: 1426588062
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: angler_fish_0
+    21300002: angler_fish_1
+    21300004: angler_fish_2
+    21300006: angler_fish_3
+    21300008: angler_fish_4
+    21300010: angler_fish_5
+    21300012: angler_fish_6
+    21300014: angler_fish_7
+    21300016: angler_fish_8
+    21300018: angler_fish_9
+    21300020: angler_fish_10
+    21300022: angler_fish_11
+    21300024: angler_fish_12
+    21300026: angler_fish_13
+    21300028: angler_fish_14
+    21300030: angler_fish_15
+    21300032: angler_fish_16
+    21300034: angler_fish_17
+    21300036: angler_fish_18
+    21300038: angler_fish_19
+    21300040: angler_fish_20
+    21300042: angler_fish_21
+    21300044: angler_fish_22
+    21300046: angler_fish_23
+    21300048: angler_fish_24
+    21300050: angler_fish_25
+    21300052: angler_fish_26
+    21300054: angler_fish_27
+    21300056: angler_fish_28
+    21300058: angler_fish_29
+    21300060: angler_fish_30
+    21300062: angler_fish_31
+    21300064: angler_fish_32
+    21300066: angler_fish_33
+    21300068: angler_fish_34
+    21300070: angler_fish_35
+    21300072: angler_fish_36
+    21300074: angler_fish_37
+    21300076: angler_fish_38
+    21300078: angler_fish_39
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: angler_fish_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 725
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_1
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 725
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_2
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 725
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_3
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 725
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_4
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 725
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 649
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_6
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 649
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_7
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 649
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_8
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 649
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_9
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 649
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 573
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_11
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 573
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_12
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 573
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_13
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 573
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_14
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 573
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 497
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_16
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 497
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_17
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 497
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_18
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 497
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_19
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 497
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 421
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_21
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 421
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_22
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 421
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_23
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 421
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_24
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 421
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 345
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_26
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 345
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_27
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 345
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_28
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 345
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_29
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 345
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 269
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_31
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 269
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_32
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 269
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_33
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 269
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_34
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 269
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 193
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_36
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 193
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_37
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 193
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_38
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 193
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: angler_fish_39
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 193
+        width: 146
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
