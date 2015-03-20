@@ -4,25 +4,20 @@ using UnityEngine.UI;
 
 public class TimeScript : MonoBehaviour {
 
-	private int _timeRemaining;
-	private int _totalTime; 
+	private float _timeRemaining;
+	private float _totalTime; 
 	//private Slider slider;
 
 	void Awake () 
 	{
-		//_timeRemainingText = GetComponent<Text> ();
-
 		startGame();
 	}
 
 	public void startGame()
 	{
 		_totalTime = 100;
-		//slider = gameObject.GetComponent<Slider>();
-		//slider.maxValue = 100;
 		_timeRemaining = _totalTime;
 		InvokeRepeating ("timeDown", 1f, 1f);
-		//_timeRemainingText.text =  "Time: " + _timeRemaining;// + timeRemaining;	//timeRemaining.ToString();
 	}
 	
 	public void timeDown()
@@ -36,18 +31,8 @@ public class TimeScript : MonoBehaviour {
 		}
 		else
 		{
-
 			_timeRemaining --;
-			transform.Rotate(0,0,-3);//100/360 kan niet, komt op 0 uit.(achter de comma word niet mee gerekend)
-		}
-	}
-
-	void OnLevelWasLoaded(int level) 
-	{
-		//prepare each scene for startup.
-		if(level != 1)
-		{
-			startGame();
+			transform.Rotate(0,0,-(360/_totalTime));
 		}
 	}
 }

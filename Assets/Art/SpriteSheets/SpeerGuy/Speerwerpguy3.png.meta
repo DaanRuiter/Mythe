@@ -1,0 +1,277 @@
+fileFormatVersion: 2
+guid: 5244a539ada8b1249b5784b54d4bc088
+timeCreated: 1426606951
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Speerwerpguy3_0
+    21300002: Speerwerpguy3_1
+    21300004: Speerwerpguy3_2
+    21300006: Speerwerpguy3_3
+    21300008: Speerwerpguy3_4
+    21300010: Speerwerpguy3_5
+    21300012: Speerwerpguy3_6
+    21300014: Speerwerpguy3_7
+    21300016: Speerwerpguy3_8
+    21300018: Speerwerpguy3_9
+    21300020: Speerwerpguy3_10
+    21300022: Speerwerpguy3_11
+    21300024: Speerwerpguy3_12
+    21300026: Speerwerpguy3_13
+    21300028: Speerwerpguy3_14
+    21300030: Speerwerpguy3_15
+    21300032: Speerwerpguy3_16
+    21300034: Speerwerpguy3_17
+    21300036: Speerwerpguy3_18
+    21300038: Speerwerpguy3_19
+    21300040: Speerwerpguy3_20
+    21300042: Speerwerpguy3_21
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Speerwerpguy3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 275
+        width: 84
+        height: 225
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Speerwerpguy3_1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 275
+        width: 84
+        height: 225
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Speerwerpguy3_2
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 275
+        width: 84
+        height: 225
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Speerwerpguy3_3
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 275
+        width: 84
+        height: 225
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Speerwerpguy3_4
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 275
+        width: 84
+        height: 225
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Speerwerpguy3_5
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 275
+        width: 84
+        height: 225
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Speerwerpguy3_6
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 275
+        width: 84
+        height: 225
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Speerwerpguy3_7
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 275
+        width: 84
+        height: 225
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Speerwerpguy3_8
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 275
+        width: 84
+        height: 225
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Speerwerpguy3_9
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 275
+        width: 84
+        height: 225
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Speerwerpguy3_10
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 275
+        width: 84
+        height: 225
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Speerwerpguy3_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 50
+        width: 84
+        height: 225
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Speerwerpguy3_12
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 50
+        width: 84
+        height: 225
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Speerwerpguy3_13
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 50
+        width: 84
+        height: 225
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Speerwerpguy3_14
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 50
+        width: 84
+        height: 225
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Speerwerpguy3_15
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 50
+        width: 84
+        height: 225
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Speerwerpguy3_16
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 50
+        width: 84
+        height: 225
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Speerwerpguy3_17
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 50
+        width: 84
+        height: 225
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Speerwerpguy3_18
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 50
+        width: 84
+        height: 225
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Speerwerpguy3_19
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 50
+        width: 84
+        height: 225
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

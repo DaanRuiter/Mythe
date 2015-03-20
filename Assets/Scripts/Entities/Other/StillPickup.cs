@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class StillPickup : FishPickup 
+public class StillPickup : Interactables 
 {
 	private float _rotateRange;
 	
@@ -17,13 +17,6 @@ public class StillPickup : FishPickup
 			_rotateRange = (_rotateRange*-1)/2;
 		}
 
-		radiusY = Random.Range(1,3);
-
-		if(radiusY == 2)
-		{
-			radiusY = -1;
-		}
-
 	}
 
 	protected override void FixedUpdate () 
@@ -33,9 +26,6 @@ public class StillPickup : FishPickup
 	
 	protected override void Movement()
 	{
-		direction = new Vector2(x, y);
-		
-		y = Mathf.Sin(mathSpeed) * radiusY;
 
 		transform.Rotate(0,0,_rotateRange);
 
@@ -46,6 +36,5 @@ public class StillPickup : FishPickup
 		{
 			_rotateRange -= _rotateRange * 2;
 		}
-		transform.position = basePosition + direction;
 	}
 }
