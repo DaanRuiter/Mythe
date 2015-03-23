@@ -3,23 +3,29 @@ using System.Collections;
 
 public class MobyDickSpawner : MonoBehaviour 
 {
-	public GameObject moby;
-	private GameObject a;
+	public GameObject prefabMoby;
+	private GameObject newMoby;
+	
 	public bool mobyHasSpawned;
 	public bool mobyHasDespawned;
+
+	[SerializeField]
+	private float spawnTimeMin;
+	[SerializeField]
+	private float spawnTimeMax;
 
 	void Start () 
 	{
 		mobyHasSpawned = false;
 		mobyHasDespawned = false;
-		float spawnTimeRange = Random.Range(10, 20);
+		float spawnTimeRange = Random.Range(spawnTimeMin, spawnTimeMax);
 
 		Invoke("SpawnHim", spawnTimeRange);
 	}
 
 	void Update()
 	{
-		if(a != null)
+		if(newMoby != null)
 		{
 			DespawnHim();
 		}else
@@ -31,12 +37,12 @@ public class MobyDickSpawner : MonoBehaviour
 
 	void SpawnHim()
 	{
-		a = Instantiate(moby, new Vector3(29, -15, 0), Quaternion.identity) as GameObject;
+		newMoby = Instantiate(prefabMoby, new Vector3(29, -15, 0), Quaternion.identity) as GameObject;
 		mobyHasSpawned = true;
 	}
 	void DespawnHim()
 	{
-		if(a.GetComponent<MobyDick>().despawning == true)
+		if(newMoby.GetComponent<MobyDick>().despawning == true)
 		{
 			mobyHasSpawned = false;
 			mobyHasDespawned = true;

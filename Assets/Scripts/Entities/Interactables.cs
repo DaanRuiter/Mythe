@@ -10,9 +10,6 @@ public class Interactables : MonoBehaviour
 
 	[SerializeField]
 	protected float mass;
-	
-	[SerializeField]
-	protected string objectName;
 
 	[SerializeField]
 	protected float speedMultiplier;
