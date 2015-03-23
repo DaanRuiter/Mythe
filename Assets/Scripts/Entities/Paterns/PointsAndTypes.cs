@@ -20,9 +20,10 @@ public class PointsAndTypes : MonoBehaviour
 	}
 }
 
-public enum PickupType
+/*public enum PickupType
 {
 	fish,
 	gold,
 	trap
 }
+*/

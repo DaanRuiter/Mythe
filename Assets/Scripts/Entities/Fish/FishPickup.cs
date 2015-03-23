@@ -22,16 +22,19 @@ public class FishPickup : Interactables
 		scale = new Vector2(transform.localScale.x, transform.localScale.y);
 
 		startScale = transform.localScale.x;
-
 	}
 
 	protected override void FixedUpdate()
 	{
 		base.FixedUpdate();
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> origin/master
 		spawnCheck = Camera.main.GetComponent<MobyDickSpawner>().mobyHasSpawned;
 		despawnCheck = Camera.main.GetComponent<MobyDickSpawner>().mobyHasDespawned;
-		
+
 		if(spawnCheck == true)
 		{
 			folowPattern = false;
@@ -40,14 +43,14 @@ public class FishPickup : Interactables
 		{
 			MoveBack();
 		}
-		
+
 		if(!despawnCheck && !spawnCheck)
 		{
 			folowPattern = true;
 		}
 	}
 
-	void MoveAway()
+	protected virtual void MoveAway()
 	{
 		if(transform.position.x <= 0 && transform.position.x >= -40f)
 		{
@@ -59,13 +62,13 @@ public class FishPickup : Interactables
 		{
 			x = 0f;
 		}
-		
+
 		direction = new Vector2(x, 0);
 		
 		transform.position += new Vector3(direction.x, direction.y, 0);
 	}
-	
-	void MoveBack()
+
+	protected virtual void MoveBack()
 	{
 		if(transform.position.x <= basePosition.x)
 		{
@@ -74,9 +77,14 @@ public class FishPickup : Interactables
 		{
 			x = -0.3f;
 		}
-		
+
 		direction = new Vector2(x, 0);
-		
+
 		transform.position += new Vector3(direction.x, direction.y, 0);
+	}
+
+    public int GetPointWorth()
+    {
+        return points;
 	}
 }

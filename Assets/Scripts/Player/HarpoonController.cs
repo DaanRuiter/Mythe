@@ -16,18 +16,21 @@ public class HarpoonController : MonoBehaviour
     //daanruiter.net
 
     public float movementSpeed;
-    public float maxMovementSpeed;
     public float distanceForReset;
     public SpriteRenderer aimingArrow;
     public Swipezone swipeZone;
 
     private float _baseMovementSpeed;
+
     private Vector2 _target; 
     private Vector2 _startPosition;
+
     private MovementDirection _movementDirection;
     private GameObject _harpoonObject;
+
     private HarpoonAimer _harpoonAimer;
     private SpriteRenderer _sprite;
+
     private List<GameObject> _fishesOnHarpoon;
 
     private void Start()
@@ -81,14 +84,6 @@ public class HarpoonController : MonoBehaviour
             {
                 ReAtachToGun();
             }
-            if(movementSpeed > _baseMovementSpeed)
-            {
-                movementSpeed -= 0.02f;
-                if(movementSpeed < _baseMovementSpeed)
-                {
-                    movementSpeed = _baseMovementSpeed;
-                }
-            }
         }
     }
 
@@ -114,13 +109,14 @@ public class HarpoonController : MonoBehaviour
         //collect all the interactables the harpoon has collected
         for (int i = 0; i < _fishesOnHarpoon.Count; i++)
         {
-            Game.instance.HandleInteractable(_fishesOnHarpoon[i].GetComponent<PointsAndTypes>());
-            Destroy(_fishesOnHarpoon[i]);
+			Destroy(_fishesOnHarpoon[i]);
+            Game.instance.HandleInteractable(_fishesOnHarpoon[i].GetComponent<Interactables>());
+
+
         }
         _fishesOnHarpoon.Clear();
         _sprite.enabled = false;
         aimingArrow.enabled = true;
-        movementSpeed = _baseMovementSpeed;
     }
 
     public void SwitchDirection()
@@ -134,15 +130,6 @@ public class HarpoonController : MonoBehaviour
         {
             //change the direction
             _movementDirection = MovementDirection.Down;
-        }
-    }
-
-    public void AddVelocity(float vel)
-    {
-        movementSpeed += vel;
-        if(movementSpeed > maxMovementSpeed)
-        {
-            movementSpeed = maxMovementSpeed;
         }
     }
 

@@ -5,22 +5,46 @@ using System.Collections;
 public class Game : MonoBehaviour {
 
     public static Game instance;
-    private Resources _resources;
+
+    public Text pointText;
+    public Text goldText;
+
+    public int points;
+    public int gold;
 
     private void Awake()
     {
         instance = this;
-        _resources = GameObject.FindGameObjectWithTag("Resources").GetComponent<Resources>();
     }
 
-    public void HandleInteractable(PointsAndTypes interactable)
+    public void AddScore(int pointsToAdd)
+    {
+        points += pointsToAdd;
+        pointText.text = "" + points;
+    }
+
+    public void AddGold(int goldToAdd)
+    {
+        gold += goldToAdd;
+        goldText.text = "" + gold;
+    }
+
+    public void SetStats(int gold , int points)
+    {
+        this.points = points;
+        this.gold = gold;
+        pointText.text = "" + points;
+        goldText.text = "" + gold;
+    }
+
+    public void HandleInteractable(Interactables interactable)
     {
         if(interactable.GetPickupType() == PickupType.gold)
         {
-            //AddGold(interactable.GetPoints());
+            AddGold(interactable.GetPoints());
         }else if(interactable.GetPickupType() == PickupType.fish)
         {
-            _resources.UpdateScore(interactable.GetPoints());
+            AddScore(interactable.GetPoints());
         }
     }
 }

@@ -12,11 +12,11 @@ public class PushUpOnWaterBlast : MonoBehaviour {
 
 	public void Blast()
     {
-        pc.SetActive(false);
+//        pc.SetActive(false);
     }
 
     private void EndBlast()
     {
-        pc.SetActive(true);
+//        pc.SetActive(true);
     }
 }

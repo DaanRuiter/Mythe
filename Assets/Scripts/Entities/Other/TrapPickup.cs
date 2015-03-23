@@ -21,6 +21,8 @@ public class TrapPickup : MonoBehaviour
 	void Start () 
 	{
 		_hasBeenHit = false;
+
+		Invoke("Explode", 20);
 		
 		_origin = new Vector2(transform.position.x, transform.position.y);
 		_bombRadius = 10;
@@ -36,19 +38,9 @@ public class TrapPickup : MonoBehaviour
 		}
 		_explosionEffect.Play();
 
-        Destroy(GetComponent<SpriteRenderer>());
+
 		Destroy(this.gameObject, 1);
 	}
-
-    private void OnTriggerEnter2D(Collider2D coll)
-    {
-        if(coll.transform.tag == "Harpoon")
-        {
-            Explode();
-            coll.GetComponent<HarpoonController>().SwitchDirection();
-        }
-    }
-
 	void Update()
 	{
 		if(_hasBeenHit)
