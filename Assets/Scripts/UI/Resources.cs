@@ -4,7 +4,6 @@ using System.Collections;
 public class Resources : MonoBehaviour {
 
 	private 	int 	_score;
-    private     int     _scoreLeftToAdd;
 	//private 	int 	_gold;
 
 	private 	Score	_scoreUI;
@@ -22,15 +21,18 @@ public class Resources : MonoBehaviour {
 		//_goldUI.UpdateUI(_gold);
 	}
 
-	void Update()
+	/*void Update()
 	{
-		if(_scoreLeftToAdd > 0)
-        {
-            _scoreLeftToAdd -= 1;
-            _score += 1;
-            _scoreUI.UpdateUI(_score);
-        }
-	}
+		if(Input.GetKeyUp(KeyCode.G))
+		{
+			UpdateGold(10);
+		}
+
+		if(Input.GetKeyUp(KeyCode.S))
+		{
+			UpdateScore(10);
+		}
+	}*/
 
 	// ---------------------- Score ----------------------
 	public int score()
@@ -46,7 +48,8 @@ public class Resources : MonoBehaviour {
 	
 	public void UpdateScore(int amount)
 	{
-        _scoreLeftToAdd += amount;
+		_score += amount;
+		_scoreUI.UpdateUI(_score);
 	}
 
 	// ---------------------- Gold ----------------------

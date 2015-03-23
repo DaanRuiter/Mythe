@@ -1,133 +1,106 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MobyDick : MonoBehaviour
+public class MobyDick : MonoBehaviour 
 {
-    private float _blastTime;
-    [SerializeField]
-    private ParticleSystem _waterBlast;
+	private float _blastTime;
+	[SerializeField]
+	private ParticleSystem _waterBlast;
 
-    private Vector2 movement;
-    private PlayerController _player;
-    private AudioSource _sound;
-    public AudioClip[] soundEffects;
+	private Vector2 movement;
 
-    private float _x;
-    private float _y;
-    private float _timer;
+	private float _x;
+	private float _y;
+	private float _timer;
 
-    public bool despawning;
-    public float blastWidth;
-    private bool _negativeMovement;
+	public bool despawning;
+	private bool _negativeMovement;
 
-    void Start()
-    {
-        _timer = Random.Range(4, 8);
-        _player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
-        _sound = GetComponent<AudioSource>();
+	void Start () 
+	{
+		_timer = Random.Range(4, 8);
 
-        Invoke("Despawn", Random.Range(10, 15));
+		Invoke ("Despawn", Random.Range(10, 15));
 
-        _x = transform.position.x;
-        _y = transform.position.y;
+		_x = transform.position.x;
+		_y = transform.position.y;
 
-        _negativeMovement = false;
-        despawning = false;
-    }
+		_negativeMovement = false;
 
-    void FixedUpdate()
-    {
-        _timer -= Time.deltaTime;
+		despawning = false;
+	}
+	
+	void FixedUpdate () 
+	{
+		_timer -= Time.deltaTime;
 
-        if (_timer <= 0)
-        {
-            WaterBlast();
-        }
-        if (_waterBlast.isPlaying == false && despawning == false)
-        {
-            SteeringBehaviour();
-            _player.PushDown();
-        }
-        else
-        {
-            if(_waterBlast.isPlaying && !despawning)
-            {
-                if(IsPlayerAbove())
-                {
-                    _player.PushUp();
-                }
-            }
-        }
-        if (despawning == true)
-        {
-            Despawn();
-        }
-    }
+		if(_timer <= 0)
+		{
+			WaterBlast();
+		}
 
-    void SteeringBehaviour()
-    {
-        movement = new Vector2(_x, _y);
+		if(_waterBlast.isPlaying == false && despawning == false)
+		{
+			SteeringBehaviour();
+		}else if(despawning == true)
+		{
+			Despawn();
+		}
+	}
 
-        float borderX = 20f;
+	void SteeringBehaviour()
+	{
+		movement = new Vector2(_x, _y);
 
-        if (_x <= -borderX)
-        {
-            _negativeMovement = false;
-        }
-        else if (_x >= borderX)
-        {
-            _negativeMovement = true;
-        }
-        if (_negativeMovement)
-        {
-            _x -= 0.5f;
-        }
-        else if (!_negativeMovement)
-        {
-            _x += 0.5f;
-        }
+		float borderX = 30f;
 
-        transform.position = movement;
-    }
+		if(_x <= -borderX)
+		{
+			_negativeMovement = false;
+		}else if(_x >= borderX)
+		{
+			_negativeMovement = true;
+		}
+		if(_negativeMovement)
+		{
+			_x -= 0.5f;
+		}else if(!_negativeMovement)
+		{
+			_x += 0.5f;
+		}
 
-    void WaterBlast()
-    {
-        _waterBlast.Play();
-        IsPlayerAbove();
-        _timer = Random.Range(4, 8);
-        PlayRandomClip();
-    }
+		transform.position = movement;
+	}
 
-    bool IsPlayerAbove()
-    {
-        if (_player.transform.position.x <= (_waterBlast.transform.position.x + blastWidth) && _player.transform.position.x >= (_waterBlast.transform.position.x - blastWidth))
-        {
-            return true;
-        }
-        return false;
-    }
+	void WaterBlast()
+	{
+		_waterBlast.Play();
+		sendCollision();
+		_timer = Random.Range(4, 8);
+	}
 
-    public void Despawn()
-    {
-        movement = new Vector2(_x, _y);
+	void sendCollision()
+	{
+		Debug.DrawLine(new Vector2(this.transform.position.x + 10, this.transform.position.y), new Vector2(this.transform.position.x+10, this.transform.position.y +50) , Color.green, _waterBlast.duration);
 
-        despawning = true;
-        _waterBlast.Stop(true);
+		RaycastHit2D hit = Physics2D.Raycast(new Vector2(this.transform.position.x + 10, this.transform.position.y), new Vector2(this.transform.position.x+10, this.transform.position.y +50));
+	}
 
-        _y -= 0.2f;
+	public void Despawn()
+	{
+		movement = new Vector2(_x, _y);
 
-        if (_y <= -35)
-        {
-            Destroy(this.gameObject);
-        }
+		despawning = true;
+		_waterBlast.Stop(true);
 
-        transform.position = movement;
-    }
+		_y -= 0.2f;
 
-    private void PlayRandomClip()
-    {
-        int index = Random.Range(0, soundEffects.Length);
-        _sound.clip = soundEffects[index];
-        _sound.Play();
-    }
+		if(_y <= -35)
+		{
+			Destroy(this.gameObject);
+		}
+
+		transform.position = movement;
+	}
 }
+

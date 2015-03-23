@@ -17,6 +17,7 @@ public class TimeScript : MonoBehaviour {
 	{
 		_totalTime = 100;
 		_timeRemaining = _totalTime;
+
 		InvokeRepeating ("timeDown", 1f, 1f);
 	}
 	

@@ -9,19 +9,11 @@ public class TargetLocator : MonoBehaviour
 
     public GameObject transformA;
     public GameObject transformB;
-    public AudioClip[] soundEffects;
     public float bending = 0f;
     public float timeToTravel = 10.0f;
     public float directionSwithDistance;
 
     private GameObject _currentDestination;
-    private AudioSource _sound;
-    private bool _playSound;
-
-    private void Awake()
-    {
-        _sound = GetComponent<AudioSource>();
-    }
 
     private void Start()
     {
@@ -29,8 +21,6 @@ public class TargetLocator : MonoBehaviour
         StartCoroutine(MoveToPosition(transformA.transform.localPosition, transformB.transform.localPosition));
         //tell what target the gun should start with moving towards
         _currentDestination = transformB;
-        PlayRandomClip();
-        _playSound = true;
     }
 
     private void Update()
@@ -83,21 +73,5 @@ public class TargetLocator : MonoBehaviour
             StopAllCoroutines();
             StartCoroutine(MoveToPosition(transformB.transform.localPosition, transformA.transform.localPosition));
         }
-        if (_playSound)
-        {
-            PlayRandomClip();
-        }
-    }
-
-    private void PlayRandomClip()
-    {
-        int index = Random.Range(0, soundEffects.Length);
-        _sound.clip = soundEffects[index];
-        _sound.Play();
-    }
-
-    public void SetPlaySound(bool b)
-    {
-        _playSound = b;
     }
 }

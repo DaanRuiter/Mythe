@@ -6,51 +6,72 @@ public class PlayerController : MonoBehaviour {
     public float minimumMovemmentSpeed, maximumMovementSpeed;
 
     private Rigidbody2D r;
-    private SwipeMovement s;
+
+    private Vector2 firstPressPos;
+    private Vector2 secondPressPos;
+    private Vector2 currentSwipe;
+    private Vector2 currentSwipeNorm;
 
     private Vector2 forceVector;
-    private float nativeHeight;
 
     public ParticleSystem PSLeft;
     public ParticleSystem PSRight;
-    public HookShooter hs;
 
     public Swipezone movementZone;
-    public float blastMaxHeight;
-    public float blastSpeed;
-
-    [HideInInspector]
-    public bool active;
 
     private void Start()
     {
         r = GetComponent<Rigidbody2D>();
-        s = new SwipeMovement();
         forceVector = new Vector2(0, 0);
-        active = true;
-        nativeHeight = transform.position.y;
     }
 
     private void Update()
     {
-        if (movementZone.IsInArea() && active && transform.position.y == nativeHeight)
+        if (movementZone.IsInArea())
         {
-            s.RegisterSwipes();
-            Swipe swipe = s.GetSwipe();
-            if (swipe.direction == SwipeDirection.Right)
+            if (Input.GetMouseButtonDown(0))
             {
-                PSLeft.Emit(12);
-                forceVector.x = LimitForce(swipe.swipeLength);
-                r.AddForce(forceVector);
+                //save touch 2d point
+                firstPressPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
             }
-            if (swipe.direction == SwipeDirection.Left)
+            if (Input.GetMouseButtonUp(0))
             {
-                PSRight.Emit(12);
-                forceVector.x = -LimitForce(swipe.swipeLength);
-                r.AddForce(forceVector);
+                //save touch 2d point
+                secondPressPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+
+                //create a vector from the two points
+                currentSwipe = new Vector2(secondPressPos.x - firstPressPos.x, secondPressPos.y - firstPressPos.y);
+                currentSwipeNorm = currentSwipe;
+
+                //normalize the 2d vector
+                currentSwipeNorm.Normalize();
+
+                //swipe upwards
+                if (currentSwipeNorm.y > 0 && currentSwipeNorm.x > -0.5f && currentSwipeNorm.x < 0.5f)
+                {
+                    Debug.Log("up swipe");
+                }
+                //swipe down
+                if (currentSwipeNorm.y < 0 && currentSwipeNorm.x > -0.5f && currentSwipeNorm.x < 0.5f)
+                {
+                    Debug.Log("down swipe");
+                }
+                //swipe left
+                if (currentSwipeNorm.x < 0 && currentSwipeNorm.y > -0.5f && currentSwipeNorm.y < 0.5f)
+                {
+                    PSRight.Emit(12);
+                    forceVector.x = -LimitForce(currentSwipe.x);
+                    r.AddForce(forceVector);
+                }
+                //swipe right
+                if (currentSwipeNorm.x > 0 && currentSwipeNorm.y > -0.5f && currentSwipeNorm.y < 0.5f)
+                {
+                    PSLeft.Emit(12);
+                    forceVector.x = LimitForce(currentSwipe.x);
+                    r.AddForce(forceVector);
+                }
             }
         }
-        active = true;
     }
 
     private float LimitForce(float swipeForce)
@@ -67,35 +88,5 @@ public class PlayerController : MonoBehaviour {
             swipeForce = maximumMovementSpeed;
         }
         return swipeForce;
-    }
-
-    private Vector2 pushVelocity = new Vector2(0, 0);
-    public void PushUp()
-    {
-        if (transform.position.y < nativeHeight + blastMaxHeight)
-        {
-            pushVelocity.y = blastSpeed;
-            transform.Translate(pushVelocity);
-        }
-    }
-
-    public void PushDown()
-    {
-        if(transform.position.y > nativeHeight)
-        {
-            pushVelocity.y = -(blastSpeed * 2);
-            transform.Translate(pushVelocity);
-        }else if(
-            transform.position.y < nativeHeight)
-        {
-            pushVelocity.y = nativeHeight - transform.position.y;
-            transform.Translate(pushVelocity);
-        }
-    }
-
-    public void SetActive(bool state)
-    {
-        this.active = state;
-        hs.SetActive(state);
     }
 }

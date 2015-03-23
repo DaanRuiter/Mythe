@@ -8,7 +8,6 @@ public class HarpoonAimer : MonoBehaviour
     //daanruiter.net
 
     private GameObject _target;
-    private TargetLocator _targetScript;
 
     private bool _rotate;
 
@@ -16,7 +15,6 @@ public class HarpoonAimer : MonoBehaviour
     {
         //create some references
         _target = GameObject.FindGameObjectWithTag("TargetLocator");
-        _targetScript = _target.GetComponent<TargetLocator>();
         //initialize some variables
         _rotate = true;
     }
@@ -34,7 +32,6 @@ public class HarpoonAimer : MonoBehaviour
     {
         //allow the gun to continue rotating
         _rotate = true;
-        _targetScript.SetPlaySound(true);
     }
 
     public static Quaternion Lookat2D(Transform origin, Transform target)
@@ -47,6 +44,5 @@ public class HarpoonAimer : MonoBehaviour
     public void SetRotate(bool b)
     {
         _rotate = b;
-        _targetScript.SetPlaySound(b);
     }
 }
