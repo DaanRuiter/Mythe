@@ -20,6 +20,7 @@ public class TutorialManager : MonoBehaviour
 		tutorialPanel.SetActive(true);
 		nextTutorial(0);
 	}
+
 	void Update()
 	{
 		if(currentTutorial == 3)
