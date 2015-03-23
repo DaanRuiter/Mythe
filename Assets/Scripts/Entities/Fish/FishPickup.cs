@@ -27,11 +27,7 @@ public class FishPickup : Interactables
 	protected override void FixedUpdate()
 	{
 		base.FixedUpdate();
-<<<<<<< HEAD
-		
-=======
 
->>>>>>> origin/master
 		spawnCheck = Camera.main.GetComponent<MobyDickSpawner>().mobyHasSpawned;
 		despawnCheck = Camera.main.GetComponent<MobyDickSpawner>().mobyHasDespawned;
 
