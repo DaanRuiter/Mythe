@@ -9,22 +9,7 @@ public class Interactables : MonoBehaviour
 	protected float mathSpeed;
 
 	[SerializeField]
-	protected PickupType type;
-
-	[SerializeField]
-	protected PickupType secondaryType;
-
-	[SerializeField]
 	protected float mass;
-	
-	[SerializeField]
-	protected string objectName;
-
-	[SerializeField]
-	protected int points;
-
-	[SerializeField]
-	protected int secondaryPoints;
 
 	[SerializeField]
 	protected float speedMultiplier;
@@ -43,17 +28,7 @@ public class Interactables : MonoBehaviour
         basePosition = transform.position;
 	}
 
-    public PickupType GetPickupType()
-    {
-        return type;
-    }
-
-    public int GetPoints()
-    {
-        return points;
-    }
-
-	protected virtual void FixedUpdate()
+   	protected virtual void FixedUpdate()
 	{
 		speed = speedMultiplier;
 		mathSpeed += Time.deltaTime * speedMultiplier;
@@ -81,10 +56,3 @@ public class Interactables : MonoBehaviour
     }
 }
 
-public enum PickupType
-{
-	none,
-	fish,
-	gold,
-	trap
-}
