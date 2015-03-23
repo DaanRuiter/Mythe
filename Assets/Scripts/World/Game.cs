@@ -13,7 +13,7 @@ public class Game : MonoBehaviour {
         _resources = GameObject.FindGameObjectWithTag("Resources").GetComponent<Resources>();
     }
 
-    public void HandleInteractable(Interactables interactable)
+    public void HandleInteractable(PointsAndTypes interactable)
     {
         if(interactable.GetPickupType() == PickupType.gold)
         {
