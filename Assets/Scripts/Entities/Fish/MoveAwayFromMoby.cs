@@ -1,39 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FishPickup : Interactables
+public class MoveAwayFromMoby : FishPickup 
 {
-    protected float radiusX;
-    protected float radiusY;
-    protected float x;
-    protected float y;
-    protected float startScale;
-	
-    protected Vector2 scale;
-    protected Vector2 direction;
 
-	public bool spawnCheck;
-    public bool checkMoby;
-	public bool despawnCheck;
-
-	protected override void Start()
-	{
-		base.Start();
-
-		scale = new Vector2(transform.localScale.x, transform.localScale.y);
-
-		startScale = transform.localScale.x;
-
-	}
-
-	protected override void FixedUpdate()
+	protected override void FixedUpdate () 
 	{
 		base.FixedUpdate();
 
-        if(checkMoby)
-        {
-            spawnCheck = Camera.main.GetComponent<MobyDickSpawner>().mobyHasSpawned;
-        }
 		spawnCheck = Camera.main.GetComponent<MobyDickSpawner>().mobyHasSpawned;
 		despawnCheck = Camera.main.GetComponent<MobyDickSpawner>().mobyHasDespawned;
 		
@@ -51,7 +25,6 @@ public class FishPickup : Interactables
 			folowPattern = true;
 		}
 	}
-
 	void MoveAway()
 	{
 		if(transform.position.x <= 0 && transform.position.x >= -40f)

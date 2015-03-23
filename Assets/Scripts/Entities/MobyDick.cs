@@ -9,6 +9,8 @@ public class MobyDick : MonoBehaviour
 
     private Vector2 movement;
     private PlayerController _player;
+    private AudioSource _sound;
+    public AudioClip[] soundEffects;
 
     private float _x;
     private float _y;
@@ -22,6 +24,7 @@ public class MobyDick : MonoBehaviour
     {
         _timer = Random.Range(4, 8);
         _player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        _sound = GetComponent<AudioSource>();
 
         Invoke("Despawn", Random.Range(10, 15));
 
@@ -92,6 +95,7 @@ public class MobyDick : MonoBehaviour
         _waterBlast.Play();
         IsPlayerAbove();
         _timer = Random.Range(4, 8);
+        PlayRandomClip();
     }
 
     bool IsPlayerAbove()
@@ -118,5 +122,12 @@ public class MobyDick : MonoBehaviour
         }
 
         transform.position = movement;
+    }
+
+    private void PlayRandomClip()
+    {
+        int index = Random.Range(0, soundEffects.Length);
+        _sound.clip = soundEffects[index];
+        _sound.Play();
     }
 }

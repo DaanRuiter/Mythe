@@ -22,16 +22,12 @@ public class HarpoonController : MonoBehaviour
     public Swipezone swipeZone;
 
     private float _baseMovementSpeed;
-
     private Vector2 _target; 
     private Vector2 _startPosition;
-
     private MovementDirection _movementDirection;
     private GameObject _harpoonObject;
-
     private HarpoonAimer _harpoonAimer;
     private SpriteRenderer _sprite;
-
     private List<GameObject> _fishesOnHarpoon;
 
     private void Start()
