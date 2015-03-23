@@ -4,6 +4,7 @@ using System.Collections;
 public class MobyDick : MonoBehaviour 
 {
 	private float _blastTime;
+
 	[SerializeField]
 	private ParticleSystem _waterBlast;
 
@@ -15,6 +16,8 @@ public class MobyDick : MonoBehaviour
 
 	public bool despawning;
 	private bool _negativeMovement;
+
+
 
 	void Start () 
 	{

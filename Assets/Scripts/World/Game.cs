@@ -37,7 +37,7 @@ public class Game : MonoBehaviour {
         goldText.text = "" + gold;
     }
 
-    public void HandleInteractable(Interactables interactable)
+    public void HandleInteractable(PointsAndTypes interactable)
     {
         if(interactable.GetPickupType() == PickupType.gold)
         {

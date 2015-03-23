@@ -12,8 +12,8 @@ public class FishPickup : Interactables
     protected Vector2 scale;
     protected Vector2 direction;
 
-	public bool spawnCheck;
-	public bool despawnCheck;
+	private bool spawnCheck;
+	private bool despawnCheck;
 
 	protected override void Start()
 	{
@@ -77,10 +77,5 @@ public class FishPickup : Interactables
 		direction = new Vector2(x, 0);
 
 		transform.position += new Vector3(direction.x, direction.y, 0);
-	}
-
-    public int GetPointWorth()
-    {
-        return points;
 	}
 }
