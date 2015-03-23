@@ -75,15 +75,7 @@ public class MobyDick : MonoBehaviour
 	void WaterBlast()
 	{
 		_waterBlast.Play();
-		sendCollision();
 		_timer = Random.Range(4, 8);
-	}
-
-	void sendCollision()
-	{
-		Debug.DrawLine(new Vector2(this.transform.position.x + 10, this.transform.position.y), new Vector2(this.transform.position.x+10, this.transform.position.y +50) , Color.green, _waterBlast.duration);
-
-		RaycastHit2D hit = Physics2D.Raycast(new Vector2(this.transform.position.x + 10, this.transform.position.y), new Vector2(this.transform.position.x+10, this.transform.position.y +50));
 	}
 
 	public void Despawn()
