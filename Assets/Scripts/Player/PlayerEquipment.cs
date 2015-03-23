@@ -49,8 +49,8 @@ public class PlayerEquipment : MonoBehaviour {
 
         PlayerData save = new PlayerData();
 
-        save.gold = Game.instance.gold;
-        save.points = Game.instance.points;
+        //save.gold = Game.instance.gold;
+        //save.points = Game.instance.points;
         save.harpoon = _playerHarpoon;
         save.ship = _playerShip;
 
@@ -70,7 +70,7 @@ public class PlayerEquipment : MonoBehaviour {
             PlayerData save = (PlayerData)binaryFormatter.Deserialize(file);
             file.Close();
 
-            Game.instance.SetStats(save.gold, save.points);
+            //Game.instance.SetStats(save.gold, save.points);
             _playerHarpoon = save.harpoon;
             _playerShip = save.ship;
 
