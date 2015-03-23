@@ -28,8 +28,8 @@ public class FishPickup : Interactables
 	{
 		base.FixedUpdate();
 
-		spawnCheck = Camera.main.GetComponent<MobyDickSpawner>().mobyHasSpawned;
-		despawnCheck = Camera.main.GetComponent<MobyDickSpawner>().mobyHasDespawned;
+		//spawnCheck = Camera.main.GetComponent<MobyDickSpawner>().mobyHasSpawned;
+		//despawnCheck = Camera.main.GetComponent<MobyDickSpawner>().mobyHasDespawned;
 
 		if(spawnCheck == true)
 		{
