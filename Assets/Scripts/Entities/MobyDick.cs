@@ -12,11 +12,18 @@ public class MobyDick : MonoBehaviour
 	private float _scale;
 	private bool _negativeMovement;
 
+	private Vector2 _scaleVector;
+
+	private float _y;
+
+
 	public bool despawning;
 
 	void Start () 
 	{
 		_scale = transform.localScale.x;
+
+		_scaleVector = new Vector2(transform.localScale.x, transform.localScale.y);
 
 		_bezierTime = 0;
 
@@ -27,6 +34,8 @@ public class MobyDick : MonoBehaviour
 		_negativeMovement = false;
 
 		despawning = false;
+
+		_y = transform.position.y;
 	}
 	
 	void FixedUpdate () 
@@ -52,11 +61,11 @@ public class MobyDick : MonoBehaviour
 	void SteeringBehaviour()
 	{
 		float StartPointX = -40;
-		float StartPointY = -10;
+		float StartPointY = -25;
 		float ControlPointX = 10;
-		float ControlPointY = 30;
+		float ControlPointY = 10;
 		float EndPointX = 35;
-		float EndPointY = -10;
+		float EndPointY = -25;
 		float CurveX;
 		float CurveY;
 
@@ -70,10 +79,11 @@ public class MobyDick : MonoBehaviour
 
 		if(_negativeMovement == true)
 		{
-			_scale = -6;
+			_scaleVector.x = -_scale;
 			_bezierTime -= Time.deltaTime / 2;
 		}else if(_negativeMovement == false)
 		{
+			_scaleVector.x = _scale;
 			_bezierTime += Time.deltaTime / 2;
 		}
 		
@@ -81,7 +91,8 @@ public class MobyDick : MonoBehaviour
 		CurveY = (((1-_bezierTime)*(1-_bezierTime)) * StartPointY) + (2 * _bezierTime * (1 - _bezierTime) * ControlPointY) + ((_bezierTime * _bezierTime) * EndPointY);
 		transform.position = new Vector2(CurveX, CurveY);
 
-		Debug.Log(_bezierTime);
+		transform.localScale = _scaleVector;
+
 	}
 
 	void WaterBlast()
@@ -94,9 +105,7 @@ public class MobyDick : MonoBehaviour
 	public void Despawn()
 	{
 		despawning = true;
-
-		float _y = transform.position.y;
-
+		
 		_y -= 0.2f;
 
 		if(_y <= -35)
