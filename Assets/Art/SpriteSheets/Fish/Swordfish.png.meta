@@ -1,39 +1,39 @@
 fileFormatVersion: 2
-guid: a37fc435d216fca4f8c06d2b923973ee
-timeCreated: 1427210297
+guid: 4ca905ecd23e1f743bcff0f03c286dd6
+timeCreated: 1427211870
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Zeepaardje_0
-    21300002: Zeepaardje_1
-    21300004: Zeepaardje_2
-    21300006: Zeepaardje_3
-    21300008: Zeepaardje_4
-    21300010: Zeepaardje_5
-    21300012: Zeepaardje_6
-    21300014: Zeepaardje_7
-    21300016: Zeepaardje_8
-    21300018: Zeepaardje_9
-    21300020: Zeepaardje_10
-    21300022: Zeepaardje_11
-    21300024: Zeepaardje_12
-    21300026: Zeepaardje_13
-    21300028: Zeepaardje_14
-    21300030: Zeepaardje_15
-    21300032: Zeepaardje_16
-    21300034: Zeepaardje_17
-    21300036: Zeepaardje_18
-    21300038: Zeepaardje_19
-    21300040: Zeepaardje_20
-    21300042: Zeepaardje_21
-    21300044: Zeepaardje_22
-    21300046: Zeepaardje_23
-    21300048: Zeepaardje_24
-    21300050: Zeepaardje_25
-    21300052: Zeepaardje_26
-    21300054: Zeepaardje_27
-    21300056: Zeepaardje_28
-    21300058: Zeepaardje_29
+    21300000: Swordfish_0
+    21300002: Swordfish_1
+    21300004: Swordfish_2
+    21300006: Swordfish_3
+    21300008: Swordfish_4
+    21300010: Swordfish_5
+    21300012: Swordfish_6
+    21300014: Swordfish_7
+    21300016: Swordfish_8
+    21300018: Swordfish_9
+    21300020: Swordfish_10
+    21300022: Swordfish_11
+    21300024: Swordfish_12
+    21300026: Swordfish_13
+    21300028: Swordfish_14
+    21300030: Swordfish_15
+    21300032: Swordfish_16
+    21300034: Swordfish_17
+    21300036: Swordfish_18
+    21300038: Swordfish_19
+    21300040: Swordfish_20
+    21300042: Swordfish_21
+    21300044: Swordfish_22
+    21300046: Swordfish_23
+    21300048: Swordfish_24
+    21300050: Swordfish_25
+    21300052: Swordfish_26
+    21300054: Swordfish_27
+    21300056: Swordfish_28
+    21300058: Swordfish_29
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -79,303 +79,303 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Zeepaardje_0
+    - name: Swordfish_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1117
-        width: 132
-        height: 279
+        y: 402
+        width: 201
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_1
+    - name: Swordfish_1
       rect:
         serializedVersion: 2
-        x: 132
-        y: 1117
-        width: 132
-        height: 279
+        x: 201
+        y: 402
+        width: 201
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_2
+    - name: Swordfish_2
       rect:
         serializedVersion: 2
-        x: 264
-        y: 1117
-        width: 132
-        height: 279
+        x: 402
+        y: 402
+        width: 201
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_3
+    - name: Swordfish_3
       rect:
         serializedVersion: 2
-        x: 396
-        y: 1117
-        width: 132
-        height: 279
+        x: 603
+        y: 402
+        width: 201
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_4
+    - name: Swordfish_4
       rect:
         serializedVersion: 2
-        x: 528
-        y: 1117
-        width: 132
-        height: 279
+        x: 804
+        y: 402
+        width: 201
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_5
-      rect:
-        serializedVersion: 2
-        x: 660
-        y: 1117
-        width: 132
-        height: 279
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_6
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 1117
-        width: 132
-        height: 279
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_7
+    - name: Swordfish_5
       rect:
         serializedVersion: 2
         x: 0
-        y: 838
-        width: 132
-        height: 279
+        y: 327
+        width: 201
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_8
+    - name: Swordfish_6
       rect:
         serializedVersion: 2
-        x: 132
-        y: 838
-        width: 132
-        height: 279
+        x: 201
+        y: 327
+        width: 201
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_9
+    - name: Swordfish_7
       rect:
         serializedVersion: 2
-        x: 264
-        y: 838
-        width: 132
-        height: 279
+        x: 402
+        y: 327
+        width: 201
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_10
+    - name: Swordfish_8
       rect:
         serializedVersion: 2
-        x: 396
-        y: 838
-        width: 132
-        height: 279
+        x: 603
+        y: 327
+        width: 201
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_11
+    - name: Swordfish_9
       rect:
         serializedVersion: 2
-        x: 528
-        y: 838
-        width: 132
-        height: 279
+        x: 804
+        y: 327
+        width: 201
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_12
-      rect:
-        serializedVersion: 2
-        x: 660
-        y: 838
-        width: 132
-        height: 279
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_13
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 838
-        width: 132
-        height: 279
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_14
+    - name: Swordfish_10
       rect:
         serializedVersion: 2
         x: 0
-        y: 559
-        width: 132
-        height: 279
+        y: 252
+        width: 201
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_15
+    - name: Swordfish_11
       rect:
         serializedVersion: 2
-        x: 132
-        y: 559
-        width: 132
-        height: 279
+        x: 201
+        y: 252
+        width: 201
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_16
+    - name: Swordfish_12
       rect:
         serializedVersion: 2
-        x: 264
-        y: 559
-        width: 132
-        height: 279
+        x: 402
+        y: 252
+        width: 201
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_17
+    - name: Swordfish_13
       rect:
         serializedVersion: 2
-        x: 396
-        y: 559
-        width: 132
-        height: 279
+        x: 603
+        y: 252
+        width: 201
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_18
+    - name: Swordfish_14
       rect:
         serializedVersion: 2
-        x: 528
-        y: 559
-        width: 132
-        height: 279
+        x: 804
+        y: 252
+        width: 201
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_19
-      rect:
-        serializedVersion: 2
-        x: 660
-        y: 559
-        width: 132
-        height: 279
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_20
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 559
-        width: 132
-        height: 279
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_21
+    - name: Swordfish_15
       rect:
         serializedVersion: 2
         x: 0
-        y: 280
-        width: 132
-        height: 279
+        y: 177
+        width: 201
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_22
+    - name: Swordfish_16
       rect:
         serializedVersion: 2
-        x: 132
-        y: 280
-        width: 132
-        height: 279
+        x: 201
+        y: 177
+        width: 201
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_23
+    - name: Swordfish_17
       rect:
         serializedVersion: 2
-        x: 264
-        y: 280
-        width: 132
-        height: 279
+        x: 402
+        y: 177
+        width: 201
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_24
+    - name: Swordfish_18
       rect:
         serializedVersion: 2
-        x: 396
-        y: 280
-        width: 132
-        height: 279
+        x: 603
+        y: 177
+        width: 201
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_25
+    - name: Swordfish_19
       rect:
         serializedVersion: 2
-        x: 528
-        y: 280
-        width: 132
-        height: 279
+        x: 804
+        y: 177
+        width: 201
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_26
-      rect:
-        serializedVersion: 2
-        x: 660
-        y: 280
-        width: 132
-        height: 279
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_27
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 280
-        width: 132
-        height: 279
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_28
+    - name: Swordfish_20
       rect:
         serializedVersion: 2
         x: 0
-        y: 1
-        width: 132
-        height: 279
+        y: 102
+        width: 201
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_29
+    - name: Swordfish_21
       rect:
         serializedVersion: 2
-        x: 132
-        y: 1
-        width: 132
-        height: 279
+        x: 201
+        y: 102
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_22
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 102
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_23
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 102
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_24
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 102
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 27
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_26
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 27
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_27
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 27
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_28
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 27
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_29
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 27
+        width: 201
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

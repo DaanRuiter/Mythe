@@ -1,0 +1,837 @@
+fileFormatVersion: 2
+guid: 817b7ba3198e0ae4eba04219fa0c26bf
+timeCreated: 1427273937
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: moby_dick (3)_0
+    21300002: moby_dick (3)_1
+    21300004: moby_dick (3)_2
+    21300006: moby_dick (3)_3
+    21300008: moby_dick (3)_4
+    21300010: moby_dick (3)_5
+    21300012: moby_dick (3)_6
+    21300014: moby_dick (3)_7
+    21300016: moby_dick (3)_8
+    21300018: moby_dick (3)_9
+    21300020: moby_dick (3)_10
+    21300022: moby_dick (3)_11
+    21300024: moby_dick (3)_12
+    21300026: moby_dick (3)_13
+    21300028: moby_dick (3)_14
+    21300030: moby_dick (3)_15
+    21300032: moby_dick (3)_16
+    21300034: moby_dick (3)_17
+    21300036: moby_dick (3)_18
+    21300038: moby_dick (3)_19
+    21300040: moby_dick (3)_20
+    21300042: moby_dick (3)_21
+    21300044: moby_dick (3)_22
+    21300046: moby_dick (3)_23
+    21300048: moby_dick (3)_24
+    21300050: moby_dick (3)_25
+    21300052: moby_dick (3)_26
+    21300054: moby_dick (3)_27
+    21300056: moby_dick (3)_28
+    21300058: moby_dick (3)_29
+    21300060: moby_dick (3)_30
+    21300062: moby_dick (3)_31
+    21300064: moby_dick (3)_32
+    21300066: moby_dick (3)_33
+    21300068: moby_dick (3)_34
+    21300070: moby_dick (3)_35
+    21300072: moby_dick (3)_36
+    21300074: moby_dick (3)_37
+    21300076: moby_dick (3)_38
+    21300078: moby_dick (3)_39
+    21300080: moby_dick (3)_40
+    21300082: moby_dick (3)_41
+    21300084: moby_dick_0
+    21300086: moby_dick_1
+    21300088: moby_dick_2
+    21300090: moby_dick_3
+    21300092: moby_dick_4
+    21300094: moby_dick_5
+    21300096: moby_dick_6
+    21300098: moby_dick_7
+    21300100: moby_dick_8
+    21300102: moby_dick_9
+    21300104: moby_dick_10
+    21300106: moby_dick_11
+    21300108: moby_dick_12
+    21300110: moby_dick_13
+    21300112: moby_dick_14
+    21300114: moby_dick_15
+    21300116: moby_dick_16
+    21300118: moby_dick_17
+    21300120: moby_dick_18
+    21300122: moby_dick_19
+    21300124: moby_dick_20
+    21300126: moby_dick_21
+    21300128: moby_dick_22
+    21300130: moby_dick_23
+    21300132: moby_dick_24
+    21300134: moby_dick_25
+    21300136: moby_dick_26
+    21300138: moby_dick_27
+    21300140: moby_dick_28
+    21300142: moby_dick_29
+    21300144: moby_dick_30
+    21300146: moby_dick_31
+    21300148: moby_dick_32
+    21300150: moby_dick_33
+    21300152: moby_dick_34
+    21300154: moby_dick_35
+    21300156: moby_dick_36
+    21300158: moby_dick_37
+    21300160: moby_dick_38
+    21300162: moby_dick_39
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: moby_dick (3)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2576
+        width: 460
+        height: 424
+      alignment: 9
+      pivot: {x: .5, y: .289999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick (3)_1
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 2576
+        width: 460
+        height: 424
+      alignment: 9
+      pivot: {x: .5, y: .289999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick (3)_2
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 2576
+        width: 460
+        height: 424
+      alignment: 9
+      pivot: {x: .5, y: .289999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick (3)_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 2576
+        width: 460
+        height: 424
+      alignment: 9
+      pivot: {x: .5, y: .289999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick (3)_4
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 2576
+        width: 460
+        height: 424
+      alignment: 9
+      pivot: {x: .5, y: .289999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick (3)_5
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 2576
+        width: 460
+        height: 424
+      alignment: 9
+      pivot: {x: .5, y: .289999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick (3)_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2152
+        width: 460
+        height: 424
+      alignment: 9
+      pivot: {x: .5, y: .289999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick (3)_7
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 2152
+        width: 460
+        height: 424
+      alignment: 9
+      pivot: {x: .5, y: .289999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick (3)_8
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 2152
+        width: 460
+        height: 424
+      alignment: 9
+      pivot: {x: .5, y: .289999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick (3)_9
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 2152
+        width: 460
+        height: 424
+      alignment: 9
+      pivot: {x: .5, y: .289999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick (3)_10
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 2152
+        width: 460
+        height: 424
+      alignment: 9
+      pivot: {x: .5, y: .289999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick (3)_11
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 2152
+        width: 460
+        height: 424
+      alignment: 9
+      pivot: {x: .5, y: .289999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick (3)_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1728
+        width: 460
+        height: 424
+      alignment: 9
+      pivot: {x: .5, y: .289999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick (3)_13
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1728
+        width: 460
+        height: 424
+      alignment: 9
+      pivot: {x: .5, y: .289999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick (3)_14
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1728
+        width: 460
+        height: 424
+      alignment: 9
+      pivot: {x: .5, y: .289999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick (3)_15
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 1728
+        width: 460
+        height: 424
+      alignment: 9
+      pivot: {x: .5, y: .289999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick (3)_16
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 1728
+        width: 460
+        height: 424
+      alignment: 9
+      pivot: {x: .5, y: .289999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick (3)_17
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 1728
+        width: 460
+        height: 424
+      alignment: 9
+      pivot: {x: .5, y: .289999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick (3)_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1304
+        width: 460
+        height: 424
+      alignment: 9
+      pivot: {x: .5, y: .289999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick (3)_19
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1304
+        width: 460
+        height: 424
+      alignment: 9
+      pivot: {x: .5, y: .289999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick (3)_20
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1304
+        width: 460
+        height: 424
+      alignment: 9
+      pivot: {x: .5, y: .289999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick (3)_21
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 1304
+        width: 460
+        height: 424
+      alignment: 9
+      pivot: {x: .5, y: .289999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick (3)_22
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 1304
+        width: 460
+        height: 424
+      alignment: 9
+      pivot: {x: .5, y: .289999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick (3)_23
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 1304
+        width: 460
+        height: 424
+      alignment: 9
+      pivot: {x: .5, y: .289999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick (3)_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 880
+        width: 460
+        height: 424
+      alignment: 9
+      pivot: {x: .5, y: .289999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick (3)_25
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 880
+        width: 460
+        height: 424
+      alignment: 9
+      pivot: {x: .5, y: .289999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick (3)_26
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 880
+        width: 460
+        height: 424
+      alignment: 9
+      pivot: {x: .5, y: .289999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick (3)_27
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 880
+        width: 460
+        height: 424
+      alignment: 9
+      pivot: {x: .5, y: .289999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick (3)_28
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 880
+        width: 460
+        height: 424
+      alignment: 9
+      pivot: {x: .5, y: .289999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick (3)_29
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 880
+        width: 460
+        height: 424
+      alignment: 9
+      pivot: {x: .5, y: .289999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 762
+        width: 451
+        height: 118
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_1
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 765
+        width: 452
+        height: 115
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_2
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 768
+        width: 453
+        height: 112
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_3
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 768
+        width: 454
+        height: 112
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_4
+      rect:
+        serializedVersion: 2
+        x: 1829
+        y: 767
+        width: 455
+        height: 113
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_5
+      rect:
+        serializedVersion: 2
+        x: 2285
+        y: 765
+        width: 456
+        height: 115
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 642
+        width: 456
+        height: 114
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_7
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 643
+        width: 456
+        height: 113
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_8
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 645
+        width: 456
+        height: 111
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_9
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 646
+        width: 455
+        height: 110
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_10
+      rect:
+        serializedVersion: 2
+        x: 1829
+        y: 647
+        width: 455
+        height: 109
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_11
+      rect:
+        serializedVersion: 2
+        x: 2287
+        y: 646
+        width: 454
+        height: 110
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 520
+        width: 454
+        height: 112
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_13
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 518
+        width: 453
+        height: 114
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_14
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 517
+        width: 452
+        height: 115
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_15
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 516
+        width: 452
+        height: 116
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_16
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 515
+        width: 451
+        height: 117
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_17
+      rect:
+        serializedVersion: 2
+        x: 2290
+        y: 514
+        width: 451
+        height: 118
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_18
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 390
+        width: 451
+        height: 118
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_19
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 390
+        width: 451
+        height: 118
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_20
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 390
+        width: 451
+        height: 118
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_21
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 390
+        width: 452
+        height: 118
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_22
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 388
+        width: 452
+        height: 120
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_23
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 387
+        width: 453
+        height: 121
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_24
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 261
+        width: 453
+        height: 123
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_25
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 260
+        width: 454
+        height: 124
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_26
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 262
+        width: 454
+        height: 122
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_27
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 263
+        width: 455
+        height: 121
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_28
+      rect:
+        serializedVersion: 2
+        x: 1829
+        y: 264
+        width: 455
+        height: 120
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_29
+      rect:
+        serializedVersion: 2
+        x: 2285
+        y: 266
+        width: 456
+        height: 118
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_30
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 142
+        width: 455
+        height: 118
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_31
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 144
+        width: 455
+        height: 116
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_32
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 145
+        width: 454
+        height: 115
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_33
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 146
+        width: 453
+        height: 114
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_34
+      rect:
+        serializedVersion: 2
+        x: 1831
+        y: 147
+        width: 453
+        height: 113
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_35
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 146
+        width: 453
+        height: 114
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_36
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 20
+        width: 452
+        height: 116
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_37
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 20
+        width: 452
+        height: 116
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_38
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 19
+        width: 451
+        height: 117
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: moby_dick_39
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 18
+        width: 451
+        height: 118
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

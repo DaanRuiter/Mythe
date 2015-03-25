@@ -6,27 +6,23 @@ public class MobyDick : MonoBehaviour
 	private float _blastTime;
 
 	[SerializeField]
-	private ParticleSystem _waterBlast;
-
-	private Vector2 movement;
-
-	private float _x;
-	private float _y;
+	private Animator animations;
 	private float _timer;
-
-	public bool despawning;
+	private float _bezierTime;
+	private float _scale;
 	private bool _negativeMovement;
 
-
+	public bool despawning;
 
 	void Start () 
 	{
+		_scale = transform.localScale.x;
+
+		_bezierTime = 0;
+
 		_timer = Random.Range(4, 8);
 
-		Invoke ("Despawn", Random.Range(10, 15));
-
-		_x = transform.position.x;
-		_y = transform.position.y;
+		Invoke ("Despawn", Random.Range(14, 18));
 
 		_negativeMovement = false;
 
@@ -37,12 +33,14 @@ public class MobyDick : MonoBehaviour
 	{
 		_timer -= Time.deltaTime;
 
+		//SteeringBehaviour();
+
 		if(_timer <= 0)
 		{
 			WaterBlast();
 		}
 
-		if(_waterBlast.isPlaying == false && despawning == false)
+		if(despawning == false)
 		{
 			SteeringBehaviour();
 		}else if(despawning == true)
@@ -53,40 +51,51 @@ public class MobyDick : MonoBehaviour
 
 	void SteeringBehaviour()
 	{
-		movement = new Vector2(_x, _y);
+		float StartPointX = -40;
+		float StartPointY = -10;
+		float ControlPointX = 10;
+		float ControlPointY = 30;
+		float EndPointX = 35;
+		float EndPointY = -10;
+		float CurveX;
+		float CurveY;
 
-		float borderX = 30f;
-
-		if(_x <= -borderX)
-		{
-			_negativeMovement = false;
-		}else if(_x >= borderX)
+		if (_bezierTime >= 1)
 		{
 			_negativeMovement = true;
-		}
-		if(_negativeMovement)
+		}else if(_bezierTime <= 0)
 		{
-			_x -= 0.5f;
-		}else if(!_negativeMovement)
-		{
-			_x += 0.5f;
+			_negativeMovement = false;
 		}
 
-		transform.position = movement;
+		if(_negativeMovement == true)
+		{
+			_scale = -6;
+			_bezierTime -= Time.deltaTime / 2;
+		}else if(_negativeMovement == false)
+		{
+			_bezierTime += Time.deltaTime / 2;
+		}
+		
+		CurveX = (((1-_bezierTime)*(1-_bezierTime)) * StartPointX) + (2 * _bezierTime * (1 - _bezierTime) * ControlPointX) + ((_bezierTime * _bezierTime) * EndPointX);
+		CurveY = (((1-_bezierTime)*(1-_bezierTime)) * StartPointY) + (2 * _bezierTime * (1 - _bezierTime) * ControlPointY) + ((_bezierTime * _bezierTime) * EndPointY);
+		transform.position = new Vector2(CurveX, CurveY);
+
+		Debug.Log(_bezierTime);
 	}
 
 	void WaterBlast()
 	{
-		_waterBlast.Play();
 		_timer = Random.Range(4, 8);
+
+		animations.Play("TestMobyBlast");
 	}
 
 	public void Despawn()
 	{
-		movement = new Vector2(_x, _y);
-
 		despawning = true;
-		_waterBlast.Stop(true);
+
+		float _y = transform.position.y;
 
 		_y -= 0.2f;
 
@@ -94,8 +103,6 @@ public class MobyDick : MonoBehaviour
 		{
 			Destroy(this.gameObject);
 		}
-
-		transform.position = movement;
 	}
 }
 
