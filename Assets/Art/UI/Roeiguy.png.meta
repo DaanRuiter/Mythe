@@ -1,0 +1,275 @@
+fileFormatVersion: 2
+guid: 0d42682d7bd106c4990a05ce1954d49d
+timeCreated: 1427210329
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Roeiguy_0
+    21300002: Roeiguy_1
+    21300004: Roeiguy_2
+    21300006: Roeiguy_3
+    21300008: Roeiguy_4
+    21300010: Roeiguy_5
+    21300012: Roeiguy_6
+    21300014: Roeiguy_7
+    21300016: Roeiguy_8
+    21300018: Roeiguy_9
+    21300020: Roeiguy_10
+    21300022: Roeiguy_11
+    21300024: Roeiguy_12
+    21300026: Roeiguy_13
+    21300028: Roeiguy_14
+    21300030: Roeiguy_15
+    21300032: Roeiguy_16
+    21300034: Roeiguy_17
+    21300036: Roeiguy_18
+    21300038: Roeiguy_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Roeiguy_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 688
+        width: 250
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roeiguy_1
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 688
+        width: 250
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roeiguy_2
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 688
+        width: 250
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roeiguy_3
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 688
+        width: 250
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roeiguy_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 526
+        width: 250
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roeiguy_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 526
+        width: 250
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roeiguy_6
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 526
+        width: 250
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roeiguy_7
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 526
+        width: 250
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roeiguy_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 364
+        width: 250
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roeiguy_9
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 364
+        width: 250
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roeiguy_10
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 364
+        width: 250
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roeiguy_11
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 364
+        width: 250
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roeiguy_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 202
+        width: 250
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roeiguy_13
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 202
+        width: 250
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roeiguy_14
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 202
+        width: 250
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roeiguy_15
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 202
+        width: 250
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roeiguy_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 250
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roeiguy_17
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 40
+        width: 250
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roeiguy_18
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 40
+        width: 250
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Roeiguy_19
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 40
+        width: 250
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -17,11 +17,6 @@ public class HarpoonSwipe : MonoBehaviour {
         swipeMovement = new SwipeMovement();
     }
 
-    private void Start()
-    {
-
-    }
-
     private void Update()
     {
         if(swipezone.IsInArea() && hc.GetDirection() == MovementDirection.Up)
@@ -30,7 +25,6 @@ public class HarpoonSwipe : MonoBehaviour {
             Swipe swipe = swipeMovement.GetSwipe();
             if(swipe.direction == SwipeDirection.Up)
             {
-//                hc.AddVelocity(LimitForce(swipe.swipeLength));
                 particles.Emit(25);
             }
         }
