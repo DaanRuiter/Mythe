@@ -9,46 +9,61 @@ public class MobyDick : MonoBehaviour
 	private ParticleSystem _waterBlast;
 
 	private Vector2 movement;
+    private PlayerController _player;
 
 	private float _x;
 	private float _y;
 	private float _timer;
 
 	public bool despawning;
+    public bool despawn;
+    public float blastWidth;
 	private bool _negativeMovement;
-
-
 
 	void Start () 
 	{
-		_timer = Random.Range(4, 8);
+        _timer = Random.Range(4, 8);
+        _player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
 
-		Invoke ("Despawn", Random.Range(10, 15));
-
+        if (despawn)
+        {
+            Invoke("Despawn", Random.Range(10, 15));
+        }
 		_x = transform.position.x;
 		_y = transform.position.y;
-
+        
 		_negativeMovement = false;
 
-		despawning = false;
+        despawning = false;
 	}
 	
 	void FixedUpdate () 
 	{
 		_timer -= Time.deltaTime;
 
-		if(_timer <= 0)
-		{
-			WaterBlast();
-		}
-
-		if(_waterBlast.isPlaying == false && despawning == false)
-		{
-			SteeringBehaviour();
-		}else if(despawning == true)
-		{
-			Despawn();
-		}
+        if (_timer <= 0)
+        {
+            WaterBlast();
+        }
+        if (_waterBlast.isPlaying == false && despawning == false)
+        {
+            SteeringBehaviour();
+            _player.PushDown();
+        }
+        else
+        {
+            if(_waterBlast.isPlaying && !despawning)
+            {
+                if(IsPlayerAbove())
+                {
+                    _player.PushUp();
+                }
+            }
+        }
+        if (despawning == true)
+        {
+            Despawn();
+        }
 	}
 
 	void SteeringBehaviour()
@@ -74,13 +89,22 @@ public class MobyDick : MonoBehaviour
 
 		transform.position = movement;
 	}
+    
+    void WaterBlast()
+    {
+        _waterBlast.Play();
+        IsPlayerAbove();
+        _timer = Random.Range(4, 8);
+    }
 
-	void WaterBlast()
-	{
-		_waterBlast.Play();
-		_timer = Random.Range(4, 8);
-	}
-
+    bool IsPlayerAbove()
+    {
+        if (_player.transform.position.x <= (_waterBlast.transform.position.x + blastWidth) && _player.transform.position.x >= (_waterBlast.transform.position.x - blastWidth))
+        {
+            return true;
+        }
+        return false;
+    }
 	public void Despawn()
 	{
 		movement = new Vector2(_x, _y);

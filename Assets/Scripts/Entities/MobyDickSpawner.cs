@@ -40,6 +40,7 @@ public class MobyDickSpawner : MonoBehaviour
 		newMoby = Instantiate(prefabMoby, new Vector3(29, -15, 0), Quaternion.identity) as GameObject;
 		mobyHasSpawned = true;
 	}
+
 	void DespawnHim()
 	{
 		if(newMoby.GetComponent<MobyDick>().despawning == true)
