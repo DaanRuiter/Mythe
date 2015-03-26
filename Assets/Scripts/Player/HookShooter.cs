@@ -6,6 +6,8 @@ public class HookShooter : MonoBehaviour {
     //Daan Ruiter
     //daanruiter.net
 
+    public Animator playerAnim;
+
     private GameObject _harpoon;
     private GameObject _targetLocator;
 
@@ -44,6 +46,7 @@ public class HookShooter : MonoBehaviour {
             _harpoon.transform.rotation = HarpoonAimer.Lookat2D(_harpoon.transform, _targetLocator.transform);
             _harpoonController.ShootAt(_targetLocator.transform.position);
             _harpoonAimer.SetRotate(false);
+            playerAnim.SetTrigger("ThrowHarpoon");
         }
     }
 }

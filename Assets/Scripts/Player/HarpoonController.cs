@@ -19,6 +19,7 @@ public class HarpoonController : MonoBehaviour
     public float distanceForReset;
     public SpriteRenderer aimingArrow;
     public Swipezone swipeZone;
+    public Animator playerAnim;
 
     private float _baseMovementSpeed;
 
@@ -114,6 +115,7 @@ public class HarpoonController : MonoBehaviour
 
 
         }
+        playerAnim.SetTrigger("GrabHarpoon");
         _fishesOnHarpoon.Clear();
         _sprite.enabled = false;
         aimingArrow.enabled = true;
@@ -125,6 +127,7 @@ public class HarpoonController : MonoBehaviour
         {
             //change the direction & reverse the starting target en the aimer target
             _movementDirection = MovementDirection.Up;
+            playerAnim.SetTrigger("StartReeling");
         }
         else
         {

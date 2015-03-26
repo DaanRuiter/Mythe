@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 8737189d6b1ecba44af961cf0510a03b
-timeCreated: 1426607665
-licenseType: Free
+guid: cb99e7d338a13fe4f82b7dbac78f2d21
+timeCreated: 1427360850
+licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Speerwerpguy2_arm1_0
-    21300002: Speerwerpguy2_arm1_1
-    21300004: Speerwerpguy2_arm1_2
-    21300006: Speerwerpguy2_arm1_3
-    21300008: Speerwerpguy2_arm1_4
-    21300010: Speerwerpguy2_arm1_5
-    21300012: Speerwerpguy2_arm1_6
-    21300014: Speerwerpguy2_arm1_7
-    21300016: Speerwerpguy2_arm1_8
-    21300018: Speerwerpguy2_arm1_9
+    21300000: spear_throw_0
+    21300002: spear_throw_1
+    21300004: spear_throw_2
+    21300006: spear_throw_3
+    21300008: spear_throw_4
+    21300010: spear_throw_5
+    21300012: spear_throw_6
+    21300014: spear_throw_7
+    21300016: spear_throw_8
+    21300018: spear_throw_9
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -59,103 +59,103 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Speerwerpguy2_arm1_0
+    - name: spear_throw_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 90
-        width: 74
-        height: 160
+        y: 505
+        width: 160
+        height: 244
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Speerwerpguy2_arm1_1
+    - name: spear_throw_1
       rect:
         serializedVersion: 2
-        x: 74
-        y: 90
-        width: 74
-        height: 160
+        x: 190
+        y: 505
+        width: 158
+        height: 232
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Speerwerpguy2_arm1_2
+    - name: spear_throw_2
       rect:
         serializedVersion: 2
-        x: 148
-        y: 90
-        width: 74
-        height: 160
+        x: 403
+        y: 505
+        width: 129
+        height: 216
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Speerwerpguy2_arm1_3
+    - name: spear_throw_3
       rect:
         serializedVersion: 2
-        x: 222
-        y: 90
-        width: 74
-        height: 160
+        x: 581
+        y: 505
+        width: 129
+        height: 215
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Speerwerpguy2_arm1_4
+    - name: spear_throw_4
       rect:
         serializedVersion: 2
-        x: 296
-        y: 90
-        width: 74
-        height: 160
+        x: 47
+        y: 260
+        width: 130
+        height: 215
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Speerwerpguy2_arm1_5
+    - name: spear_throw_5
       rect:
         serializedVersion: 2
-        x: 370
-        y: 90
-        width: 74
-        height: 160
+        x: 225
+        y: 260
+        width: 130
+        height: 214
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Speerwerpguy2_arm1_6
+    - name: spear_throw_6
       rect:
         serializedVersion: 2
-        x: 444
-        y: 90
-        width: 74
-        height: 160
+        x: 403
+        y: 260
+        width: 131
+        height: 214
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Speerwerpguy2_arm1_7
+    - name: spear_throw_7
       rect:
         serializedVersion: 2
-        x: 518
-        y: 90
-        width: 74
-        height: 160
+        x: 581
+        y: 260
+        width: 130
+        height: 214
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Speerwerpguy2_arm1_8
+    - name: spear_throw_8
       rect:
         serializedVersion: 2
-        x: 592
-        y: 90
-        width: 74
-        height: 160
+        x: 47
+        y: 15
+        width: 130
+        height: 214
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Speerwerpguy2_arm1_9
+    - name: spear_throw_9
       rect:
         serializedVersion: 2
-        x: 666
-        y: 90
-        width: 74
-        height: 160
+        x: 225
+        y: 15
+        width: 131
+        height: 214
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
