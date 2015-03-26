@@ -6,7 +6,12 @@ public class displayUsernames : MonoBehaviour {
 
 	public Text text;
 
-	void Start () {
+	public void Start()
+	{
+		downloadHighScore();
+	}
+
+	public void downloadHighScore () {
 		string url = "http://16636.hosts.ma-cloud.nl/PHP/DisplayHighScore.php";
 		WWW www = new WWW(url);
 		StartCoroutine(WaitForRequest(www));
@@ -20,6 +25,5 @@ public class displayUsernames : MonoBehaviour {
 			text.text = www.text;
 			Debug.Log(www.text);
 		}
-		Debug.Log(www.error);
 	}
 }

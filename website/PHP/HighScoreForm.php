@@ -4,8 +4,12 @@
 	$username = $_REQUEST['username'];
 	$deviceId = $_REQUEST['deviceId'];
 	$score = $_REQUEST['score'];
-	$screenshot = $_REQUEST['fileToUpload'];
 		
+	if($username == null)
+	{
+		$username = "Default";	
+	}
+	
 	$sql = "INSERT INTO Users (Username, DeviceId, HighScore)
 	VALUES ('$username', '$deviceId', '$score')";
 
