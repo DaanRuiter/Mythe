@@ -1,0 +1,385 @@
+fileFormatVersion: 2
+guid: 4ca905ecd23e1f743bcff0f03c286dd6
+timeCreated: 1427211870
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Swordfish_0
+    21300002: Swordfish_1
+    21300004: Swordfish_2
+    21300006: Swordfish_3
+    21300008: Swordfish_4
+    21300010: Swordfish_5
+    21300012: Swordfish_6
+    21300014: Swordfish_7
+    21300016: Swordfish_8
+    21300018: Swordfish_9
+    21300020: Swordfish_10
+    21300022: Swordfish_11
+    21300024: Swordfish_12
+    21300026: Swordfish_13
+    21300028: Swordfish_14
+    21300030: Swordfish_15
+    21300032: Swordfish_16
+    21300034: Swordfish_17
+    21300036: Swordfish_18
+    21300038: Swordfish_19
+    21300040: Swordfish_20
+    21300042: Swordfish_21
+    21300044: Swordfish_22
+    21300046: Swordfish_23
+    21300048: Swordfish_24
+    21300050: Swordfish_25
+    21300052: Swordfish_26
+    21300054: Swordfish_27
+    21300056: Swordfish_28
+    21300058: Swordfish_29
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Swordfish_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 402
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_1
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 402
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_2
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 402
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_3
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 402
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_4
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 402
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 327
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_6
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 327
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_7
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 327
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_8
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 327
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_9
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 327
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 252
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_11
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 252
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_12
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 252
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_13
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 252
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_14
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 252
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 177
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_16
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 177
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_17
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 177
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_18
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 177
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_19
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 177
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 102
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_21
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 102
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_22
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 102
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_23
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 102
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_24
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 102
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 27
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_26
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 27
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_27
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 27
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_28
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 27
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Swordfish_29
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 27
+        width: 201
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

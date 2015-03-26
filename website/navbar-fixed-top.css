@@ -1,0 +1,15 @@
+body {
+  min-height: 100%;
+  padding-top: 70px;
+}
+
+.logo
+{
+	display:block;
+	margin:0 auto;
+}
+
+h1
+{
+	text-align: center
+}

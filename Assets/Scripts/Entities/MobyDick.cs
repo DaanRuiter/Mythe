@@ -1,125 +1,119 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MobyDick : MonoBehaviour 
+public class MobyDick : MonoBehaviour
 {
-	private float _blastTime;
+    private float _blastTime;
 
-	[SerializeField]
-	private ParticleSystem _waterBlast;
+    [SerializeField]
+    private Animator animations;
+    private float _timer;
+    private float _bezierTime;
+    private float _scale;
+    private bool _negativeMovement;
 
-	private Vector2 movement;
-    private PlayerController _player;
+    private Vector2 _scaleVector;
 
-	private float _x;
-	private float _y;
-	private float _timer;
+    private float _y;
 
-	public bool despawning;
-    public bool despawn;
-    public float blastWidth;
-	private bool _negativeMovement;
 
-	void Start () 
-	{
+    public bool despawning;
+
+    void Start()
+    {
+        _scale = transform.localScale.x;
+
+        _scaleVector = new Vector2(transform.localScale.x, transform.localScale.y);
+
+        _bezierTime = 0;
+
         _timer = Random.Range(4, 8);
-        _player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
 
-        if (despawn)
-        {
-            Invoke("Despawn", Random.Range(10, 15));
-        }
-		_x = transform.position.x;
-		_y = transform.position.y;
-        
-		_negativeMovement = false;
+        Invoke("Despawn", Random.Range(14, 18));
+
+        _negativeMovement = false;
 
         despawning = false;
-	}
-	
-	void FixedUpdate () 
-	{
-		_timer -= Time.deltaTime;
+
+        _y = transform.position.y;
+    }
+
+    void FixedUpdate()
+    {
+        _timer -= Time.deltaTime;
+
+        //SteeringBehaviour();
 
         if (_timer <= 0)
         {
             WaterBlast();
         }
-        if (_waterBlast.isPlaying == false && despawning == false)
+
+        if (despawning == false)
         {
             SteeringBehaviour();
-            _player.PushDown();
         }
-        else
-        {
-            if(_waterBlast.isPlaying && !despawning)
-            {
-                if(IsPlayerAbove())
-                {
-                    _player.PushUp();
-                }
-            }
-        }
-        if (despawning == true)
+        else if (despawning == true)
         {
             Despawn();
         }
-	}
+    }
 
-	void SteeringBehaviour()
-	{
-		movement = new Vector2(_x, _y);
+    void SteeringBehaviour()
+    {
+        float StartPointX = -40;
+        float StartPointY = -25;
+        float ControlPointX = 10;
+        float ControlPointY = 10;
+        float EndPointX = 35;
+        float EndPointY = -25;
+        float CurveX;
+        float CurveY;
 
-		float borderX = 30f;
+        if (_bezierTime >= 1)
+        {
+            _negativeMovement = true;
+        }
+        else if (_bezierTime <= 0)
+        {
+            _negativeMovement = false;
+        }
 
-		if(_x <= -borderX)
-		{
-			_negativeMovement = false;
-		}else if(_x >= borderX)
-		{
-			_negativeMovement = true;
-		}
-		if(_negativeMovement)
-		{
-			_x -= 0.5f;
-		}else if(!_negativeMovement)
-		{
-			_x += 0.5f;
-		}
+        if (_negativeMovement == true)
+        {
+            _scaleVector.x = -_scale;
+            _bezierTime -= Time.deltaTime / 2;
+        }
+        else if (_negativeMovement == false)
+        {
+            _scaleVector.x = _scale;
+            _bezierTime += Time.deltaTime / 2;
+        }
 
-		transform.position = movement;
-	}
-    
+        CurveX = (((1 - _bezierTime) * (1 - _bezierTime)) * StartPointX) + (2 * _bezierTime * (1 - _bezierTime) * ControlPointX) + ((_bezierTime * _bezierTime) * EndPointX);
+        CurveY = (((1 - _bezierTime) * (1 - _bezierTime)) * StartPointY) + (2 * _bezierTime * (1 - _bezierTime) * ControlPointY) + ((_bezierTime * _bezierTime) * EndPointY);
+        transform.position = new Vector2(CurveX, CurveY);
+
+        transform.localScale = _scaleVector;
+
+    }
+
     void WaterBlast()
     {
-        _waterBlast.Play();
-        IsPlayerAbove();
         _timer = Random.Range(4, 8);
+
+        animations.Play("TestMobyBlast");
     }
 
-    bool IsPlayerAbove()
+    public void Despawn()
     {
-        if (_player.transform.position.x <= (_waterBlast.transform.position.x + blastWidth) && _player.transform.position.x >= (_waterBlast.transform.position.x - blastWidth))
+        despawning = true;
+
+        _y -= 0.2f;
+
+        if (_y <= -35)
         {
-            return true;
+            Destroy(this.gameObject);
         }
-        return false;
     }
-	public void Despawn()
-	{
-		movement = new Vector2(_x, _y);
-
-		despawning = true;
-		_waterBlast.Stop(true);
-
-		_y -= 0.2f;
-
-		if(_y <= -35)
-		{
-			Destroy(this.gameObject);
-		}
-
-		transform.position = movement;
-	}
 }
-

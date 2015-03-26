@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 91d146b7b111bc84997405be69cf32f9
-timeCreated: 1426240963
+guid: a37fc435d216fca4f8c06d2b923973ee
+timeCreated: 1427210297
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -34,25 +34,6 @@ TextureImporter:
     21300054: Zeepaardje_27
     21300056: Zeepaardje_28
     21300058: Zeepaardje_29
-    21300060: Zeepaardje_30
-    21300062: Zeepaardje_31
-    21300064: Zeepaardje_32
-    21300066: Zeepaardje_33
-    21300068: Zeepaardje_34
-    21300070: Zeepaardje_35
-    21300072: Zeepaardje_36
-    21300074: Zeepaardje_37
-    21300076: Zeepaardje_38
-    21300078: Zeepaardje_39
-    21300080: Zeepaardje_40
-    21300082: Zeepaardje_41
-    21300084: Zeepaardje_42
-    21300086: Zeepaardje_43
-    21300088: Zeepaardje_44
-    21300090: Zeepaardje_45
-    21300092: Zeepaardje_46
-    21300094: Zeepaardje_47
-    21300096: Zeepaardje_48
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -102,7 +83,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1699
+        y: 1117
         width: 132
         height: 279
       alignment: 0
@@ -111,150 +92,150 @@ TextureImporter:
     - name: Zeepaardje_1
       rect:
         serializedVersion: 2
-        x: 133
-        y: 1701
-        width: 131
-        height: 277
+        x: 132
+        y: 1117
+        width: 132
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zeepaardje_2
       rect:
         serializedVersion: 2
-        x: 266
-        y: 1702
-        width: 130
-        height: 276
+        x: 264
+        y: 1117
+        width: 132
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zeepaardje_3
       rect:
         serializedVersion: 2
-        x: 399
-        y: 1703
-        width: 129
-        height: 275
+        x: 396
+        y: 1117
+        width: 132
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zeepaardje_4
       rect:
         serializedVersion: 2
-        x: 531
-        y: 1705
-        width: 129
-        height: 273
+        x: 528
+        y: 1117
+        width: 132
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zeepaardje_5
       rect:
         serializedVersion: 2
-        x: 664
-        y: 1706
-        width: 128
-        height: 272
+        x: 660
+        y: 1117
+        width: 132
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zeepaardje_6
       rect:
         serializedVersion: 2
-        x: 797
-        y: 1707
-        width: 127
-        height: 271
+        x: 792
+        y: 1117
+        width: 132
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zeepaardje_7
       rect:
         serializedVersion: 2
-        x: 6
-        y: 1430
-        width: 126
-        height: 269
+        x: 0
+        y: 838
+        width: 132
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zeepaardje_8
       rect:
         serializedVersion: 2
-        x: 139
-        y: 1431
-        width: 125
-        height: 268
+        x: 132
+        y: 838
+        width: 132
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zeepaardje_9
       rect:
         serializedVersion: 2
-        x: 270
-        y: 1430
-        width: 126
-        height: 269
+        x: 264
+        y: 838
+        width: 132
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zeepaardje_10
       rect:
         serializedVersion: 2
-        x: 401
-        y: 1428
-        width: 127
-        height: 271
+        x: 396
+        y: 838
+        width: 132
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zeepaardje_11
       rect:
         serializedVersion: 2
-        x: 532
-        y: 1427
-        width: 128
-        height: 272
+        x: 528
+        y: 838
+        width: 132
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zeepaardje_12
       rect:
         serializedVersion: 2
-        x: 663
-        y: 1426
-        width: 129
-        height: 273
+        x: 660
+        y: 838
+        width: 132
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zeepaardje_13
       rect:
         serializedVersion: 2
-        x: 794
-        y: 1425
-        width: 130
-        height: 274
+        x: 792
+        y: 838
+        width: 132
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zeepaardje_14
       rect:
         serializedVersion: 2
-        x: 2
-        y: 1144
-        width: 130
-        height: 276
+        x: 0
+        y: 559
+        width: 132
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zeepaardje_15
       rect:
         serializedVersion: 2
-        x: 133
-        y: 1143
-        width: 131
-        height: 277
+        x: 132
+        y: 559
+        width: 132
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -262,7 +243,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 264
-        y: 1141
+        y: 559
         width: 132
         height: 279
       alignment: 0
@@ -271,318 +252,128 @@ TextureImporter:
     - name: Zeepaardje_17
       rect:
         serializedVersion: 2
-        x: 397
-        y: 1143
-        width: 131
-        height: 277
+        x: 396
+        y: 559
+        width: 132
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zeepaardje_18
       rect:
         serializedVersion: 2
-        x: 530
-        y: 1144
-        width: 130
-        height: 276
+        x: 528
+        y: 559
+        width: 132
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zeepaardje_19
       rect:
         serializedVersion: 2
-        x: 663
-        y: 1145
-        width: 129
-        height: 275
+        x: 660
+        y: 559
+        width: 132
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zeepaardje_20
       rect:
         serializedVersion: 2
-        x: 795
-        y: 1147
-        width: 129
-        height: 273
+        x: 792
+        y: 559
+        width: 132
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zeepaardje_21
       rect:
         serializedVersion: 2
-        x: 4
-        y: 869
-        width: 128
-        height: 272
+        x: 0
+        y: 280
+        width: 132
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zeepaardje_22
       rect:
         serializedVersion: 2
-        x: 137
-        y: 870
-        width: 127
-        height: 271
+        x: 132
+        y: 280
+        width: 132
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zeepaardje_23
       rect:
         serializedVersion: 2
-        x: 270
-        y: 872
-        width: 126
-        height: 269
+        x: 264
+        y: 280
+        width: 132
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zeepaardje_24
       rect:
         serializedVersion: 2
-        x: 403
-        y: 873
-        width: 125
-        height: 268
+        x: 396
+        y: 280
+        width: 132
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zeepaardje_25
       rect:
         serializedVersion: 2
-        x: 534
-        y: 872
-        width: 126
-        height: 269
+        x: 528
+        y: 280
+        width: 132
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zeepaardje_26
       rect:
         serializedVersion: 2
-        x: 665
-        y: 870
-        width: 127
-        height: 271
+        x: 660
+        y: 280
+        width: 132
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zeepaardje_27
       rect:
         serializedVersion: 2
-        x: 796
-        y: 869
-        width: 128
-        height: 272
+        x: 792
+        y: 280
+        width: 132
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zeepaardje_28
       rect:
         serializedVersion: 2
-        x: 3
-        y: 589
-        width: 129
-        height: 273
+        x: 0
+        y: 1
+        width: 132
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Zeepaardje_29
       rect:
         serializedVersion: 2
-        x: 134
-        y: 588
-        width: 130
-        height: 274
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_30
-      rect:
-        serializedVersion: 2
-        x: 266
-        y: 586
-        width: 130
-        height: 276
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_31
-      rect:
-        serializedVersion: 2
-        x: 397
-        y: 585
-        width: 131
-        height: 277
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_32
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 583
-        width: 132
-        height: 279
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_33
-      rect:
-        serializedVersion: 2
-        x: 661
-        y: 585
-        width: 131
-        height: 277
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_34
-      rect:
-        serializedVersion: 2
-        x: 794
-        y: 586
-        width: 130
-        height: 276
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_35
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 308
-        width: 129
-        height: 275
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_36
-      rect:
-        serializedVersion: 2
-        x: 135
-        y: 310
-        width: 129
-        height: 273
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_37
-      rect:
-        serializedVersion: 2
-        x: 268
-        y: 311
-        width: 128
-        height: 272
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_38
-      rect:
-        serializedVersion: 2
-        x: 401
-        y: 312
-        width: 127
-        height: 271
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_39
-      rect:
-        serializedVersion: 2
-        x: 534
-        y: 314
-        width: 126
-        height: 269
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_40
-      rect:
-        serializedVersion: 2
-        x: 667
-        y: 315
-        width: 125
-        height: 268
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_41
-      rect:
-        serializedVersion: 2
-        x: 798
-        y: 314
-        width: 126
-        height: 269
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_42
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 33
-        width: 127
-        height: 271
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_43
-      rect:
-        serializedVersion: 2
-        x: 136
-        y: 32
-        width: 128
-        height: 272
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_44
-      rect:
-        serializedVersion: 2
-        x: 267
-        y: 31
-        width: 129
-        height: 273
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_45
-      rect:
-        serializedVersion: 2
-        x: 398
-        y: 30
-        width: 130
-        height: 274
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_46
-      rect:
-        serializedVersion: 2
-        x: 530
-        y: 28
-        width: 130
-        height: 276
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_47
-      rect:
-        serializedVersion: 2
-        x: 661
-        y: 27
-        width: 131
-        height: 277
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Zeepaardje_48
-      rect:
-        serializedVersion: 2
-        x: 792
-        y: 25
+        x: 132
+        y: 1
         width: 132
         height: 279
       alignment: 0
