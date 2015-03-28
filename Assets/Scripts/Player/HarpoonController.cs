@@ -110,10 +110,8 @@ public class HarpoonController : MonoBehaviour
         //collect all the interactables the harpoon has collected
         for (int i = 0; i < _fishesOnHarpoon.Count; i++)
         {
-			Destroy(_fishesOnHarpoon[i]);
             Game.instance.HandleInteractable(_fishesOnHarpoon[i].GetComponent<PointsAndTypes>());
-
-
+			Destroy(_fishesOnHarpoon[i]);
         }
         playerAnim.SetTrigger("GrabHarpoon");
         _fishesOnHarpoon.Clear();

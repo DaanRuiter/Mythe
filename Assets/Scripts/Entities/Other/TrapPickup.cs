@@ -17,6 +17,8 @@ public class TrapPickup : MonoBehaviour
 
 	[SerializeField]
 	private ParticleSystem _explosionEffect;
+	[SerializeField]
+	private Material[] _exlosionMaterials;
 
 	void Start () 
 	{
