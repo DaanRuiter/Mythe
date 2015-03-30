@@ -15,6 +15,8 @@ public class Game : MonoBehaviour {
     public int points;
     public int gold;
 
+    public GameObject gameOverScreen;
+
     private void Awake()
     {
         instance = this;

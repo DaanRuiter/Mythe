@@ -6,12 +6,12 @@ public class Stats : MonoBehaviour {
     public static Stats instance;
 
 	public int highScore;
-	public int level;
+    public int level;
 
 	void Awake()
-	{
-		DontDestroyOnLoad(gameObject);
+    {
         instance = this;
+		DontDestroyOnLoad(gameObject);
 
 		//Haal hier alle waarden uit de save game op.
 
@@ -49,5 +49,7 @@ public class Stats : MonoBehaviour {
 		{
 			PlayerPrefs.SetInt("Level", Application.loadedLevel + 1);
 		}
+
+        Game.instance.gameOverScreen.SetActive(true);
 	}
 }
