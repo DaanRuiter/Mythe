@@ -11,14 +11,14 @@ public class TrapPickup : MonoBehaviour
 
 	[SerializeField]
 	private Collider2D[] _explodables;
-
 	[SerializeField]
 	private LayerMask _interactableLayer;
-
 	[SerializeField]
 	private ParticleSystem _explosionEffect;
 	[SerializeField]
 	private Material[] _exlosionMaterials;
+	[SerializeField]
+	private AudioClip _explosionSound;
 
 	void Start () 
 	{
@@ -30,6 +30,8 @@ public class TrapPickup : MonoBehaviour
 	
 	public void Explode () 
 	{
+		GetComponent<AudioSource>().PlayOneShot(_explosionSound);
+		//this.GetComponent<AudioSource>().PlayOneShot(_explosionSound);
 		_explodables = Physics2D.OverlapCircleAll(_origin, _bombRadius, _interactableLayer);
 
 		foreach (Collider2D cols in _explodables) 
