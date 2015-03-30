@@ -30,7 +30,7 @@ public class TrapPickup : MonoBehaviour
 		_bombRadius = 10;
 	}
 	
-	private void Explode () 
+	public void Explode () 
 	{
 		_explodables = Physics2D.OverlapCircleAll(_origin, _bombRadius, _interactableLayer);
 
@@ -39,7 +39,7 @@ public class TrapPickup : MonoBehaviour
 			Destroy(cols.gameObject);
 		}
 		_explosionEffect.Play();
-
+        GetComponent<SpriteRenderer>().enabled = false;
 
 		Destroy(this.gameObject, 1);
 	}

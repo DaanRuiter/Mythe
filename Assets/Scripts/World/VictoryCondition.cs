@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class VictoryCondition : MonoBehaviour {
@@ -6,6 +7,7 @@ public class VictoryCondition : MonoBehaviour {
     private int fishPointsNeeded;
     private int currentFishPoints;
 
+    public Text pointsNeededText;
     public int percentageOfTotalNeeded;
     public bool useCustomAmount;
     public int customFishpointsNeeded;
@@ -19,16 +21,16 @@ public class VictoryCondition : MonoBehaviour {
             {
                 fishPointsNeeded += fish[i].GetComponent<PointsAndTypes>().GetPoints();
             }
-            print(fishPointsNeeded);
             float pointsNeeded = (float)fishPointsNeeded / 100;
-            print(pointsNeeded);
             fishPointsNeeded = (int)(pointsNeeded * (float) percentageOfTotalNeeded);
-            print(fishPointsNeeded);
         }
         else
         {
             fishPointsNeeded = customFishpointsNeeded;
         }
+        print(fishPointsNeeded);
+        pointsNeededText.text = "" + fishPointsNeeded;
+        print(pointsNeededText.text);
     }
 
     public void AddFishPoints(int pointsToAdd)

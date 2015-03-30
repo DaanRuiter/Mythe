@@ -58,8 +58,19 @@ public class HarpoonController : MonoBehaviour
             if (_movementDirection == MovementDirection.Down)
             {
                 SwitchDirection();
-                col.GetComponent<Interactables>().PickUp(transform);
-                _fishesOnHarpoon.Add(col.gameObject);
+                if (col.GetComponent<TrapPickup>())
+                {
+                    col.GetComponent<TrapPickup>().Explode();
+                }
+                else
+                {
+                    col.GetComponent<Interactables>().PickUp(transform);
+                }
+
+                if (col.GetComponent<PointsAndTypes>())
+                {
+                    _fishesOnHarpoon.Add(col.gameObject);
+                }
             }
         }
     }
@@ -110,7 +121,7 @@ public class HarpoonController : MonoBehaviour
         //collect all the interactables the harpoon has collected
         for (int i = 0; i < _fishesOnHarpoon.Count; i++)
         {
-            Game.instance.HandleInteractable(_fishesOnHarpoon[i].GetComponent<PointsAndTypes>());
+                Game.instance.HandleInteractable(_fishesOnHarpoon[i].GetComponent<PointsAndTypes>());
 			Destroy(_fishesOnHarpoon[i]);
         }
         playerAnim.SetTrigger("GrabHarpoon");
