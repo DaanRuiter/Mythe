@@ -23,8 +23,6 @@ public class TrapPickup : MonoBehaviour
 	void Start () 
 	{
 		_hasBeenHit = false;
-
-		Invoke("Explode", 20);
 		
 		_origin = new Vector2(transform.position.x, transform.position.y);
 		_bombRadius = 10;
