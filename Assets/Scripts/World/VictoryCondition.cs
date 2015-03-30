@@ -28,9 +28,7 @@ public class VictoryCondition : MonoBehaviour {
         {
             fishPointsNeeded = customFishpointsNeeded;
         }
-        print(fishPointsNeeded);
         pointsNeededText.text = "" + fishPointsNeeded;
-        print(pointsNeededText.text);
     }
 
     public void AddFishPoints(int pointsToAdd)

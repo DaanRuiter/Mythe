@@ -8,10 +8,10 @@ public class GameOver : MonoBehaviour {
 	public Button retry;
 	public Text text;
 
-	void Update()
-	{
-		Debug.Log(Application.loadedLevel);
-	}
+	private void OnEnable()
+    {
+        Time.timeScale = 0;
+    }
 
 	public void endScreen(bool win)
 	{

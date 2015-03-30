@@ -3,12 +3,15 @@ using System.Collections;
 
 public class Stats : MonoBehaviour {
 
+    public static Stats instance;
+
 	public int highScore;
 	public int level;
 
 	void Awake()
 	{
 		DontDestroyOnLoad(gameObject);
+        instance = this;
 
 		//Haal hier alle waarden uit de save game op.
 
@@ -36,15 +39,15 @@ public class Stats : MonoBehaviour {
 
 	}
 
-	public void FinishLevel(int score, int currentLevel)
+	public void FinishLevel(int score)
 	{
 		highScore = PlayerPrefs.GetInt("Score");
 
 		PlayerPrefs.SetInt("Score", score + highScore);
 
-		if(PlayerPrefs.GetInt("highestLevel") <= currentLevel)
+		if(PlayerPrefs.GetInt("highestLevel") <= Application.loadedLevel)
 		{
-			PlayerPrefs.SetInt("Level", currentLevel);
+			PlayerPrefs.SetInt("Level", Application.loadedLevel + 1);
 		}
 	}
 }
