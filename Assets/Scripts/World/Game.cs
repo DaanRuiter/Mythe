@@ -2,9 +2,12 @@
 using UnityEngine.UI;
 using System.Collections;
 
+[RequireComponent(typeof(VictoryCondition))]
 public class Game : MonoBehaviour {
 
     public static Game instance;
+
+    private VictoryCondition _victoryCondidtion;
 
     public Text pointText;
     public Text goldText;
@@ -15,10 +18,12 @@ public class Game : MonoBehaviour {
     private void Awake()
     {
         instance = this;
+        _victoryCondidtion = GetComponent<VictoryCondition>();
     }
 
     public void AddScore(int pointsToAdd)
     {
+        _victoryCondidtion.AddFishPoints(pointsToAdd);
         points += pointsToAdd;
         pointText.text = "" + points;
     }

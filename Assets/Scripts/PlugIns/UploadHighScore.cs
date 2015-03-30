@@ -5,7 +5,14 @@ using UnityEngine.UI;
 public class UploadHighScore : MonoBehaviour {
 
 	public InputField Username;
-	private int Score = 10;
+	public Text text;
+	private int Score;
+
+	void Start()
+	{
+		Score = PlayerPrefs.GetInt("Score");
+		text.text = Score.ToString();
+	}
 
 	public void UploadScore()
 	{

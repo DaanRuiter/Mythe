@@ -49,9 +49,12 @@ public class Interactables : MonoBehaviour
 
 	}
 
-    public void PickUp(Transform newParent)
+    public void PickUp(Transform newParent = null)
     {
-        transform.parent = newParent;
-        hasBeenHooked = true;
+        if(newParent != null)
+        {
+            transform.parent = newParent;
+            hasBeenHooked = true;
+        }
     }
 }
