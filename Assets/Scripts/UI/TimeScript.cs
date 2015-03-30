@@ -6,7 +6,6 @@ public class TimeScript : MonoBehaviour {
 
 	private float _timeRemaining;
 	public float _totalTime; 
-	//private Slider slider;
 
 	void Awake () 
 	{
@@ -26,8 +25,6 @@ public class TimeScript : MonoBehaviour {
 		{
 			//Gaat naar een ander level. bijvoorbeeld shop/deadscreen.
 			CancelInvoke();
-			Application.LoadLevel("Menu");
-			Debug.Log("Died");
 		}
 		else
 		{

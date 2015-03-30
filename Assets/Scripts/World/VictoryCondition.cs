@@ -28,9 +28,7 @@ public class VictoryCondition : MonoBehaviour {
         {
             fishPointsNeeded = customFishpointsNeeded;
         }
-        print(fishPointsNeeded);
         pointsNeededText.text = "" + fishPointsNeeded;
-        print(pointsNeededText.text);
     }
 
     public void AddFishPoints(int pointsToAdd)
@@ -38,7 +36,8 @@ public class VictoryCondition : MonoBehaviour {
         currentFishPoints += pointsToAdd;
         if (hasWon)
         {
-            //the player won the game.
+            Game.instance.gameOverScreen.GetComponent<GameOver>().endScreen(hasWon);
+            Stats.instance.FinishLevel(Game.instance.points);
         }
     }
 
