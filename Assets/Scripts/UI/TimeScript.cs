@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class TimeScript : MonoBehaviour {
 
 	private float _timeRemaining;
-	private float _totalTime; 
+	public float _totalTime; 
 	//private Slider slider;
 
 	void Awake () 
@@ -15,7 +15,6 @@ public class TimeScript : MonoBehaviour {
 
 	public void startGame()
 	{
-		_totalTime = 100;
 		_timeRemaining = _totalTime;
 
 		InvokeRepeating ("timeDown", 1f, 1f);
