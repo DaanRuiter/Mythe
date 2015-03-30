@@ -36,6 +36,7 @@ public class VictoryCondition : MonoBehaviour {
         currentFishPoints += pointsToAdd;
         if (hasWon)
         {
+            Game.instance.gameOverScreen.GetComponent<GameOver>().endScreen(hasWon);
             Stats.instance.FinishLevel(Game.instance.points);
         }
     }

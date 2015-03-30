@@ -13,6 +13,8 @@ public class Stats : MonoBehaviour {
         instance = this;
 		DontDestroyOnLoad(gameObject);
 
+        print(PlayerPrefs.GetInt("Level"));
+
 		//Haal hier alle waarden uit de save game op.
 
 		if(PlayerPrefs.HasKey("highScore"))
@@ -35,7 +37,8 @@ public class Stats : MonoBehaviour {
 		{
 			PlayerPrefs.SetInt("Level", 1);
 			print("Loaded score");
-		}
+        }
+        PlayerPrefs.Save();
 
 	}
 
@@ -44,11 +47,6 @@ public class Stats : MonoBehaviour {
 		highScore = PlayerPrefs.GetInt("Score");
 
 		PlayerPrefs.SetInt("Score", score + highScore);
-
-		if(PlayerPrefs.GetInt("highestLevel") <= Application.loadedLevel)
-		{
-			PlayerPrefs.SetInt("Level", Application.loadedLevel + 1);
-		}
 
         Game.instance.gameOverScreen.SetActive(true);
 	}

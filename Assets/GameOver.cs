@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour {
 
-	public Button head;
+	public Image head;
 	public Button retry;
 	public Text text;
 
@@ -19,12 +19,11 @@ public class GameOver : MonoBehaviour {
 		text.text = PlayerPrefs.GetInt("Score").ToString();
 		if (win = true)
 		{
-			head.image.overrideSprite = UnityEngine.Resources.Load<Sprite>("Clear");
-			//retry.image.overrideSprite = UnityEngine.Resources.Load<Sprite>("Next");
-		}
-		else
-		{
+			head.overrideSprite = UnityEngine.Resources.Load<Sprite>("Clear");
+            //retry.image.overrideSprite = UnityEngine.Resources.Load<Sprite>("Next");
 
+            PlayerPrefs.SetInt("highestLevel", PlayerPrefs.GetInt("highestLevel") + 1);
+            PlayerPrefs.Save();
 		}
 	}
 
@@ -37,7 +36,7 @@ public class GameOver : MonoBehaviour {
 	public void nextLevel()
 	{
 		Time.timeScale = 1;
-		if(head.image.overrideSprite == UnityEngine.Resources.Load<Sprite>("Clear"))
+		if(head.overrideSprite == UnityEngine.Resources.Load<Sprite>("Clear"))
 		{
 			Application.LoadLevel(Application.loadedLevel + 1);
 		}
