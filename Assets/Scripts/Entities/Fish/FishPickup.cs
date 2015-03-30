@@ -28,25 +28,20 @@ public class FishPickup : Interactables
 	{
 		base.FixedUpdate();
 
-		spawnCheck = Camera.main.GetComponent<MobyDickSpawner>().mobyHasSpawned;
-		despawnCheck = Camera.main.GetComponent<MobyDickSpawner>().mobyHasDespawned;
+		//spawnCheck = Camera.main.GetComponent<MobyDickSpawner>().mobyHasSpawned;
+		//despawnCheck = Camera.main.GetComponent<MobyDickSpawner>().mobyHasDespawned;
 
-		if(spawnCheck == true)
+		/*if(spawnCheck == true)
 		{
 			folowPattern = false;
 			MoveAway();
 		}else if(despawnCheck == true)
 		{
 			MoveBack();
-		}
-
-		if(!despawnCheck && !spawnCheck)
-		{
-			folowPattern = true;
-		}
+		}*/
 	}
 
-	protected virtual void MoveAway()
+	/*protected virtual void MoveAway()
 	{
 		if(transform.position.x <= 0 && transform.position.x >= -40f)
 		{
@@ -77,5 +72,5 @@ public class FishPickup : Interactables
 		direction = new Vector2(x, 0);
 
 		transform.position += new Vector3(direction.x, direction.y, 0);
-	}
+	}*/
 }

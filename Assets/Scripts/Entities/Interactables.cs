@@ -36,6 +36,9 @@ public class Interactables : MonoBehaviour
 		if(hasBeenHooked)
 		{
 			folowPattern = false;
+		}else
+		{
+			folowPattern = true;
 		}
 
 		if(folowPattern == true)
