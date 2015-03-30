@@ -12,7 +12,7 @@ public class LevelSelectHost : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		currentLevel = 10; //Level hier ophalen
+		currentLevel = PlayerPrefs.GetInt("highestLevel");
 
 		for(int i = currentLevel;i < levelAllowed;i++)
 		{
