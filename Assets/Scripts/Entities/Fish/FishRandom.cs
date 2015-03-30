@@ -5,7 +5,7 @@ public class FishRandom : FishPickup
 {
 	private float switchDirection = 3;
 	private float curTime = 0;
-	
+
 	protected override void Start ()
 	{
 		SetDir();
