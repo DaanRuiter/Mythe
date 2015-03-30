@@ -8,7 +8,7 @@
 	if ($result->num_rows > 0) {
 	    // output data of each row
 	    while($row = $result->fetch_assoc()) {
-	        echo $rang . ". Username : " . $row["Username"] . ". Score : " . $row["HighScore"] . "\n";
+	        echo $rang . ". " . $row["Username"] . "\n" . "Score : " . $row["HighScore"] . "\n \n";
 			$rang += 1;
 	    }
 	} else {
