@@ -56,16 +56,16 @@ public class FishRandom : FishPickup
 			curTime = 0;
 		}
 
-		if(transform.position.x >= 30)
+		if(transform.position.x >= 29)
 		{
 			x = -0.05f;
-		}else if(transform.position.x <= -30)
+		}else if(transform.position.x <= -29)
 		{
 			x = 0.05f;
-		}else if(transform.position.y >= 8.5f)
+		}else if(transform.position.y >= 5)
 		{
 			y = -0.05f;
-		}else if(transform.position.y <= -20)
+		}else if(transform.position.y <= -19)
 		{
 			y = 0.05f;
 		}

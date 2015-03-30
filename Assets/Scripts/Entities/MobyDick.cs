@@ -89,11 +89,11 @@ public class MobyDick : MonoBehaviour
 		if(_negativeMovement == true)
 		{
 			_scaleVector.x = -_scale;
-			_bezierTime -= Time.deltaTime / 2;
+			_bezierTime -= Time.deltaTime / 4;
 		}else if(_negativeMovement == false)
 		{
 			_scaleVector.x = _scale;
-			_bezierTime += Time.deltaTime / 2;
+			_bezierTime += Time.deltaTime / 4;
 		}
 		
 		curveX = (((1-_bezierTime)*(1-_bezierTime)) * startPointX) + (2 * _bezierTime * (1 - _bezierTime) * controlPointX) + ((_bezierTime * _bezierTime) * endPointX);
