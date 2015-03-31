@@ -12,8 +12,8 @@ public class FishPickup : Interactables
     protected Vector2 scale;
     protected Vector2 direction;
 
-	private bool spawnCheck;
-	private bool despawnCheck;
+	//private bool spawnCheck;
+	//private bool despawnCheck;
 
 	protected override void Start()
 	{

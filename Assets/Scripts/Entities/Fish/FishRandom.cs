@@ -8,6 +8,7 @@ public class FishRandom : FishPickup
 
 	protected override void Start ()
 	{
+		base.Start();
 		SetDir();
 	}
 	
@@ -32,6 +33,7 @@ public class FishRandom : FishPickup
 	protected override void FixedUpdate ()
 	{
 		base.FixedUpdate();
+
 	}
 
 	protected override void Movement()
@@ -69,9 +71,26 @@ public class FishRandom : FishPickup
 		{
 			y = 0.05f;
 		}
-
 		direction += new Vector2(x,y);
 
+		float angle = Mathf.Atan2(direction.y - this.transform.position.y, direction.x - this.transform.position.x) * Mathf.Rad2Deg;
+		transform.rotation = Quaternion.AngleAxis(angle + 180, Vector3.forward);
+
+		float localScale = transform.localScale.y;
+
+		if(transform.rotation.z *360 >= 270)
+		{
+			transform.localScale = new Vector3(startScale,-startScale,1);
+		}else
+		{
+			transform.localScale = new Vector3(startScale,startScale,1);
+		}
+
+		Debug.Log(localScale);
+
 		transform.position = direction;
+
+
+		Debug.Log (transform.rotation.z * 360);
 	}
 }
